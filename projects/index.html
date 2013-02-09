@@ -5,12 +5,13 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Dominik Moritz</title>
+  <title>Projects - Dominik Moritz</title>
   <meta name="author" content="Dominik Moritz">
 
   
-  <meta name="description" content="
-">
+  <meta name="description" content="Projects Feb 9th, 2013 Some projects. Foo
+Bar
+Baz Feb 9th, 2013 Recent Posts hello world 2 hello world GitHub Repos Status updating... @domoritz on &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +20,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://domoritz.github.com/">
+  <link rel="canonical" href="http://domoritz.github.com/projects/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -77,19 +78,40 @@
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article role="article">
   
-  
-  
-    <article>
-      
   <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/02/hello-world-2/">Hello World 2</a></h1>
-    
-    
+    <h1 class="entry-title">Projects</h1>
+    <p class="meta">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-02-09T12:48:00+01:00" pubdate data-updated="true">Feb 9<span>th</span>, 2013</time></p>
+  </header>
+  
+  <p><em>Some</em> projects.</p>
+
+<ul>
+<li>Foo</li>
+<li>Bar</li>
+<li>Baz</li>
+</ul>
+
+
+  
+    <footer>
       <p class="meta">
         
+        
 
 
 
@@ -101,81 +123,16 @@
   
 
 
-<time datetime="2013-02-09T12:15:00+01:00" pubdate data-updated="true">Feb 9<span>th</span>, 2013</time>
+<time datetime="2013-02-09T12:48:00+01:00" pubdate data-updated="true">Feb 9<span>th</span>, 2013</time>
         
       </p>
-    
-  </header>
-
-
-  <div class="entry-content">
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/02/hello-world/">Hello World</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
+    </footer>
   
+</article>
 
-
-<time datetime="2013-02-09T12:12:00+01:00" pubdate data-updated="true">Feb 9<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h2>heading</h2>
-
-<p>This is some lorem ipsum text <em>to test</em> wheter the <strong>style</strong> is cool. This text also has <a href="domoritz.de">Links</a>.</p>
-
-<h2>more headings</h2>
-
-<blockquote><p>Flying is learning how to throw yourself at the ground and miss.</p><footer><strong>Douglas Adams</strong> <cite>The Hichhikers Guide to the Galaxy</cite></footer></blockquote>
-
-
-
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="k">def</span> <span class="nf">foo</span><span class="p">():</span>
-</span><span class='line'>  <span class="k">return</span> <span class="mi">42</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h3>and subheadings</h3>
 </div>
-  
-  
 
-
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
-</div>
 <aside class="sidebar">
   
     <section>
@@ -193,8 +150,59 @@
   </ul>
 </section>
 
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/domoritz">@domoritz</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'domoritz',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("doobly_doo", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/doobly_doo" class="twitter-follow-button" data-show-count="false">Follow @doobly_doo</a>
+  
+</section>
+
+
+
+
+
   
 </aside>
+
 
     </div>
   </div>
@@ -204,19 +212,6 @@
 
 </footer>
   
-
-<script type="text/javascript">
-      var disqus_shortname = 'domoritz';
-      
-        
-        var disqus_script = 'count.js';
-      
-    (function () {
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    }());
-</script>
 
 
 

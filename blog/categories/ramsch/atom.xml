@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: ramsch | Dominik Moritz]]></title>
+  <link href="http://domoritz.github.com/blog/categories/ramsch/atom.xml" rel="self"/>
+  <link href="http://domoritz.github.com/"/>
+  <updated>2013-02-10T00:16:53+01:00</updated>
+  <id>http://domoritz.github.com/</id>
+  <author>
+    <name><![CDATA[Dominik Moritz]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[hello world 2]]></title>
+    <link href="http://domoritz.github.com/blog/2013/02/hello-world-2/"/>
+    <updated>2013-02-09T12:15:00+01:00</updated>
+    <id>http://domoritz.github.com/blog/2013/02/hello-world-2</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[hello world]]></title>
+    <link href="http://domoritz.github.com/blog/2013/02/hello-world/"/>
+    <updated>2013-02-09T12:12:00+01:00</updated>
+    <id>http://domoritz.github.com/blog/2013/02/hello-world</id>
+    <content type="html"><![CDATA[<h2>heading</h2>
+
+<p>This is some lorem ipsum text <em>to test</em> wheter the <strong>style</strong> is cool. This text also has <a href="domoritz.de">Links</a>.</p>
+
+<h2>more headings</h2>
+
+<p><blockquote><p>Flying is learning how to throw yourself at the ground and miss.</p><footer><strong>Douglas Adams</strong> <cite>The Hichhikers Guide to the Galaxy</cite></footer></blockquote></p>
+
+<p>```python
+def foo():</p>
+
+<pre><code>return 42
+</code></pre>
+
+<p>```</p>
+
+<h3>and subheadings</h3>
+]]></content>
+  </entry>
+  
+</feed>
