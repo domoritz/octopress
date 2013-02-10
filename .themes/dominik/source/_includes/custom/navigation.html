@@ -1,4 +1,18 @@
-<ul class="main-navigation">
-  <li><a href="{{ root_url }}/">Blog</a></li>
-  <li><a href="{{ root_url }}/blog/archives">Archives</a></li>
-</ul>
+{% for node in pages_list %}
+	{% if node.menu-title %}
+	  {% assign title = node.menu-title %}
+	{% elsif node.title %}
+	  {% assign title = node.title %}
+	{% endif %}
+  {% if title != null %}
+    {% if group == node.group %}
+      {% if page.url == node.url %}
+      <li class="active">
+      {% else %}
+      <li>
+      {% endif %}
+      <a href="{{ BASE_PATH }}{{node.url}}">{{title}}</a></li>
+    {% endif %}
+  {% endif %}
+{% endfor %}
+
