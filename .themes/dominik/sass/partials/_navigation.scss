@@ -10,6 +10,7 @@ body > header > nav {
       box-sizing: border-box;
   		float: left;
       @include transition;
+      @include transition-duration(0.5s);
   		&:hover {
   			background-color: $nav-bg-hover;
         a {
@@ -24,6 +25,7 @@ body > header > nav {
       }
   		a {
         @include transition;
+        @include transition-duration(0.5s);
         color: $nav-color;
   			min-width: 35px;
 				margin: 10px 10px;

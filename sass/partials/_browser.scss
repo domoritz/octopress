@@ -31,7 +31,6 @@
         .description { color: $browser-description-color-active; }
       }
 
-      @include transition;
       @include transition-duration(0.5s);
       @include transition-timing-function(ease-out);
 

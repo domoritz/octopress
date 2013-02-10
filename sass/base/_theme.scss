@@ -22,7 +22,7 @@ $browser-title-color: $browser-color !default;
 $browser-published-color: $browser-color !default;
 $browser-description-color: $text-color-light !default;
 
-$browser-bg-hover: darken($base2, 2);
+$browser-bg-hover: darken($base2, 5);
 
 $browser-bg-active: $base03;
 $browser-color-active: #ddd !default;
@@ -31,9 +31,9 @@ $browser-published-color-active: $browser-color-active !default;
 $browser-description-color-active: darken($browser-color-active, 25) !default;
 
 /* Navigation */
-$nav-bg: $browser-bg-hover !default;
-$nav-bg-hover: darken($browser-bg-hover, 10) !default;
-$nav-bg-active: $browser-bg-active !default;
+$nav-bg: $base2 !default;
+$nav-bg-hover: darken($base2, 10) !default;
+$nav-bg-active: $base03 !default;
 $nav-color: $base03 !default;
 $nav-color-hover:  darken($base03, 10) !default;
 $nav-color-active: $browser-color-active !default;
