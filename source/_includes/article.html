@@ -4,7 +4,7 @@
   <header>
     <h1 class="entry-title">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</h1>
     <h2 class="author hidden">{{ site.author }}</h2>
-    <p class="description">{{ page.description }}</p>
+    {% if page.description %}<p class="description">{{ page.description }}</p>{% endif %}
     {% if page.date %}<p class="meta" title="date published">{% include post/date.html %}{{ time }}</p>{% endif %}
   </header>
   {% endif %}
