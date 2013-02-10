@@ -1,0 +1,25 @@
+body {
+	background-color: $main-bg;
+}
+
+.clear { clear: both; }
+.hidden { display: none; }
+.invisible { opacity: 0; }
+.right { float: right; }
+.left { float: left; }
+.nobr {white-space: nowrap}
+.right-align {text-align: right; }
+
+a {
+  @include link-colors($link-color, $hover: $link-color-hover, $focus: $link-color-hover, $visited: $link-color-visited, $active: $link-color-active);
+  text-decoration: none;
+  border-bottom: 1px solid $link-color-border;
+  padding: 0 0 -1px 0;
+  &:hover {
+	  border-bottom: 1px solid $link-color-border-hover;
+	}
+}
+
+.active a {
+  border-bottom: 1px solid $link-color-border-hover;
+}

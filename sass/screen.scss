@@ -2,6 +2,10 @@
 @include global-reset;
 @include reset-html5;
 
+@import "compass/css3/transition";
+
+@import "libraries/font-awesome";
+
 @import "custom/colors";
 @import "custom/fonts";
 @import "custom/layout";

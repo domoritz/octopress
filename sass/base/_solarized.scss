@@ -43,4 +43,7 @@ $pre-bg: $base03 !default;
 $pre-border: darken($base02, 5) !default;
 $pre-color: $base1 !default;
 
-
+html * {
+    color-profile: sRGB;
+    rendering-intent: auto;
+}

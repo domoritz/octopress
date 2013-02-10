@@ -1,0 +1,40 @@
+.browser {
+  ul {
+    list-style: none;
+    li {
+      a {
+        padding: 10px;
+        display: block;
+        border: none;
+        color: $browser-color;
+      }
+      margin-bottom: 7px;
+      &:hover {
+        background: $browser-bg-hover;
+      }
+      .title {
+        color: $browser-title-color;
+        padding: 2px 0;
+      }
+      .description {
+        margin-top: 5px;
+        color: $browser-description-color;
+      }
+      .published {
+        color: $browser-published-color;
+      }
+      &.active {
+        background: $browser-bg-active;
+        a {color: $browser-color-active};
+        .published { color: $browser-published-color-active; }
+        .title {  color: $browser-title-color-active; }
+        .description { color: $browser-description-color-active; }
+      }
+
+      @include transition;
+      @include transition-duration(0.5s);
+      @include transition-timing-function(ease-out);
+
+    }
+  }
+}
