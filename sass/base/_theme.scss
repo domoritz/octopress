@@ -1,10 +1,10 @@
 /* Main Section Colors */
-$main-bg: lighten($base3, 1) !default;
+$main-bg: #F0F0ED !default;
 
 $title-color: #383D3D !default;
 
 $text-color: #222 !default;
-$text-color-light: lighten($text-color, 30) !default;
+$text-color-light: lighten($text-color, 40) !default;
 $text-color-verylight: lighten($text-color, 60) !default;
 $type-border: #ddd !default;
 
@@ -22,13 +22,17 @@ $browser-title-color: $browser-color !default;
 $browser-published-color: $browser-color !default;
 $browser-description-color: $text-color-light !default;
 
-$browser-bg-hover: darken($base2, 5);
-
-$browser-bg-active: $base03;
-$browser-color-active: #ddd !default;
+$browser-bg: tranparent !default;
+$browser-bg-hover: darken($base2, 5) !default;
+$browser-bg-active: $base03 !default;
+$browser-color-active: #fff !default;
 $browser-title-color-active: $browser-color-active !default;
 $browser-published-color-active: $browser-color-active !default;
-$browser-description-color-active: darken($browser-color-active, 25) !default;
+$browser-description-color-active: darken($browser-color-active, 20) !default;
+
+@media only screen and (max-width: 767px) {
+
+}
 
 /* Navigation */
 $nav-bg: $base2 !default;

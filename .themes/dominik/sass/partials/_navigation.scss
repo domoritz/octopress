@@ -1,16 +1,20 @@
 body > header > nav {
-  background-color: $nav-bg;
   cursor: pointer;
-  @include border-radius(3px);
-  @include background-clip(border-box);
   overflow: hidden;
   ul {
   	list-style: none;
-  	li {
-      box-sizing: border-box;
+    margin: 0;
+    li {
   		float: left;
+      background-color: $nav-bg;
       @include transition;
       @include transition-duration(0.5s);
+      &:first-child {
+        @include border-left-radius(3px);
+      }
+      &:last-child {
+        @include border-right-radius(3px);
+      }
   		&:hover {
   			background-color: $nav-bg-hover;
         a {

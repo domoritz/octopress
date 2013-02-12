@@ -10,14 +10,16 @@
     }
     footer { padding: 0; margin: 0;}
   }
-  h1 { color: $text-color; margin-bottom: .3em; }
+  h1 {
+    color: $text-color;
+    margin-bottom: .3em;
+  }
   h2 { display: none; }
   h2:before { display: none; }
   h1 {
     font-size: 1.5em;
     a {
-      @include hover-link;
-      color: inherit;
+      border-bottom: none;
       &:hover {
         text-decoration: none;
         color: $link-color-hover;
