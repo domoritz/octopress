@@ -1,18 +1,21 @@
-{% sorted_for node in pages_list sort_by:weight %}
-	{% if node.menu-title %}
-	  {% assign title = node.menu-title %}
-	{% elsif node.title %}
-	  {% assign title = node.title %}
-	{% endif %}
-  {% if title != null %}
-    {% if group == node.group %}
-      {% if page.url == node.url %}
-      <li class="active">
-      {% else %}
-      <li>
+{% for weight in (1..2) %}
+  {% for node in pages_list %}
+    {% if node.weight == weight %}
+    	{% if node.menu-title %}
+    	  {% assign title = node.menu-title %}
+    	{% elsif node.title %}
+    	  {% assign title = node.title %}
+    	{% endif %}
+      {% if title != null %}
+        {% if group == node.group %}
+          {% if page.url == node.url %}
+          <li class="active">
+          {% else %}
+          <li>
+          {% endif %}
+          <a href="{{ BASE_PATH }}{{node.url}}">{{title}}</a></li>
+        {% endif %}
       {% endif %}
-      <a href="{{ BASE_PATH }}{{node.url}}">{{title}}</a></li>
     {% endif %}
-  {% endif %}
-{% endsorted_for %}
-
+  {% endfor %}
+{% endfor %}

@@ -22,12 +22,12 @@ body {
   > header {
     font-family: $header-title-font-family;
     .title {
-      font-size: 1.2em;
+      font-size: 1.3em;
       font-weight: normal;
       line-height: 1.2em;
     }
     .navigation {
-      font-size: 0.9em;
+      font-size: 0.95em;
       @include media(handheld) {
         font-size: 1.0em;
       }
@@ -43,7 +43,10 @@ nav {
 
 .browser {
   font-family: $sans;
-  font-size: 1.0em;
+  font-size: 1.05em;
+  @include media(wide) {
+    font-size: 1.1em;
+  }
 
   .published {
     font-size: 0.9em;
@@ -83,6 +86,10 @@ article header {
 .entry-content {
   font-size: 1em;
   line-height: 1.5em;
+  @include media(wide) {
+    font-size: 1.1em;
+    line-height: 1.7em;
+  }
 }
 
 h1 {
