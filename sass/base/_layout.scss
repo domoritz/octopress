@@ -6,9 +6,8 @@ $header-font-size: 1.0em !default;
 $header-padding-top: 25px !default;
 $header-padding-bottom: 40px !default;
 
-$pad-min: 18px;
-$pad-medium: 35px;
-$pad-wide: 55px;
+$pad-min: 10px;
+$pad-medium: 25px;
 
 .group { @include pie-clearfix; }
 
@@ -18,55 +17,61 @@ body {
   position: relative;
   margin: 0 auto;
   padding: 0 $pad-medium;
-  @include media(haldheld) {
+  @include media(handheld) {
     padding: 0 $pad-min;
   }
   > header {
+    position: relative;
     font-size: $header-font-size;
     padding-top: $header-padding-top;
     padding-bottom: $header-padding-bottom;
 
-    nav {
+    nav.navigation {
       position: absolute;
       top: 0;
       right: 0;
       margin-top: 20px;
       line-height: 35px;
+      .mini-nav {
+        display: none;
+      }
+      @include media(handheld) {
+        position: relative;
+        margin: 20px auto 0 auto;
+        width: 100%;
+      }
+    }
+  }
+}
+
+#main {
+  #browser {
+    float: left;
+    width: $browser-width;
+    padding-right: $browser-padding;
+    @include media(handheld) {
+      display: none;
     }
   }
 
-  #main {
-    #browser {
-      float: left;
-      width: $browser-width;
-      padding-right: $browser-padding;
-      @include media(handheld) {
-        float: none;
-        &:not(.archive) {
-          display: none;
-        }
-      }
-    }
+  #content {
+    overflow: hidden;
+    position: relative;
+    top: 0px;
+    min-height: 300px;
+  }
 
-    #content {
-      overflow: hidden;
-      position: relative;
-      top: 0px;
-      min-height: 300px;
+  &.sidebar #content {
+    margin-left: $browser-width;
+    @include media(handheld) {
+      margin-left: 0;
     }
-
-    &.sidebar #content {
-      margin-left: $browser-width;
-      @include media(handheld) {
-        margin-left: 0;
-      }
+  }
+  &:not(.sidebar) #content {
+    @media only screen and (min-width: 980px) {
+      padding: 0 10%;
     }
-    &:not(.sidebar) #content {
-      @media only screen and (min-width: 980px) {
-        padding: 0 10%;
-      }
-      margin: auto;
-    }
+    margin: auto;
   }
 }
 

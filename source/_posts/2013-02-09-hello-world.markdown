@@ -13,13 +13,22 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 
 This is some lorem ipsum text *to test* wheter the **style** is cool. This text also has [Links](domoritz.de).
 
+A list:
+
+* Foo
+* Bar
+	* Baz
+1. a
+2. b
+
+
 ## more headings
 
 {% blockquote Douglas Adams, The Hichhikers Guide to the Galaxy %}
 Flying is learning how to throw yourself at the ground and miss.
 {% endblockquote %}
 
-```python
+```python This is code
 def foo():
 	return 42
 ```

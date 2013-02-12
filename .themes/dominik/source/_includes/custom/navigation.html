@@ -1,4 +1,4 @@
-{% for node in pages_list %}
+{% sorted_for node in pages_list sort_by:weight %}
 	{% if node.menu-title %}
 	  {% assign title = node.menu-title %}
 	{% elsif node.title %}
@@ -14,5 +14,5 @@
       <a href="{{ BASE_PATH }}{{node.url}}">{{title}}</a></li>
     {% endif %}
   {% endif %}
-{% endfor %}
+{% endsorted_for %}
 

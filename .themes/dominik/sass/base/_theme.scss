@@ -1,45 +1,44 @@
 /* Main Section Colors */
 $main-bg: #F0F0ED !default;
+$main-color: #002b36 !default;
+$second-color: darken(#DDDDDB, 5) !default;
 
 $title-color: #383D3D !default;
 
 $text-color: #222 !default;
-$text-color-light: lighten($text-color, 40) !default;
+$text-color-light: lighten($text-color, 30) !default;
 $text-color-verylight: lighten($text-color, 60) !default;
 $type-border: #ddd !default;
 
 /* Main Link Colors */
 $link-color: darken($text-color, 2) !default;
 $link-color-border: lighten($link-color, 60) !default;
-$link-color-hover: $base03 !default;
+$link-color-hover: $main-color !default;
 $link-color-border-hover: $link-color-hover !default;
 $link-color-visited: adjust-color($link-color, $hue: 80, $lightness: -4) !default;
 $link-color-active: adjust-color($link-color-hover, $lightness: -15) !default;
 
 /* Browser */
-$browser-color: $base03 !default;
+$browser-color: $main-color !default;
 $browser-title-color: $browser-color !default;
 $browser-published-color: $browser-color !default;
 $browser-description-color: $text-color-light !default;
 
 $browser-bg: tranparent !default;
-$browser-bg-hover: darken($base2, 5) !default;
-$browser-bg-active: $base03 !default;
+$browser-bg-hover: $second-color !default;
+$browser-bg-active: $main-color !default;
+
 $browser-color-active: #fff !default;
 $browser-title-color-active: $browser-color-active !default;
 $browser-published-color-active: $browser-color-active !default;
-$browser-description-color-active: darken($browser-color-active, 20) !default;
-
-@media only screen and (max-width: 767px) {
-
-}
+$browser-description-color-active: adjust-color($browser-bg-active, $saturation: -85, $lightness: 45) !default;
 
 /* Navigation */
-$nav-bg: $base2 !default;
-$nav-bg-hover: darken($base2, 10) !default;
-$nav-bg-active: $base03 !default;
-$nav-color: $base03 !default;
-$nav-color-hover:  darken($base03, 10) !default;
+$nav-bg: #DDDDDB !default;
+$nav-bg-hover: darken($second-color, 10) !default;
+$nav-bg-active: $main-color !default;
+$nav-color: $main-color !default;
+$nav-color-hover:  darken($main-color, 10) !default;
 $nav-color-active: $browser-color-active !default;
 
 $footer-color: lighten($text-color, 38) !default;

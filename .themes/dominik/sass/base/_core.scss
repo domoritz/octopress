@@ -16,8 +16,8 @@ a {
   border-bottom: 1px solid $link-color-border;
   padding: 0 0 -1px 0;
   &:hover {
-	  border-bottom: 1px solid $link-color-border-hover;
-	}
+		border-bottom: 1px solid $link-color-border-hover;
+  }
 }
 
 .active a {
