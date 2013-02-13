@@ -7,7 +7,7 @@ comments: false
 sharing: false
 sidebar: false
 group: navigation
-weight: 5
+weight: 4
 ---
 
 Hi, I'm Dominik. CS student at [Hasso Plattner Institute](http://www.hpi.uni-potsdam.de) at the University of Potsdam, Germany.

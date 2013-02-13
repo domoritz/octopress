@@ -7,7 +7,7 @@ comments: false
 sharing: false
 sidebar: false
 group: navigation
-weight 3
+weight: 3
 ---
 
 # CKAN
