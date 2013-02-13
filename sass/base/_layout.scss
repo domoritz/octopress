@@ -28,9 +28,8 @@ body {
 
     nav.navigation {
       position: absolute;
-      top: 0;
+      top: 29px;
       right: 0;
-      margin-top: 20px;
       line-height: 35px;
       .mini-nav {
         display: none;
@@ -52,6 +51,9 @@ body {
     @include media(handheld) {
       display: none;
     }
+    @include media(wide) {
+      width: $browser-width + 20px;
+    }
   }
 
   #content {
@@ -59,6 +61,12 @@ body {
     position: relative;
     top: 0px;
     min-height: 300px;
+    footer .archive-link {
+      display: none;
+      @include media(handheld) {
+        display: block;
+      }
+    }
   }
 
   &.sidebar #content {

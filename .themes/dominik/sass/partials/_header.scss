@@ -1,7 +1,19 @@
-body > header .title {
-	a, a:visited, a:hover {
+body > header .title-header {
+  color: $title_color;
+  a, a:visited, a:hover {
 		border-bottom: none;
-    color: $title_color;
-    padding: 0.5em 1em 0.5em 0;
+	}
+	.description {
+  	display: block;
+  	margin-top: 3px;
+  	color: $text-color-light;
+  	@include media(mobile) {
+      display: none;
+    }
+  }
+  .subtitle{
+  	@include media(mobile) {
+      display: none;
+    }
   }
 }

@@ -33,7 +33,8 @@
         .description { color: $browser-description-color-active; }
       }
 
-      @include transition(all 0.5s ease-out);
+      @include transition(0.8s ease-out);
+      @include transition-property(color background-color)
 
     }
   }

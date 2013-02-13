@@ -1,11 +1,18 @@
-<hgroup class="title">
+<hgroup class="title-header">
   <a href="{{ root_url }}/">
-    <span>
+    <span class="title">
       {{ site.title }}
-      |
-      {% if site.subtitle %}
-        {{ site.subtitle }}
-      {% endif %}
+      <span class="subtitle">
+        |
+        {% if site.subtitle %}
+          {{ site.subtitle }}
+        {% endif %}
+      </span>
+    </span>
+    <span class="description">
+	    {% if site.description %}
+	      {{ site.description }}
+	    {% endif %}
     </span>
   </a>
 </hgroup>

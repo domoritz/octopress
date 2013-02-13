@@ -11,13 +11,11 @@ body > header > nav {
     margin: 0;
     li {
   		float: left;
+      padding: 0;
+      margin: 0;
       background-color: $nav-bg;
-      @include transition-property(background-color);
+      @include transition-property(border-color color background-color);
       @include transition-duration(0.5s);
-      @include media(handheld) {
-        padding: 5px 12px;
-        @include border-radius(3px);
-      }
       &:first-child {
         @include border-left-radius(3px);
       }
@@ -27,22 +25,32 @@ body > header > nav {
   		&:hover {
   			background-color: $nav-bg-hover;
         a {
-          border-color: $nav-color-hover;
+          border: none;
           color: $nav-color-hover;
         }
   		}
       &.active {
         background-color: $nav-bg-active;
         a {
+          border: none;
           color: $nav-color-active;
         }
       }
   		a {
+        border: none;
+        display: block;
         @include transition-property(border-color color);
         @include transition-duration(0.5s);
         color: $nav-color;
   			min-width: 35px;
-				margin: 10px 12px;
+				padding: 0px 12px;
+        @include media(handheld) {
+          padding: 8px 20px;
+          @include border-radius(3px);
+        }
+        &:hover {
+          border: none;
+        }
   		}
   	}
   }
