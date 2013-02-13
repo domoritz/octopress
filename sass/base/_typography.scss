@@ -62,35 +62,35 @@ nav {
   }
 }
 
-article header {
-  h1 {
-    @extend .serif;
-    font-weight: normal;
-    font-size: 60px;
-    @include media(handheld) {
-      font-size: 50px;
-    }
-    @include media(wide){
-      font-size: 70px;
-    }
-    line-height: 70px;
-    text-align: center;
-  }
-
-  .description {
-    font-size: 20px;
-    line-height: 1.5;
-    font-style: italic;
-    text-align: center;
-  }
-}
-
-.entry-content {
+article {
   font-size: 1em;
   line-height: 1.5em;
   @include media(wide) {
     font-size: 1.1em;
     line-height: 1.7em;
+  }
+
+  header {
+    h1 {
+      @extend .serif;
+      font-weight: normal;
+      font-size: 60px;
+      @include media(handheld) {
+        font-size: 50px;
+      }
+      @include media(wide){
+        font-size: 70px;
+      }
+      line-height: 70px;
+      text-align: center;
+    }
+
+    .description {
+      font-size: 20px;
+      line-height: 1.5;
+      font-style: italic;
+      text-align: center;
+    }
   }
 }
 
