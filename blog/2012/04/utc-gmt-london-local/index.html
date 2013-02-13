@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Blog - Dominik Moritz</title>
+  <title>UTC vs GMT vs London Local Time (vs CET) - Dominik Moritz</title>
   <meta name="author" content="Dominik Moritz">
 
   
-  <meta name="description" content="Lange ist es her, dass ich hier im Blog mal wieder etwas von mir gegeben habe. Die gute Nachricht, dass ich noch lebe, ist damit raus. Dafür, dass &hellip;">
+  <meta name="description" content="Über die Verwirrungen durch Zeitstandards">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://domoritz.github.com/">
+  <link rel="canonical" href="http://domoritz.github.com/blog/2012/04/utc-gmt-london-local/">
   <link rel="author" href="humans.txt" />
   <link href="/favicon.ico" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
@@ -87,7 +87,7 @@
       
         
           
-          <li class="active">
+          <li>
           
           <a href="/index.html">Blog</a></li>
         
@@ -273,7 +273,7 @@
 				<ul>
 	
   	
-    <li class="active">
+    <li>
     
 	  	<a href="/blog/2012/12/london-4D/">
 		    <div class="published" data-published="2012-12-15 23:52:00 +0100">December 2012</div>
@@ -283,7 +283,7 @@
 		</li>
 	
   	
-    <li>
+    <li class="active">
     
 	  	<a href="/blog/2012/04/utc-gmt-london-local/">
 		    <div class="published" data-published="2012-04-09 20:15:00 +0200">April 2012</div>
@@ -303,15 +303,13 @@
 		</div>
 	
 		<div id="content">
-			
-
-<div>
+			<div>
 <article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">The London 4D Experience</h1>
+    <h1 class="entry-title">UTC vs GMT vs London Local Time (vs CET)</h1>
     <h2 class="author hidden">Dominik Moritz</h2>
-    <p class="description">some information</p>
+    <p class="description">Über die Verwirrungen durch Zeitstandards</p>
     <p class="meta" title="date published">
 
 
@@ -324,20 +322,28 @@
   
 
 
-<time datetime="2012-12-15T23:52:00+01:00" pubdate data-updated="true">Dec 15<span>th</span>, 2012</time></p>
+<time datetime="2012-04-09T20:15:00+02:00" pubdate data-updated="true">Apr 9<span>th</span>, 2012</time></p>
   </header>
   
 
   <div class="entry-content">
-    <p>Lange ist es her, dass ich hier im Blog mal wieder etwas von mir gegeben habe. Die gute Nachricht, dass ich noch lebe, ist damit raus. Dafür, dass ich hier im Blog nichts geschrieben habe, habe ich auf <a href="http://twitter.com/doobly_doo">Twitter</a> kurze Infos von mir gegeben und auch auf Github einiges an Code produziert.</p>
+    <p>Ich hab mich gerade gefragt, ob die GMT auch Sommerzeit mit einbezieht und wie denn die UTC dazu steht. Nach einiger Recherche konnte ich etwas Licht in das Dunkel bringen. Wen es also interessiert, hier die harten Fakten.</p>
 
-<p>Also, wie gesagt, ich lebe noch und ich studiere auch immer noch am <a href="http://www.hpi.uni-potsdam.de">HPI</a>. Mittlerweile aber im 5 Semester. Noch dieses und das nächste Semester und ich habe einen Bachelorabschluss. Im nächsten Jahr werde ich dann in den USA studieren. Mehr dazu muss noch bis zu einem späteren Artikel warten.</p>
+<p>GMT (Greenwich Mean Time) ist der alte Zeitstandard, an dem alles Zeitzonen ausgerichtet wurden. GMT wurde als primäre Referenz für das Britische Empire eingeführt und wurde schnell zum allgemeinen Standard. Der BBC World Service arbeitet nach GMT. Nun kam es jedoch, dass die Sonne und die Erde nicht so regelmäßig sind und die Zeit von Zeit zu Zeit angeglichen werden muss. Dabei geht es nicht um Sommer- und Winterzeit, sondern Schaltsekunden.</p>
 
-<p><img src="https://lh3.googleusercontent.com/-OdNSCUEo_co/URwP_7Wv_aI/AAAAAAAABq8/fC8-4Y1Bz2U/s600/SAM_1675.JPG" title="London 4D" alt="Bus and street in London"></p>
+<p>GMT ist unabhängig von Sommer und Winterzeit.</p>
 
-<p>So, nun noch zum Titel dieses Blogposts, der London 4D experience. In diesem Sommer war ich für zwei Monate in London, wo ich für die <a href="http://www.okfn.org">Open Knowledge Foundation</a> an <a href="http://www.ckan.org">CKAN</a> gearbeitet habe. CKAN ist eine Datahub Software, welche von verschiedenen Regierungen und Organisationen für die Katalogisierung und Veröffentlichung von offenen Daten genutzt wird. In London habe ich praktisch alle Museen gesehen, viele nette Leute kennen gelernt und eine Menge Spaß mit der Arbeit an CKAN gehabt. Ich habe hauptsächlich am neuen Datastore von CKAN gearbeitet und auch einen Artikel im CKAN Blog geschrieben. Genaueres zum Datastore gibt’s in der Doku.</p>
+<p><strong>UTC (Coordinated Universal Time)</strong> wurde am 1. Januar 1972 offizieller Standard und richtet sich, wie GMT, nach der Zeit bei Null Grad Longitudinal, was den Nullmeridian bezeichnet, der durch den Londoner Stadtteil Greenwich geht. Im Gegensatz zu GMT gibt es jedoch alle paar Jahre Schaltsekunden, um der verlangsamenden Erdrotation zu folgen. Da die Abweichung zu GMT sehr gering ist, wird die UTC teilweise auch als GMT bezeichnet (z.B. vom BBC).</p>
 
-<p>London hat aber nicht nur Museen, sondern ist auch eine sehr lebhafte und vielfältige Stadt. Was man eigentlich jeden Tag draußen bekommen kann, ist Regen, laute Krankenwagen (man hört eigentlich immer mindestens eine&#8230;), rote Doppeldeckerbusse und Fahrradfahrer. Und das alles gibt es in diesem einen Bild, was ich dem Internet nicht vorenthalten wollte.</p>
+<p><strong>UTC</strong> ist auch der Standard für alle Zeiten im Internet und im internationalen Handel.</p>
+
+<p>London Local time ist die Zeit, welche in London gilt. Das heißt im Winter UTC und im Sommer die BST (Britisch Summer Time), welche UTC+01:00 entspricht.</p>
+
+<p><strong>CET (Central European Time)</strong> entspricht UTC+01:00 und gilt in Mitteleuropa in Winter. CET hat keine Sommerzeit.</p>
+
+<p>Unix time richtet sich an der UTC aus und wird in Sekunden seit Donnerstag, 1. Januar 1970 angegeben. Die Umrechnung in UTC ist nicht trivial, da Schaltjahre, Schaltsekunden und eventuell die Sommerzeit mit eingerechnet werden müssen.</p>
+
+<p>Also nun noch der ultimative Tipp, wenn man Zeiten ganz klar ausdrücken will. Zeit in Lokaler Zeit angeben oder auf UTC verweisen. Für die Umrechnung empfehle ich <a href="http://www.wolframalpha.com">Wolfram Alpha</a>.</p>
 
   </div>
 
@@ -345,7 +351,7 @@
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://domoritz.github.com/blog/2012/12/london-4D/" data-via="doobly_doo" data-counturl="http://domoritz.github.com/blog/2012/12/london-4D/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://domoritz.github.com/blog/2012/04/utc-gmt-london-local/" data-via="doobly_doo" data-counturl="http://domoritz.github.com/blog/2012/04/utc-gmt-london-local/" >Tweet</a>
   
   
   
@@ -356,8 +362,8 @@
     
     <p class="meta hidden">
       
-        <a class="basic-alignment left" href="/blog/2012/04/utc-gmt-london-local/" title="Previous Post: UTC vs GMT vs London Local Time (vs CET)">&laquo; UTC vs GMT vs London Local Time (vs CET)</a>
       
+        <a class="basic-alignment right" href="/blog/2012/12/london-4D/" title="Next Post: The London 4D experience">The London 4D experience &raquo;</a>
       
     </p>
     <a href="/blog/archives" class="archive-link"><div><i class="icon-calendar"></i> Blog archive</div></a>
@@ -386,8 +392,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://domoritz.github.com/index.html';
-        var disqus_url = 'http://domoritz.github.com/index.html';
+        var disqus_identifier = 'http://domoritz.github.com/blog/2012/04/utc-gmt-london-local/';
+        var disqus_url = 'http://domoritz.github.com/blog/2012/04/utc-gmt-london-local/';
         var disqus_script = 'embed.js';
       
     (function () {

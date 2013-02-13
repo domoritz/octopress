@@ -4,7 +4,7 @@
   <title><![CDATA[Dominik Moritz]]></title>
   <link href="http://domoritz.github.com/atom.xml" rel="self"/>
   <link href="http://domoritz.github.com/"/>
-  <updated>2013-02-12T23:25:29+01:00</updated>
+  <updated>2013-02-14T00:24:06+01:00</updated>
   <id>http://domoritz.github.com/</id>
   <author>
     <name><![CDATA[Dominik Moritz]]></name>
@@ -15,58 +15,43 @@
   
   <entry>
     <title type="html"><![CDATA[The London 4D experience]]></title>
-    <link href="http://domoritz.github.com/blog/2013/02/london-4D/"/>
-    <updated>2013-02-09T12:15:00+01:00</updated>
-    <id>http://domoritz.github.com/blog/2013/02/london-4D</id>
+    <link href="http://domoritz.github.com/blog/2012/12/london-4D/"/>
+    <updated>2012-12-15T23:52:00+01:00</updated>
+    <id>http://domoritz.github.com/blog/2012/12/london-4D</id>
     <content type="html"><![CDATA[<p>Lange ist es her, dass ich hier im Blog mal wieder etwas von mir gegeben habe. Die gute Nachricht, dass ich noch lebe, ist damit raus. Dafür, dass ich hier im Blog nichts geschrieben habe, habe ich auf <a href="http://twitter.com/doobly_doo">Twitter</a> kurze Infos von mir gegeben und auch auf Github einiges an Code produziert.</p>
 
-<p>Also, wie gesagt, ich lebe noch und ich studiere auch immer noch am HPI. Mittlerweile aber im 5 Semester. Noch dieses und das nächste Semester und ich habe einen Bachelorabschluss. Im nächsten Jahr werde ich dann in den USA studieren. Mehr dazu muss noch bis zu einem späteren Artikel warten.</p>
+<p>Also, wie gesagt, ich lebe noch und ich studiere auch immer noch am <a href="http://www.hpi.uni-potsdam.de">HPI</a>. Mittlerweile aber im 5 Semester. Noch dieses und das nächste Semester und ich habe einen Bachelorabschluss. Im nächsten Jahr werde ich dann in den USA studieren. Mehr dazu muss noch bis zu einem späteren Artikel warten.</p>
 
-<p>So, nun noch zum Titel dieses Blogposts, der London 4D experience. In diesem Sommer war ich für zwei Monate in London, wo ich für die Open Knowledge Foundation (OKFN) an CKAN gearbeitet habe. CKAN ist eine Datahub Software, welche von verschiedenen Regierungen und Organisationen für die Katalogisierung und Veröffentlichung von offenen Daten genutzt wird. In London habe ich praktisch alle Museen gesehen, viele nette Leute kennen gelernt und eine Menge Spaß mit der Arbeit an CKAN gehabt. Ich habe hauptsächlich am neuen Datastore von CKAN gearbeitet und auch einen Artikel im CKAN Blog geschrieben. Genaueres zum Datastore gibt’s in der Doku. London hat aber nicht nur Museen, sondern ist auch eine sehr lebhafte und vielfältige Stadt. Was man eigentlich jeden Tag draußen bekommen kann, ist Regen, laute Krankenwagen (man hört eigentlich immer mindestens einen…). rote Doppeldeckerbusse und Fahrradfahrer. Und das alles gibt es in diesem einen Bild, was ich der Welt nicht vorenthalten wollte.</p>
+<p><img src="https://lh3.googleusercontent.com/-OdNSCUEo_co/URwP_7Wv_aI/AAAAAAAABq8/fC8-4Y1Bz2U/s600/SAM_1675.JPG" title="London 4D" alt="Bus and street in London"></p>
+
+<p>So, nun noch zum Titel dieses Blogposts, der London 4D experience. In diesem Sommer war ich für zwei Monate in London, wo ich für die <a href="http://www.okfn.org">Open Knowledge Foundation</a> an <a href="http://www.ckan.org">CKAN</a> gearbeitet habe. CKAN ist eine Datahub Software, welche von verschiedenen Regierungen und Organisationen für die Katalogisierung und Veröffentlichung von offenen Daten genutzt wird. In London habe ich praktisch alle Museen gesehen, viele nette Leute kennen gelernt und eine Menge Spaß mit der Arbeit an CKAN gehabt. Ich habe hauptsächlich am neuen Datastore von CKAN gearbeitet und auch einen Artikel im CKAN Blog geschrieben. Genaueres zum Datastore gibt’s in der Doku.</p>
+
+<p>London hat aber nicht nur Museen, sondern ist auch eine sehr lebhafte und vielfältige Stadt. Was man eigentlich jeden Tag draußen bekommen kann, ist Regen, laute Krankenwagen (man hört eigentlich immer mindestens eine&#8230;), rote Doppeldeckerbusse und Fahrradfahrer. Und das alles gibt es in diesem einen Bild, was ich dem Internet nicht vorenthalten wollte.</p>
 ]]></content>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[hello world]]></title>
-    <link href="http://domoritz.github.com/blog/2013/02/hello-world/"/>
-    <updated>2013-02-09T12:12:00+01:00</updated>
-    <id>http://domoritz.github.com/blog/2013/02/hello-world</id>
-    <content type="html"><![CDATA[<h2>heading</h2>
+    <title type="html"><![CDATA[UTC vs GMT vs London Local Time (vs CET)]]></title>
+    <link href="http://domoritz.github.com/blog/2012/04/utc-gmt-london-local/"/>
+    <updated>2012-04-09T20:15:00+02:00</updated>
+    <id>http://domoritz.github.com/blog/2012/04/utc-gmt-london-local</id>
+    <content type="html"><![CDATA[<p>Ich hab mich gerade gefragt, ob die GMT auch Sommerzeit mit einbezieht und wie denn die UTC dazu steht. Nach einiger Recherche konnte ich etwas Licht in das Dunkel bringen. Wen es also interessiert, hier die harten Fakten.</p>
 
-<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#8217;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+<p>GMT (Greenwich Mean Time) ist der alte Zeitstandard, an dem alles Zeitzonen ausgerichtet wurden. GMT wurde als primäre Referenz für das Britische Empire eingeführt und wurde schnell zum allgemeinen Standard. Der BBC World Service arbeitet nach GMT. Nun kam es jedoch, dass die Sonne und die Erde nicht so regelmäßig sind und die Zeit von Zeit zu Zeit angeglichen werden muss. Dabei geht es nicht um Sommer- und Winterzeit, sondern Schaltsekunden.</p>
 
-<p>This is some lorem ipsum text <em>to test</em> wheter the <strong>style</strong> is cool. This text also has <a href="domoritz.de">Links</a>.</p>
+<p>GMT ist unabhängig von Sommer und Winterzeit.</p>
 
-<p>A list:</p>
+<p><strong>UTC (Coordinated Universal Time)</strong> wurde am 1. Januar 1972 offizieller Standard und richtet sich, wie GMT, nach der Zeit bei Null Grad Longitudinal, was den Nullmeridian bezeichnet, der durch den Londoner Stadtteil Greenwich geht. Im Gegensatz zu GMT gibt es jedoch alle paar Jahre Schaltsekunden, um der verlangsamenden Erdrotation zu folgen. Da die Abweichung zu GMT sehr gering ist, wird die UTC teilweise auch als GMT bezeichnet (z.B. vom BBC).</p>
 
-<ul>
-<li>Foo</li>
-<li>Bar
+<p><strong>UTC</strong> ist auch der Standard für alle Zeiten im Internet und im internationalen Handel.</p>
 
-<ul>
-<li>Baz</li>
-</ul>
-</li>
-<li>a</li>
-<li>b</li>
-</ul>
+<p>London Local time ist die Zeit, welche in London gilt. Das heißt im Winter UTC und im Sommer die BST (Britisch Summer Time), welche UTC+01:00 entspricht.</p>
 
+<p><strong>CET (Central European Time)</strong> entspricht UTC+01:00 und gilt in Mitteleuropa in Winter. CET hat keine Sommerzeit.</p>
 
-<h2>more headings</h2>
+<p>Unix time richtet sich an der UTC aus und wird in Sekunden seit Donnerstag, 1. Januar 1970 angegeben. Die Umrechnung in UTC ist nicht trivial, da Schaltjahre, Schaltsekunden und eventuell die Sommerzeit mit eingerechnet werden müssen.</p>
 
-<blockquote><p>Flying is learning how to throw yourself at the ground and miss.</p><footer><strong>Douglas Adams</strong> <cite>The Hichhikers Guide to the Galaxy</cite></footer></blockquote>
-
-
-
-
-<figure class='code'><figcaption><span>This is code</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="k">def</span> <span class="nf">foo</span><span class="p">():</span>
-</span><span class='line'>  <span class="k">return</span> <span class="mi">42</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h3>and subheadings</h3>
+<p>Also nun noch der ultimative Tipp, wenn man Zeiten ganz klar ausdrücken will. Zeit in Lokaler Zeit angeben oder auf UTC verweisen. Für die Umrechnung empfehle ich <a href="http://www.wolframalpha.com">Wolfram Alpha</a>.</p>
 ]]></content>
   </entry>
   
