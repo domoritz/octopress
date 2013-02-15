@@ -7,6 +7,7 @@ $header-padding-bottom: 40px !default;
 
 $pad-min: 10px;
 $pad-medium: 25px;
+$pad-wide: 60px;
 
 .group { @include pie-clearfix; }
 
@@ -17,6 +18,9 @@ body {
   padding: 0 $pad-medium;
   @include media(handheld) {
     padding: 0 $pad-min;
+  }
+  @include media(wide) {
+    padding: 0 $pad-wide;
   }
   > header {
     position: relative;
