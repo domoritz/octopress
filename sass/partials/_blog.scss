@@ -106,14 +106,14 @@ article {
         display: table-cell;
         &.page-link-prev { padding-right: 10px; }
         &.page-link-next { padding-left: 10px; }
-      }
-      > li > a {
-        @include border-radius(3px);
-        background-color: $nav-bg;
-        border: none;
-        display: block;
-        padding: 15px 15px;
-        text-align: center;
+        > a {
+          @include border-radius(3px);
+          background-color: $nav-bg;
+          border: none;
+          display: block;
+          padding: 15px 15px;
+          text-align: center;
+        }
       }
     }
     .byline + time:before, time +time:before, .comments:before, .byline ~ .categories:before {
