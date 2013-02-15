@@ -12,7 +12,7 @@ weight: 4
 
 {% img right https://lh4.googleusercontent.com/-pQ7AqQIZkZQ/THOvXggKWaI/AAAAAAAAAA0/i7JSVqagXdw/s128/avatar.png %}
 
-Hi, I'm Dominik. CS student at [Hasso Plattner Institute](http://www.hpi.uni-potsdam.de) at the University of Potsdam, Germany. I took part in the Summer of Code 2012, work for the [Open Knowledge Foundation](http://www.okfn.org) and hold a scholarship from the [German National Academic Foundation](http://www.studienstiftung.de/).
+Hi, I'm Dominik. CS student at [Hasso Plattner Institute](http://www.hpi.uni-potsdam.de) at the University of Potsdam, Germany. I took part in the Summer of Code 2012, work on [CKAN](http://www.ckan.org) from the [Open Knoowledge Foundation](http://www.okfn.org) and hold a scholarship from the [German National Academic Foundation](http://www.studienstiftung.de/).
 
 <span class="clearfix"></span>
 

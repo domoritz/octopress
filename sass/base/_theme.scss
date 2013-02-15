@@ -2,6 +2,7 @@
 $main-bg: #F0F0ED !default;
 $main-color: #002b36 !default;
 $second-color: darken(#DDDDDB, 5) !default;
+$light-bg: #DDDDDB !default;
 
 $title-color: #383D3D !default;
 
@@ -34,7 +35,7 @@ $browser-published-color-active: $browser-color-active !default;
 $browser-description-color-active: adjust-color($browser-bg-active, $saturation: -85, $lightness: 45) !default;
 
 /* Navigation */
-$nav-bg: #DDDDDB !default;
+$nav-bg: $light-bg !default;
 $nav-bg-hover: darken($second-color, 10) !default;
 $nav-bg-active: $main-color !default;
 $nav-color: $main-color !default;

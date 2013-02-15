@@ -61,12 +61,6 @@ body {
     position: relative;
     top: 0px;
     min-height: 300px;
-    footer .archive-link {
-      display: none;
-      @include media(handheld) {
-        display: block;
-      }
-    }
   }
 
   &.sidebar #content {

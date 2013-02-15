@@ -92,6 +92,11 @@ article {
       text-align: center;
     }
   }
+  > footer {
+    .meta {
+      font-size: .85em;
+    }
+  }
 }
 
 h1 {
@@ -206,6 +211,12 @@ blockquote {
   /* Make left pullquotes align properly. */
   float: left;
   margin: .5em 1.5em 1em 0;
+}
+
+.tags{
+  a {
+    font-size: 0.8em;
+  }
 }
 
 /* @extend this to force long lines of continuous text to wrap */

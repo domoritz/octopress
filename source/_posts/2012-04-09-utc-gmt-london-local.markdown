@@ -5,8 +5,8 @@ description: "Über die Verwirrungen durch Zeitstandards"
 date: 2012-04-09 20:15
 comments: true
 tags:
-  -utc
-  -gmt
+  - utc
+  - gmt
 ---
 
 Ich hab mich gerade gefragt, ob die GMT auch Sommerzeit mit einbezieht und wie denn die UTC dazu steht. Nach einiger Recherche konnte ich etwas Licht in das Dunkel bringen. Wen es also interessiert, hier die harten Fakten.
