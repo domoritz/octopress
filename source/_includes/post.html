@@ -11,11 +11,13 @@
 
   <div class="entry-content">
     {{ content }}
-    {% assign tags_list = page.tags %}
-    {% include post/tags.html %}
   </div>
 
   <footer>
+    {% unless page.tags == null %}
+      {% assign tags_list = page.tags %}
+      {% include post/tags.html %}
+    {% endunless %}
     {% unless page.sharing == false %}
       {% include post/sharing.html %}
     {% endunless %}
