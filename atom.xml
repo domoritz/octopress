@@ -4,7 +4,7 @@
   <title><![CDATA[Dominik Moritz]]></title>
   <link href="http://domoritz.github.com/atom.xml" rel="self"/>
   <link href="http://domoritz.github.com/"/>
-  <updated>2013-02-15T16:37:42+01:00</updated>
+  <updated>2013-02-16T00:53:43+01:00</updated>
   <id>http://domoritz.github.com/</id>
   <author>
     <name><![CDATA[Dominik Moritz]]></name>
@@ -24,7 +24,7 @@
 
 <p><img src="https://lh3.googleusercontent.com/-OdNSCUEo_co/URwP_7Wv_aI/AAAAAAAABq8/fC8-4Y1Bz2U/s600/SAM_1675.JPG" title="London 4D" alt="Bus and street in London"></p>
 
-<p>So, nun noch zum Titel dieses Blogposts, der London 4D experience. In diesem Sommer war ich für zwei Monate in London, wo ich für die <a href="http://www.okfn.org">Open Knowledge Foundation</a> an <a href="http://www.ckan.org">CKAN</a> gearbeitet habe. CKAN ist eine Datahub Software, welche von verschiedenen Regierungen und Organisationen für die Katalogisierung und Veröffentlichung von offenen Daten genutzt wird. In London habe ich praktisch alle Museen gesehen, viele nette Leute kennen gelernt und eine Menge Spaß mit der Arbeit an CKAN gehabt. Ich habe hauptsächlich am neuen Datastore von CKAN gearbeitet und auch einen Artikel im CKAN Blog geschrieben. Genaueres zum Datastore gibt’s in der <a href="http://docs.ckan.org/en/latest/datastore.html">Doku</a>.</p>
+<p>So, nun noch zum Titel dieses Blogposts, der London 4D experience. In diesem Sommer war ich für zwei Monate in London, wo ich für die <a href="http://www.okfn.org">Open Knowledge Foundation</a> an <a href="http://www.ckan.org">CKAN</a> gearbeitet habe. CKAN ist eine Datahub Software, welche von verschiedenen Regierungen und Organisationen für die Katalogisierung und Veröffentlichung von offenen Daten genutzt wird. In London habe ich praktisch alle Museen gesehen, viele nette Leute kennen gelernt und eine Menge Spaß mit der Arbeit an CKAN gehabt. Ich habe hauptsächlich am neuen Datastore von CKAN gearbeitet und auch einen <a href="http://ckan.org/2012/10/26/introducing-the-new-datastore/">Artikel im CKAN Blog</a> geschrieben. Genaueres zum Datastore gibt’s in der <a href="http://docs.ckan.org/en/latest/datastore.html">Doku</a>.</p>
 
 <p>London hat aber nicht nur Museen, sondern ist auch eine sehr lebhafte und vielfältige Stadt. Was man eigentlich jeden Tag draußen bekommen kann, ist Regen, laute Krankenwagen (man hört eigentlich immer mindestens eine&#8230;), rote Doppeldeckerbusse und Fahrradfahrer. Und das alles gibt es in diesem einen Bild, was ich dem Internet nicht vorenthalten wollte.</p>
 ]]></content>
@@ -52,6 +52,569 @@
 <p>Unix time richtet sich an der UTC aus und wird in Sekunden seit Donnerstag, 1. Januar 1970 angegeben. Die Umrechnung in UTC ist nicht trivial, da Schaltjahre, Schaltsekunden und eventuell die Sommerzeit mit eingerechnet werden müssen.</p>
 
 <p>Also nun noch der ultimative Tipp, wenn man Zeiten ganz klar ausdrücken will. Zeit in Lokaler Zeit angeben oder auf UTC verweisen. Für die Umrechnung empfehle ich <a href="http://www.wolframalpha.com">Wolfram Alpha</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[The singing VHDL Board]]></title>
+    <link href="http://domoritz.github.com/blog/2012/03/singing_vhdl_board/"/>
+    <updated>2012-03-27T15:59:57+02:00</updated>
+    <id>http://domoritz.github.com/blog/2012/03/singing_vhdl_board</id>
+    <content type="html"><![CDATA[<p>Nach 6 Monaten warten ist es so weit! Es lebt.</p>
+
+<p>Vor etwas mehr als 6 Monaten habe ich mit einem <a href="http://blog.kaifabian.de/">Kommilitonen</a> angefangen an einem Musikplayer in VHDL zu arbeiten. Dadurch, dass wir im letzten Semester kaum Zeit gefunden haben, hat sich die Entwicklung etwas verzögert. Nichtsdestotrotz waren wir unheimlich stolz, als wir zum ersten Mal etwas hörten, was eine Melodie sein könnte und nach ein paar Bitoperationen auch richtige Musik hörten.</p>
+
+<p>Was ist denn nun sooooo toll an dem Player? Naja, einerseits ist alles in VHDL implementiert, das heißt, dass alles in Hardware läuft und wir uns wirklich um jedes Bit kümmern müssen. Andererseits haben wir wirklich alles selber implementieren müssen und konnten nicht auf ein Betriebssystem oder Programmbibliotheken zurückgreifen.</p>
+
+<p>Das Ganze haben wir auf einem Spartan 3 <a href="http://en.wikipedia.org/wiki/Fpga">FPGA</a> Board aufgebaut, an das wir über eine Schnittstelle einen SD/MMC Slot und einen <a href="http://en.wikipedia.org/wiki/Digital-to-analog_converter">DAC</a> mit einem Kopfhörerausgang angeschlossen haben. Die Musik ist liegt als unkomprimiertes <a href="http://en.wikipedia.org/wiki/Wav">WAV/RIFF</a> auf der Karte.</p>
+
+<p>Der Player besteht aus vier Hauptkomponenten. Als erstes gibt es einen MMC/SD Kartenleser, welcher das <a href="http://en.wikipedia.org/wiki/Serial_Peripheral_Interface_Bus">SPI</a> Protokoll zur Kommunikation mit der Karte implementiert. Dazu mussten wir uns durch die Dokumentation der Karten arbeiten und die verschiedenen Schritte zur Initialisierung der Karte, dem Senden von Befehlen und Empfangen von Datenblöcken implementieren. Da die Karte immer 512 Byte Blöcke auf einmal liefert und wir diesen nicht auf dem FPGA Chip speichern können (das sind immerhin 512*8 = 4096 Bit!) nutzen wir eine Blockram Fifo, die auf dem Board verbaut ist. Die Ausgangsseite der Fifo ist an eine weitere Komponente angeschlossen, die auch wieder per (dieses Mal sehr einfachen) SPI mit dem DAC kommuniziert. Der DAC wandelt dann eine digitale 12 Bit Zahl, die von der Karte durch die Fifo kam, in eine analoge Spannung um. Und das ist dann das, was der Kopfhörer oder Lautsprecher ausgibt.</p>
+
+<p>Besonders interessant fand ich bei der Entwicklung den MMC Kartenleser. Dabei hat uns besonders das Datenblatt von Samsung geholfen, dass du <a href="http://html.alldatasheet.com/html-pdf/141187/SAMSUNG/MC2GH512NMCA-2SA00/616/2/MC2GH512NMCA-2SA00.html">hier</a> finden kannst. Wenn wir das Projekt abgeschlossen haben, werden wir den Sourcecode sicher veröffentlichen. Wer also auch einen SD/MMC Kartenleser in VHDL bauen will, kann sich dann inspirieren lassen.</p>
+
+<p>Das Programm ist noch nciht ganz fertig und wir arbeiten gerade noch an der Tastatursteuerung per PS/3 Tastatur. Stay tuned.</p>
+
+<ul>
+<li>[SPI]: Serial Peripheral Interface Bus</li>
+<li>[DAC]: Digital Analog Converter</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Shopping tour Optimizer]]></title>
+    <link href="http://domoritz.github.com/blog/2012/03/shoppingtour-optimizer/"/>
+    <updated>2012-03-17T16:17:39+01:00</updated>
+    <id>http://domoritz.github.com/blog/2012/03/shoppingtour-optimizer</id>
+    <content type="html"><![CDATA[<p>Wie schon im letzten Jahr habe ich mit einigen Kommilitonen am InformatiCup teilgenommen. Dieses Mal ging es darum ein Programm zu schreiben, dass eine Einkaufstour optimiert. Gegeben ist eine Menge von Läden, in denen man Produkte kaufen kann und eine Einkaufsliste. Ziel ist es, möglichst günstig die Einkaufsliste abzuarbeiten. Problem ist dabei, dass es nicht alle Produkte überall gibt, die Preise für gleiche Produkte verschieden sind und die Läden an verschiedenen Orten liegen, sodass Fahrtkosten entstehen.</p>
+
+<p>Die Aufgabe gibt es <a href="http://www.gi.de/wir-ueber-uns/wettbewerbe/informaticup/informaticup-2012.html">hier</a>.</p>
+
+<p>Da wir in diesem Jahr ziemlich viel mit der Uni beschäftigt waren, haben wir das Projekt praktisch in drei Wochen vor der Abgabe schreiben müssen. Aber dafür ist es doch ganz cool geworden.</p>
+
+<p>Wir nutzen für die Lösung des Problems zwei Algorithmen. Einerseits benutzten wir einen genetischen Algorithmus, welcher schnell zu einer guten Lösung kommt. Diese ist jedoch nicht notwendigerweise optimal. Um eine optimale Lösung zu finden, wird das Problem als Answer Set Programming Problem kodiert und dann von Clasp gelöst.</p>
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/HSMU7a_TlgI" frameborder="0" allowfullscreen></iframe>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Tagshot und andere Projekte]]></title>
+    <link href="http://domoritz.github.com/blog/2012/03/tagshot-und-andere-projekte/"/>
+    <updated>2012-03-17T14:30:02+01:00</updated>
+    <id>http://domoritz.github.com/blog/2012/03/tagshot-und-andere-projekte</id>
+    <content type="html"><![CDATA[<p>Lang ist&#8217;s her, dass ich hier mal was veröffentlicht habe. Dafür habe ich jetzt ein paar umso coolere Projekte, die ich gerne vorstellen möchte.</p>
+
+<p>Im letzten Semester habe ich an drei größeren Projekten gearbeitet. Darunter ein Spiel, eine Webbasiertes Fotoverwaltungstool und ein Programm zum <a href="http://www.domoritz.de/2012/03/shoppingtour-optimizer/">Optimieren von Einkaufswegen</a>. In diesem Artikel möchte ich das Fotoverwaltungstool vorstellen, was treffenderweise <em>Tagshot</em> heißt.</p>
+
+<p>Das Programm habe ich mit vier Kommilitonen im Rahmen eines Studienseminars erstellt und soll dabei helfen, die große Anzahl an Photos, die am HPI aufgenommen werden, zu verwalten. Verwalten heißt dabei suchen, taggen, bewerten, herunterladen, löschen und auch nur einfach ansehen um gute Bilder zu finden.</p>
+
+<p>Wir haben das Tool bei uns am HPI bereits in Benutzung und haben etwa 10.000 Bilder in der Datenbank. Dabei ist beim Suchen keine Verzögerung spürbar.</p>
+
+<p>Ein wenig zur Technik. Das Backend ist in <a href="http://rubyonrails.org/">Ruby on Rails</a> geschrieben und sucht nach Bildern in einem bestimmten Verzeichnis. Die Metadaten der Bilder werden in eine Datenbank geschrieben (bei uns <a href="http://www.postgresql.org/">postgreSQL</a>) und Thumbnails erzeugt. Das Frontend ist eine einzige Seite, auf der mit JavaScript die Website dynamisch aufgebaut wird. Auch die gesamte Navigation findet auf einer Seite statt. Als Grundframework für das Frontend haben wir <a href="http://documentcloud.github.com/backbone/">Backbone.js</a> benutzt.</p>
+
+<p>Coole Features von Tagshot sind:</p>
+
+<ul>
+<li>Taggen und bewerten von Bildern</li>
+<li>Bilder nach Bewertung und Tags durchsuchen. Dabei können Boolesche Operatoren benutzt werden</li>
+<li>Schnellvorschau</li>
+<li>Unendliches Scrollen und dynamisches Nachladen von Bildern</li>
+<li>Tastaturnavigation für schnelles Bearbeiten</li>
+<li>Vergrößern/ Verkleinern der Ansicht</li>
+<li>Detailansicht</li>
+<li>Verschiedene Auflösungen herunterlade</li>
+<li>Bearbeiten von mehreren Bildern gleichzeitig</li>
+<li>Getestet in Webkit und Firefox</li>
+</ul>
+
+
+<p>Das Projektrepo (Git) und die Projektorganisation (Redmine) sind zur Zeit noch am HPI gehostet, werden aber bald auf <a href="https://github.com/tagshot/tagshot">https://github.com/tagshot/tagshot</a> umziehen. Das Projekt ist immer noch in der Entwicklung und einige Features fehlen noch (drehen von Bildern&#8230;), aber Tagshot ist trotzdem schon gut benutzbar und schnell.</p>
+
+<p><update>Die Quellen sind online auf <a href="https://github.com/tagshot/tagshot">https://github.com/tagshot/tagshot</a></update></p>
+
+<p>Auf Youtube gibt es kleines Demovideo, dass die wichtigsten Grundfunktionen zeigt.</p>
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/nB3fcDLNk8g" frameborder="0" allowfullscreen></iframe>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[RHoK]]></title>
+    <link href="http://domoritz.github.com/blog/2011/12/rhok/"/>
+    <updated>2011-12-08T18:36:42+01:00</updated>
+    <id>http://domoritz.github.com/blog/2011/12/rhok</id>
+    <content type="html"><![CDATA[<p>Am letzten Wochenende war wieder der RHoK und ich war dieses Mal in Berlin mit dabei. So viel zum allgemeinen möchte ich gar nicht sagen, da im Prinzip alles <a href="https://twitter.com/#!/search/%23rhokbln">gewittert</a> wurde.</p>
+
+<p>[caption id=&#8221;&#8221; align=&#8221;alignnone&#8221; width=&#8221;500&#8221; caption=&#8221;some people at RHoK&#8221;]<a href="http://farm8.staticflickr.com/7157/6487192427_66ce356104.jpg"><img src="http://farm8.staticflickr.com/7157/6487192427_66ce356104.jpg" alt="some people at RHoK" /></a>[/caption]</p>
+
+<p>Ich war beim Team &#8221;<a href="http://www.rhok.org/solutions/climate-goggles">Climate Goggles</a>&#8221; mit dabei. Wir haben mit Django eine Webapp geschrieben, die es Nichtwissenschaftlern ermöglichen soll Aussagen über den Klimawandel zu verifizieren. Dazu werden zu einer Aussage passende Artikel gesucht, die nach wissenschaftlichen Gesichtspunkten vertrauenswürdig sind.</p>
+
+<p>[caption id=&#8221;&#8221; align=&#8221;alignnone&#8221; width=&#8221;500&#8221; caption=&#8221;climate goggles&#8221;]<a href="http://farm8.staticflickr.com/7017/6487165247_020963a2b8.jpg"><img src="http://farm8.staticflickr.com/7017/6487165247_020963a2b8.jpg" alt="climate goggles" /></a>[/caption]</p>
+
+<p><update> Ich habe weitergemacht und das Project fortgeführt. Code hier: <a href="https://github.com/domoritz/validitychecker">https://github.com/domoritz/validitychecker</a> </update>
+  *[RHoK]: Random Hacks of Kindness</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[7000000000]]></title>
+    <link href="http://domoritz.github.com/blog/2011/10/7000000000/"/>
+    <updated>2011-10-31T22:05:59+01:00</updated>
+    <id>http://domoritz.github.com/blog/2011/10/7000000000</id>
+    <content type="html"><![CDATA[<p>7 Milliarden Menschen auf der Erde. Das ist eine 7 mit 9 Nullen und damit soviel, wie noch nie und laut Wolfram Alpha sind das 6,6% der Anzahl von Menschen, die bisher gelebt haben.</p>
+
+<p>Für heute hat der <em>Bevölkerungsfonds der Vereinten Nationen</em> die Geburt des 7 Milliardensten lebenden Menschen vorhergesagt. Natürlich ist dies nur eine Schätzung und die Wirkliche Zahl kann um einige Millionen abweichen. Übrigens wird es mit einer Wahrscheinlichkeit von rund 15% mehrere 7 Milliardenste Menschen geben da ja auch ständig Menschen sterben. Allerdings wird auch das niemand genau feststellen können.</p>
+
+<p>Mir persönlich macht das Bevölkerungswachstum etwas angst. Es hat nur 12 Jahre gedauert bis die Weltbevölkerung um 1Mrd zugenommen hat. Auch wenn die Wachstumsrate langsam abnimmt ist meiner Meinung nach Wachstum in sich nicht Hilfreich. Ich will nicht jemandem verwehren geboren/gezeugt zu werden aber die Erde hat nun mal begrenzte Ressourcen und langsam aber sicher müssen wir uns darum sorgen machen. Was wir tun können? Ich weiß es leider nicht konkret, aber es muss das Ziel sein die Anzahl der Menschen auf diesem Planeten konstant zu halten oder sogar zu senken. Nur so, zur Zeit der Ägypter lebten gerade einmal  um 50 Millionen Menschen auf der gesamten Erde. Halb so viele wie heute in Deutschland&#8230;</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[C3PO-r2d2-POE]]></title>
+    <link href="http://domoritz.github.com/blog/2011/10/c3po-r2d2-poe/"/>
+    <updated>2011-10-10T01:52:31+02:00</updated>
+    <id>http://domoritz.github.com/blog/2011/10/c3po-r2d2-poe</id>
+    <content type="html"><![CDATA[<p>Der CCC hat ja eine <a href="http://ccc.de/de/updates/2011/staatstrojaner">Analyse des &#8220;Bundestrojaners&#8221;</a> durchgeführt und ist dabei auf einige Sicherheitslücken gestoßen. Falls es sich wirklich um das Produkt der Behörden handelt, it es mehr als Peinlich, was die da gebastelt haben. Ok, das die Daten nicht vollständig verschlüsselt sind kann ja mal passieren, aber Daten über die USA schicken und beliebige Software ohne Verifikation nachzuinstallieren ist doch schon etwas schwach.</p>
+
+<p>Und jetzt mal ehrlich, was soll bitte der String <em>C3PO-r2d2-POE</em> bei der Verifizierung der Kommunikation. Gab es da einen Clown zum Frühstück oder was soll die Star-Wars Referenz???</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Zitatstunde]]></title>
+    <link href="http://domoritz.github.com/blog/2011/10/1681/"/>
+    <updated>2011-10-06T02:08:07+02:00</updated>
+    <id>http://domoritz.github.com/blog/2011/10/1681</id>
+    <content type="html"><![CDATA[<blockquote><p>Substitute <em>damn</em> every time you’re inclined to write <em>very</em>; your editor will delete it and the writing will be just as it should be.</p></blockquote>
+
+<p>Mark Twain</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Drummy]]></title>
+    <link href="http://domoritz.github.com/blog/2011/09/drummy/"/>
+    <updated>2011-09-20T21:05:47+02:00</updated>
+    <id>http://domoritz.github.com/blog/2011/09/drummy</id>
+    <content type="html"><![CDATA[<p>So, mal wieder etwas neues! Ich habe in den letzten Wochen an einem Programm gearbeitet, das es Schlagzeugspielern ermöglicht Tabs mit Ihrem Schlagzeug aufzunehmen. Die Idee dazu kam von einem ehemaligen Mitschüler, der selber Schlagzeug spielt und selber die Tabs zu bestimmten Songs erstellen wollte. Es gibt ein <a href="http://www.911tabs.com/drum_tabs/">relativ verbreitetes</a> und halbwegs standardisiertes Format das in einer einfachen Textdatei gespeichert oder auf einer Website verbreitet werden kann. Man benötigt keine besonderen Tools, da man die Tabs mit einem normalen Texteditor schreiben kann. Das Problem ist allerdings, dass das nicht in Echtzeit geht und es sehr schwer ist die Tabs aus dem Gedächtnis aufzuschreiben.</p>
+
+<p>Für genau diesen Zweck habe ich ein Programm geschrieben mit dem Schlagzeug Tabs in Echtzeit aufgenommen werden können. Das Programm habe ich in C++ mit der Hilfe von <a href="http://qt.nokia.com/">Qt</a> geschrieben, sodass ich das Programm für Windows, Mac und Linux kompilieren kann. Auf der Projektseite habe ich bereits Downloadpakete für die drei Betriebssysteme postiert. Und wer will kann sich Drummy auch aus den Quellen bauen. Momentan befindet sich Drummy noch in der Betaphase und ich baue sehr auf Feedback.</p>
+
+<p>Drummy habe ich bisher nach Englisch und Deutsch übersetzt. Eine Auflistung der wichtigsten Features gibt es <a href="http://domoritz.github.com/drummy/#features">hier</a>.</p>
+
+<p>[caption id=&#8221;attachment_1675&#8221; align=&#8221;alignnone&#8221; width=&#8221;640&#8221; caption=&#8221;Screenshot Drummy 1.0 Beta&#8221;]<a href="http://www.dmoritz.bplaced.de/wordpress/wp-content/uploads/2011/09/Screen-Shot-2011-09-19-at-21.38.59-.png"><img src="http://www.dmoritz.bplaced.de/wordpress/wp-content/uploads/2011/09/Screen-Shot-2011-09-19-at-21.38.59--1024x619.png" alt="Screenshot Drummy 1.0 Beta" /></a>[/caption]</p>
+
+<p>Das gesamte Projekt inklusive des gesamten Quelltextes gibt es <a href="https://github.com/domoritz/drummy">auf GitHub</a>. Ich habe in den Letzten Tagen noch einmal viel Arbeit in <a href="http://domoritz.github.com/drummy/">eine ansehnliche Website zu dem Projekt</a> gesteckt. Die Website habe ich von Hand geschrieben, die Bilder mit <a href="http://www.gimp.org/">Gimp</a> erstellt und alles mit <a href="http://html5boilerplate.com">Boilerplate</a> gebacken. Ich bin noch nicht ganz fertig und es fehlt beispielsweise noch eine Anständige Doku und ein Tutorial, aber das Grundgerüst steht.</p>
+
+<p>Also los, an alle Schlagzeugspieler und solche, die Tabs aufnehmen wollen. Greift euch Drummy!</p>
+
+<p><a href="http://domoritz.github.com/drummy/">Zur offiziellen Website und den Downloads</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Staatsschulden mal nicht als Zahlen...]]></title>
+    <link href="http://domoritz.github.com/blog/2011/08/statsschulden-mal-nicht-als-zahlen/"/>
+    <updated>2011-08-02T22:49:03+02:00</updated>
+    <id>http://domoritz.github.com/blog/2011/08/statsschulden-mal-nicht-als-zahlen</id>
+    <content type="html"><![CDATA[<p>Ja, Staatsschulden sind im Allgemeinen sehr hoch. Doch, wie hoch sie wirklich sind, ist oft kaum vorstellbar. Mein Mathedozent sagt immer, dass Zahlen über 10 groß sind. Naja, und Billionen kann sich wirklich niemand richtig vorstellen.</p>
+
+<p>Und da heute die Schuldenkriese in den USA dadurch behoben wurde, indem die Schuldengrenze und die Aufgaben gesenkt werden, einmal eine kleine Visualisierung der ganzen Sache. Zu finden hier: <a href="http://usdebt.kleptocracy.us/">http://usdebt.kleptocracy.us/</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Zitatestunde]]></title>
+    <link href="http://domoritz.github.com/blog/2011/07/zitatestunde-2/"/>
+    <updated>2011-07-25T22:07:05+02:00</updated>
+    <id>http://domoritz.github.com/blog/2011/07/zitatestunde-2</id>
+    <content type="html"><![CDATA[<blockquote><p>Be nice to nerds. Chances are you&#8217;ll end up working for one.</p></blockquote>
+
+<ul>
+<li>Bill Gates</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Johnossi beim Sommerfest]]></title>
+    <link href="http://domoritz.github.com/blog/2011/07/johnossi-beim-sommerfest/"/>
+    <updated>2011-07-23T17:20:58+02:00</updated>
+    <id>http://domoritz.github.com/blog/2011/07/johnossi-beim-sommerfest</id>
+    <content type="html"><![CDATA[<p>Die Vorlesungszeit ist offiziell vorbei und gestern Abend war das Sommerfest. Special Guest waren Johnossi! Trotz, oder gerade wegen des Regenwetters war die Stimmung super und Johnossi haben die Bühne gerockt.</p>
+
+<p>Ein Zitat von dem Abend: von John Engelbert: &#8220;Does anyone here has a cigarette?&#8221; Als er dann eine bekommt, ruft jemand von hinten: &#8220;Smoking kills.&#8221; Johns Antwort:</p>
+
+<blockquote><p>Studying kills.</p></blockquote>
+
+<p>[caption id=&#8221;attachment_1650&#8221; align=&#8221;alignnone&#8221; width=&#8221;640&#8221; caption=&#8221;Johnossi beim HPI Sommerfest&#8221;]<a href="http://www.dmoritz.bplaced.de/wordpress/wp-content/uploads/2011/07/IMAG0039.jpg"><img src="http://www.dmoritz.bplaced.de/wordpress/wp-content/uploads/2011/07/IMAG0039-1024x613.jpg" alt="Johnossi beim HPI Sommerfest" /></a>[/caption]</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Erlang: The movie]]></title>
+    <link href="http://domoritz.github.com/blog/2011/07/erlang-the-movie/"/>
+    <updated>2011-07-12T01:21:51+02:00</updated>
+    <id>http://domoritz.github.com/blog/2011/07/erlang-the-movie</id>
+    <content type="html"><![CDATA[<p>Einfach nur genial. Ich habe nichts weiter zu sagen.</p>
+
+<iframe width="420" height="315" src="https://www.youtube-nocookie.com/embed/uKfKtXYLG78" frameborder="0" allowfullscreen></iframe>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Besuch am PIK]]></title>
+    <link href="http://domoritz.github.com/blog/2011/06/besuch-am-pik/"/>
+    <updated>2011-06-24T00:10:05+02:00</updated>
+    <id>http://domoritz.github.com/blog/2011/06/besuch-am-pik</id>
+    <content type="html"><![CDATA[<p>Heute war ich am <a href="http://www.pik-potsdam.de/">Institut für Klimafolgenforschung in Potsdam</a> auf dem Telegrafenberg. Es gab einen Vortragsnachmittag (bis späten Nachmittag) mit drei Interessanten Vorträgen zum Thema Klimawandel und seinen Folgen. Der erste Vortrag drehte sich um die reinen Fakten und ein paar Ausblicke auf die Zukunft des Weltklimas. Der zweite war ein Vortrag, in dem es um die Wiederlegung der Argumente aus dem Buch <a href="http://www.amazon.de/Cool-Skeptical-Environmentalists-Global-Warming/dp/0307266923">&#8220;Cool It&#8221;</a> ging. Als letztes ging es um die ökonomischen Folgen des Klimawandels auf die Wirtschaft in Deutschland, Europa und der Welt.</p>
+
+<p><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Lightning_cloud_to_cloud_%28aka%29.jpg/600px-Lightning_cloud_to_cloud_%28aka%29.jpg"></p>
+
+<p>Für mich besonders wichtig waren diese Aussagen:</p>
+
+<ul>
+<li>Klimawandel existiert, ist extrem (schnell und stark) und menschengemacht (So ist zum Beispiel der ganze Quatsch mit Sonneneinstrahlung und so ist falsch. Die Sonnenaktivität ist niedriger!)</li>
+<li>Klimaschutz ist nicht teuer (mit 5% des BIP wäre fast alles möglich)</li>
+<li>Langfristig müssen wir auf 0 Emission!</li>
+<li>Die Auswirkungen (erhöhtes CO2 und erhöhte Temperatur) bleiben auch noch Jahrhunderte nach Senkung des Ausstoßes erhalten</li>
+<li>Am Ende des Jahrhunderts werden 90% aller Korallenriffe nicht mehr existieren!</li>
+<li>Obwohl in Europa der CO2 Ausstoß gesenkt wurde, ist der Fußabdruck jedes Bürgers schlechter geworden, weil wir alles auslagern.</li>
+<li>Sonnenenergie hat ökonomisch Zukunft. Wenn man sich die Preisentwicklung anschaut, gab es dort die größte Verbesserung.</li>
+<li>Die Klimasimulationen sind positiv gerechnet.</li>
+</ul>
+
+
+<p>Sehr interessant ist folgende Broschüre direkt vom PIK: <a href="http://www.pik-potsdam.de/infothek/buecher_broschueren/broschuere_cms_100.pdf">http://www.pik-potsdam.de/infothek/buecher_broschueren/broschuere_cms_100.pdf</a></p>
+
+<p>Die Einladung zu dem Vortragsabend habe ich übrigens vom Verein &#8220;Alumni der Studienstiftung&#8221; erhalten.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Zitatestunde]]></title>
+    <link href="http://domoritz.github.com/blog/2011/06/zitatestunde/"/>
+    <updated>2011-06-04T01:42:16+02:00</updated>
+    <id>http://domoritz.github.com/blog/2011/06/zitatestunde</id>
+    <content type="html"><![CDATA[<blockquote><p>There are two ways of constructing a software design: One way is to make it so simple that there are obviously no deficiencies, and the other way is to make it so complicated that there are no obvious deficiencies. The first method is far more difficult.</p></blockquote>
+
+<p><a href="http://en.wikipedia.org/wiki/C._A._R._Hoare">C.A.R. Hoare</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Youtube Server Error, ohne Worte]]></title>
+    <link href="http://domoritz.github.com/blog/2011/04/youtube-server-error-ohne-worte/"/>
+    <updated>2011-04-13T22:50:53+02:00</updated>
+    <id>http://domoritz.github.com/blog/2011/04/youtube-server-error-ohne-worte</id>
+    <content type="html"><![CDATA[<h1>500 Internal Server Error</h1>
+
+<p>Sorry, something went wrong.</p>
+
+<p>A team of highly trained monkeys has been dispatched to deal with this situation.</p>
+
+<p>If you see them, show them this information:</p>
+
+<pre><code>e0oOIPtHiNOQk7OOMkUGjvYZ3OZbC0dD3EqnaKdY35-BsoF1hPS5UVroa9qt
+VenkWuBU6HufHbO2Xs_NaVjmm0EIHUBEmSfaNpSzhW3jJb-vDJTMzH1G1E8Y
+krFSKuReoIX_Vt6_FJxNtgS3eykC4m39KFZ23YDY8B7OcZ8oc-1qohCLjWwb
+z0y8DTiaEX-g3h4xqyVnERdg2mfwgg0KyF9YLyteTOPVOUeT6IMiFaIldNRY
+PLX6w9X3v0kBeOuN3xp04ijtDYrL-HH0Nv0kI1bBMVud4mvxHEhZNuKBF5g4
+IlfF5iOcVxDNEogYpRkNbOk1ZNFK44pQ-tq9qT5qXudUljYMOtaZZVgR-8O1
+EsZvHPTD9LwHAKiq_EXG6fi_VdVlZZ_KbDz2KXn2AewPXTxhTfPUokPwDIkA
+_uEzjxoaZReSNCH3laBooH7mPctUfy7h0Az_vteySES6WG6dmoFLocAPRC6U
+PwqWSo84BOc_MnrZnWGcKJOKeskrvMzZ56lKusX2V7fYvKzZXjYlDUL7rVwV
+[...]
+</code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Asteroids auf beliebiger Website spielen]]></title>
+    <link href="http://domoritz.github.com/blog/2011/04/asteroids-auf-beliebiger-website-spielen/"/>
+    <updated>2011-04-04T01:13:22+02:00</updated>
+    <id>http://domoritz.github.com/blog/2011/04/asteroids-auf-beliebiger-website-spielen</id>
+    <content type="html"><![CDATA[<p>Für alle, sie gerne mal eine website zerstören, kann ich dieses kleine Javascript Stückchen empfehlen. Einfach auf einer beliebigen Seite in die URL-Leiste oder die Javascriptkonsole kopieren und bestätigen und los gehts. Viel Spaß.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">javascript</span><span class="o">:</span><span class="kd">var</span><span class="o">%</span><span class="mi">20</span><span class="nx">s</span><span class="o">%</span><span class="mi">20</span><span class="o">=%</span><span class="mi">20</span><span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">&#39;script&#39;</span><span class="p">);</span><span class="nx">s</span><span class="p">.</span><span class="nx">type</span><span class="o">=</span><span class="s1">&#39;text/javascript&#39;</span><span class="p">;</span><span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">s</span><span class="p">);</span><span class="nx">s</span><span class="p">.</span><span class="nx">src</span><span class="o">=</span><span class="s1">&#39;http://erkie.github.com/asteroids.min.js&#39;</span><span class="p">;</span><span class="k">void</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Dank geht an <a href="http://erkie.github.com/">Erik Rothoff Andersson</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Hello Genetic Algorithm]]></title>
+    <link href="http://domoritz.github.com/blog/2011/03/hello-genetic-algorithm/"/>
+    <updated>2011-03-30T00:44:57+02:00</updated>
+    <id>http://domoritz.github.com/blog/2011/03/hello-genetic-algorithm</id>
+    <content type="html"><![CDATA[<p>Hier mal ein Optimierungsalgorithmus, mit dem sich verschiedenste Probleme lassen können. Hier soll es einfach nur darum gehen, den Text &#8220;Hello World!&#8221; zu finden. das Problem ist insofern nicht so schwer, weil es keine lokalen Maxima gibt, in denen der Algorithmus hängen bleiben kann und es lässt sich einfach feststellen, dass das Optimum erreicht worden ist.</p>
+
+<p>An sich kann ein genetischer Algorithmus aber auch solche Probleme lösen, bei denen es lokale Maxima gibt oder nicht die optimale, sondern nur eine sehr gute Lösung gefunden werden soll. Ein andere Algorithmus für diese Art von Problemen ist die simulierte Abkühlung (<a href="http://www.dmoritz.bplaced.de/2011/01/informaticup-2011/">passender Blogeintrag</a>).</p>
+
+<p>Genug der Worte, hier der Code. Ich muss dazu sagen, dass ich ich ihn auf einer Bahnfahrt zusammengehackt habe und das Prinzip des genetischen Algorithmus aus den Gedächtnis herleiten musste, wobei dies das erste Mal ist, dass ich überhaupt einen genetischen Algorithmus geschrieben habe. Kommentare willkommen, aber bitte nicht über den Stil, es ging nicht um schönen Code, sondern einfach mal den Versuch, zur Lösung zu kommen.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+<span class='line-number'>67</span>
+<span class='line-number'>68</span>
+<span class='line-number'>69</span>
+<span class='line-number'>70</span>
+<span class='line-number'>71</span>
+<span class='line-number'>72</span>
+<span class='line-number'>73</span>
+<span class='line-number'>74</span>
+<span class='line-number'>75</span>
+<span class='line-number'>76</span>
+<span class='line-number'>77</span>
+<span class='line-number'>78</span>
+<span class='line-number'>79</span>
+<span class='line-number'>80</span>
+<span class='line-number'>81</span>
+<span class='line-number'>82</span>
+<span class='line-number'>83</span>
+<span class='line-number'>84</span>
+<span class='line-number'>85</span>
+<span class='line-number'>86</span>
+<span class='line-number'>87</span>
+<span class='line-number'>88</span>
+<span class='line-number'>89</span>
+<span class='line-number'>90</span>
+<span class='line-number'>91</span>
+<span class='line-number'>92</span>
+<span class='line-number'>93</span>
+<span class='line-number'>94</span>
+<span class='line-number'>95</span>
+<span class='line-number'>96</span>
+<span class='line-number'>97</span>
+<span class='line-number'>98</span>
+<span class='line-number'>99</span>
+<span class='line-number'>100</span>
+<span class='line-number'>101</span>
+<span class='line-number'>102</span>
+<span class='line-number'>103</span>
+<span class='line-number'>104</span>
+<span class='line-number'>105</span>
+<span class='line-number'>106</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="c">#!/usr/bin/python</span>
+</span><span class='line'><span class="c"># -*- coding: UTF-8 -*-</span>
+</span><span class='line'>
+</span><span class='line'><span class="kn">import</span> <span class="nn">random</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">def</span> <span class="nf">bewertung</span><span class="p">(</span><span class="n">individuum</span><span class="p">):</span>
+</span><span class='line'>  <span class="c">#return sum( abs(ord(individuum[i])-ord(z)) for i,z in enumerate(ziel))</span>
+</span><span class='line'>  <span class="k">return</span> <span class="nb">sum</span><span class="p">(</span><span class="mi">1</span> <span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">x</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">ziel</span><span class="p">)</span> <span class="k">if</span> <span class="n">individuum</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">!=</span> <span class="n">x</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">def</span> <span class="nf">mutation</span><span class="p">(</span><span class="n">individuum</span><span class="p">):</span>
+</span><span class='line'>  <span class="n">pos</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span><span class="o">*</span><span class="nb">len</span><span class="p">(</span><span class="n">individuum</span><span class="p">))</span>
+</span><span class='line'>  <span class="n">ran</span> <span class="o">=</span> <span class="n">moegl</span><span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span><span class="o">*</span><span class="nb">len</span><span class="p">(</span><span class="n">moegl</span><span class="p">))]</span>
+</span><span class='line'>  <span class="n">indivliste</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">individuum</span><span class="p">)</span>
+</span><span class='line'>  <span class="n">indivliste</span><span class="p">[</span><span class="n">pos</span><span class="p">]</span><span class="o">=</span><span class="n">ran</span>
+</span><span class='line'>  <span class="n">individuum</span> <span class="o">=</span> <span class="s">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">indivliste</span><span class="p">)</span>
+</span><span class='line'>  <span class="k">return</span> <span class="n">individuum</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">def</span> <span class="nf">paarenLassen</span><span class="p">(</span><span class="n">individuum1</span><span class="p">,</span> <span class="n">individuum2</span><span class="p">):</span>
+</span><span class='line'>  <span class="n">individuum1</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">individuum1</span><span class="p">)</span>
+</span><span class='line'>  <span class="n">individuum2</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">individuum2</span><span class="p">)</span>
+</span><span class='line'>  <span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">x</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">individuum1</span><span class="p">):</span>
+</span><span class='line'>      <span class="k">if</span> <span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span> <span class="o">&gt;=</span> <span class="mf">0.5</span><span class="p">:</span>
+</span><span class='line'>          <span class="n">individuum1</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">individuum2</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+</span><span class='line'>  <span class="k">return</span> <span class="s">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">individuum1</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">def</span> <span class="nf">findLooser</span><span class="p">(</span><span class="n">population</span><span class="p">):</span>
+</span><span class='line'>  <span class="n">gewichte</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="n">bewertung</span><span class="p">,</span><span class="n">population</span><span class="p">)</span>
+</span><span class='line'>  <span class="nb">max</span> <span class="o">=</span> <span class="n">gewichte</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+</span><span class='line'>  <span class="n">maxpos</span> <span class="o">=</span> <span class="mi">0</span>
+</span><span class='line'>  <span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">x</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">gewichte</span><span class="p">):</span>
+</span><span class='line'>      <span class="n">maxpos</span><span class="p">,</span> <span class="nb">max</span> <span class="o">=</span> <span class="p">(</span><span class="n">maxpos</span><span class="p">,</span> <span class="nb">max</span><span class="p">)</span> <span class="k">if</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="nb">max</span> <span class="k">else</span> <span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="n">x</span><span class="p">)</span>
+</span><span class='line'>  <span class="k">return</span> <span class="n">maxpos</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">def</span> <span class="nf">findMinMax</span><span class="p">(</span><span class="n">anz</span><span class="p">,</span><span class="n">reverse</span><span class="p">):</span>
+</span><span class='line'>  <span class="n">liste</span> <span class="o">=</span> <span class="p">[]</span>
+</span><span class='line'>  <span class="k">for</span> <span class="n">individuum</span> <span class="ow">in</span> <span class="n">population</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+</span><span class='line'>      <span class="n">liste</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">individuum</span><span class="p">,</span><span class="n">population</span><span class="p">[</span><span class="n">individuum</span><span class="p">][</span><span class="mi">1</span><span class="p">]))</span>
+</span><span class='line'>  <span class="n">liste</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="nb">cmp</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">:</span> <span class="nb">cmp</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="n">b</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span><span class="o">*</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span> <span class="k">if</span> <span class="n">reverse</span> <span class="k">else</span> <span class="mi">1</span><span class="p">))</span>
+</span><span class='line'>  <span class="n">liste</span> <span class="o">=</span> <span class="n">liste</span><span class="p">[:</span><span class="n">anz</span><span class="p">]</span>
+</span><span class='line'>  <span class="k">return</span> <span class="p">[</span><span class="n">a</span> <span class="k">for</span> <span class="n">a</span><span class="p">,</span><span class="n">b</span> <span class="ow">in</span> <span class="n">liste</span><span class="p">]</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">def</span> <span class="nf">printAll</span><span class="p">():</span>
+</span><span class='line'>  <span class="k">for</span> <span class="n">individuum</span> <span class="ow">in</span> <span class="n">population</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+</span><span class='line'>      <span class="k">print</span> <span class="n">individuum</span><span class="p">,</span> <span class="n">population</span><span class="p">[</span><span class="n">individuum</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="n">population</span><span class="p">[</span><span class="n">individuum</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
+</span><span class='line'>  <span class="k">print</span> <span class="s">&quot;###############&quot;</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">ziel</span> <span class="o">=</span> <span class="s">&quot;Hello World!&quot;</span>
+</span><span class='line'><span class="n">moegl</span> <span class="o">=</span> <span class="s">&quot;abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ !@$%^&amp;*()=+-?&lt;&gt;&quot;</span>
+</span><span class='line'><span class="n">population</span> <span class="o">=</span> <span class="p">{}</span>
+</span><span class='line'>
+</span><span class='line'><span class="c">#Anfangspopulation</span>
+</span><span class='line'><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">30</span><span class="p">):</span>
+</span><span class='line'>  <span class="n">individuum</span> <span class="o">=</span> <span class="s">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">moegl</span><span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span><span class="o">*</span><span class="nb">len</span><span class="p">(</span><span class="n">moegl</span><span class="p">))]</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">ziel</span><span class="p">))])</span>
+</span><span class='line'>  <span class="n">population</span><span class="p">[</span><span class="n">individuum</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">bewertung</span><span class="p">(</span><span class="n">individuum</span><span class="p">),</span><span class="mi">0</span><span class="p">]</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">print</span> <span class="s">&quot;Ausgangspopulation:&quot;</span>
+</span><span class='line'><span class="n">printAll</span><span class="p">()</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">anzahl</span> <span class="o">=</span> <span class="mi">0</span>
+</span><span class='line'><span class="k">while</span> <span class="n">ziel</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">population</span><span class="p">:</span>
+</span><span class='line'>  <span class="n">anzahl</span> <span class="o">+=</span> <span class="mi">1</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="c">#print &#39;neue Generation&#39;</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="c">#Bewertung</span>
+</span><span class='line'>  <span class="k">for</span> <span class="n">individuum</span> <span class="ow">in</span> <span class="n">population</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+</span><span class='line'>      <span class="n">population</span><span class="p">[</span><span class="n">individuum</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">bewertung</span><span class="p">(</span><span class="n">individuum</span><span class="p">),</span><span class="mi">0</span><span class="p">]</span>
+</span><span class='line'>      <span class="n">population</span><span class="p">[</span><span class="n">individuum</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">population</span><span class="p">[</span><span class="n">individuum</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="n">random</span><span class="o">.</span><span class="n">randrange</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span><span class="mi">11</span><span class="p">)</span><span class="o">*</span><span class="mf">0.1</span>
+</span><span class='line'>  <span class="c">#print &#39;Bewertung&#39;</span>
+</span><span class='line'>  <span class="c">#printAll()</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="c">#Selektion</span>
+</span><span class='line'>  <span class="n">selektion</span> <span class="o">=</span> <span class="n">findMinMax</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="bp">False</span><span class="p">)</span>
+</span><span class='line'>  <span class="c">#print &#39;selektion&#39;, selektion</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="c">#Rekombination, Crossover</span>
+</span><span class='line'>  <span class="n">kinder</span> <span class="o">=</span> <span class="p">[]</span>
+</span><span class='line'>  <span class="n">selektion2</span> <span class="o">=</span> <span class="n">selektion</span><span class="p">[:]</span>
+</span><span class='line'>  <span class="n">random</span><span class="o">.</span><span class="n">shuffle</span><span class="p">(</span><span class="n">selektion2</span><span class="p">)</span>
+</span><span class='line'>  <span class="n">random</span><span class="o">.</span><span class="n">shuffle</span><span class="p">(</span><span class="n">selektion</span><span class="p">)</span>
+</span><span class='line'>  <span class="k">while</span> <span class="n">selektion</span><span class="p">:</span>
+</span><span class='line'>      <span class="n">kinder</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">paarenLassen</span><span class="p">(</span><span class="n">selektion</span><span class="o">.</span><span class="n">pop</span><span class="p">(),</span> <span class="n">selektion</span><span class="o">.</span><span class="n">pop</span><span class="p">()))</span>
+</span><span class='line'>      <span class="n">kinder</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">paarenLassen</span><span class="p">(</span><span class="n">selektion2</span><span class="o">.</span><span class="n">pop</span><span class="p">(),</span> <span class="n">selektion2</span><span class="o">.</span><span class="n">pop</span><span class="p">()))</span>
+</span><span class='line'>  <span class="c">#print &#39;kinder&#39;, kinder</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="c">#Mutation</span>
+</span><span class='line'>  <span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">kind</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">kinder</span><span class="p">):</span>
+</span><span class='line'>      <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+</span><span class='line'>          <span class="n">mutant</span> <span class="o">=</span> <span class="n">mutation</span><span class="p">(</span><span class="n">kind</span><span class="p">)</span>
+</span><span class='line'>          <span class="k">if</span> <span class="ow">not</span> <span class="n">mutant</span> <span class="ow">in</span> <span class="n">population</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">mutant</span> <span class="ow">in</span> <span class="n">kinder</span><span class="p">:</span>
+</span><span class='line'>              <span class="k">break</span>
+</span><span class='line'>      <span class="n">kinder</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="o">=</span> <span class="n">mutant</span>
+</span><span class='line'>  <span class="c">#print &#39;mutierte Kinder&#39;, kinder</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="c">#sterben lassen</span>
+</span><span class='line'>  <span class="n">maxima</span> <span class="o">=</span> <span class="n">findMinMax</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="bp">True</span><span class="p">)</span>
+</span><span class='line'>  <span class="k">for</span> <span class="n">maximum</span> <span class="ow">in</span> <span class="n">maxima</span><span class="p">:</span>
+</span><span class='line'>      <span class="n">population</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="n">maximum</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="c">#neue Population</span>
+</span><span class='line'>  <span class="k">for</span> <span class="n">individuum</span> <span class="ow">in</span> <span class="n">kinder</span><span class="p">:</span>
+</span><span class='line'>      <span class="n">population</span><span class="p">[</span><span class="n">individuum</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">print</span> <span class="s">&quot;Letzte Population:&quot;</span>
+</span><span class='line'><span class="n">printAll</span><span class="p">()</span>
+</span><span class='line'><span class="k">print</span> <span class="s">&quot;Benötigte Generationen:&quot;</span><span class="p">,</span> <span class="n">anzahl</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Ausblick (was man noch verbessern sollte):</h3>
+
+<ul>
+<li>Objektorientiert</li>
+<li>Kommentare</li>
+<li>variable Parameter
+
+<ul>
+<li>Größe der Population</li>
+<li>Anzahl der Kinder</li>
+<li>Stärke der Mutation</li>
+<li>mehr/weniger Zufall bei der Auswahl für Rekombination</li>
+<li>am besten neu schreiben, so unsauber, wie das ist :-)</li>
+</ul>
+</li>
+</ul>
+
+
+<h3>Noch zwei ganz nette Seiten zum Thema</h3>
+
+<p><a href="http://www.obitko.com/tutorials/genetic-algorithms/index.php">http://www.obitko.com/tutorials/genetic-algorithms/index.php</a>
+<a href="http://www.ai-junkie.com/ga/intro/gat1.html">http://www.ai-junkie.com/ga/intro/gat1.html</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Zitat]]></title>
+    <link href="http://domoritz.github.com/blog/2011/03/1515/"/>
+    <updated>2011-03-13T20:44:34+01:00</updated>
+    <id>http://domoritz.github.com/blog/2011/03/1515</id>
+    <content type="html"><![CDATA[<blockquote><p>Technik, die kleine hässliche Schwester der Magie.</p></blockquote>
+
+<ul>
+<li>Fil</li>
+</ul>
+
 ]]></content>
   </entry>
   

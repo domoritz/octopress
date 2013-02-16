@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Google | Dominik Moritz]]></title>
+  <link href="http://domoritz.github.com/blog/categories/google/atom.xml" rel="self"/>
+  <link href="http://domoritz.github.com/"/>
+  <updated>2013-02-16T01:09:16+01:00</updated>
+  <id>http://domoritz.github.com/</id>
+  <author>
+    <name><![CDATA[Dominik Moritz]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Google Wave]]></title>
+    <link href="http://domoritz.github.com/blog/2009/11/google-wave/"/>
+    <updated>2009-11-07T18:55:30+01:00</updated>
+    <id>http://domoritz.github.com/blog/2009/11/google-wave</id>
+    <content type="html"><![CDATA[<p>Ich habe auch eine Google Wave Einladung bekommen :-). Leider kenne ich niemanden, der auch noch Wave benutzt, sodass es momentan mehr zum Spielen, als zum wirklich benutzen ist. Eigentlich schade. Was ich bis jetzt sehe, sieht wirklich Vielversprechend aus. Für mich ist es schon überraschend, was man alles in einem Browserfenster machen kann.</p>
+]]></content>
+  </entry>
+  
+</feed>
