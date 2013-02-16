@@ -6,7 +6,6 @@ slug: vulkanausbruch-fuhrt-zu-flugausfallen-in-ganz-europa
 title: Vulkanausbruch führt zu Flugausfällen in ganz Europa
 wordpress_id: 871
 tags:
-- Flugzeug
 - Vulkan
 ---
 

@@ -2,8 +2,8 @@
 comments: true
 date: 2011-08-02 20:49:03
 layout: post
-slug: statsschulden-mal-nicht-als-zahlen
 title: Staatsschulden mal nicht als Zahlen...
+description: Bildhafte Visualisierungen
 wordpress_id: 1658
 tags:
 - crisis
@@ -11,7 +11,6 @@ tags:
 - dollar
 - money
 - USA
-- Wirtschaft
 ---
 
 Ja, Staatsschulden sind im Allgemeinen sehr hoch. Doch, wie hoch sie wirklich sind, ist oft kaum vorstellbar. Mein Mathedozent sagt immer, dass Zahlen über 10 groß sind. Naja, und Billionen kann sich wirklich niemand richtig vorstellen.

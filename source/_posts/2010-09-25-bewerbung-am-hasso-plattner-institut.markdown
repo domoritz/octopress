@@ -2,16 +2,14 @@
 comments: true
 date: 2010-09-25 15:06:33
 layout: post
-slug: bewerbung-am-hasso-plattner-institut
 title: Bewerbung am Hasso-Plattner Institut
+description: Meine Erfahrungen und Tipps
 wordpress_id: 1367
 tags:
 - HPI
 - Immatrikulation
-- Informatik
 - IT-Systems Engineering
 - NC
-- Zulassung
 ---
 
 Da es im Internet nur wenige Einträge zur Bewerbung am Hasso-Plattner Institut gibt, das Interesse aber sehr groß ist, schreibe ich hier einmal meine Erfahrungen nieder. Oft wird auch die Frage nach dem NC gestellt, die sich übrigens nicht so einfach beantworten lässt.
@@ -26,12 +24,13 @@ Wie du hier siehst, kann man keine pauschale Aussage über den NC machen. Es ist
 
 Als ich meine erfolgreiche Zusage bekommen habe, konnte ich mich immatrikulieren, das heißt Einschreiben und damit den Studiengang annehmen. Übrigens habe ich noch vor der verbindlichen Zusage von der Uni Potsdam eine vorläufige Bestätigung direkt vom HPI bekommen. Da ich in dem Zeitraum, in dem die Bescheinigungen rausgeschickt wurden in den USA war, habe ich eine Vollmacht für die Immatrikulation zu hause gelassen und meine Eltern konnten dann die Immatrikulation durchführen. Für die Immatrikulation habe ich eine beglaubigte Kopie vom Abizeugnis, einen Krankenversicherungsnachweis, den ausgefüllten Antrag auf Immatrikulation (bekommt man), eine Kopie des Personalausweises und noch einmal den Lebenslauf gebraucht. Die genaue Liste gibt es in dem Heftchen "Vorläufiges Studienangebot" der Uni Potsdam. Es gibt einen genauen Zeitraum, in dem die Unterlagen bei der Uni sein müssen.
 
-Nach erfolgreichem Eingang und Prüfung bekommt man von der Uni Potsdam einen Überweisungsträger zugeschickt, um die Semestergebühren zu bezahlen (insgesamt 255,11 €). In den Gebühren sind der Beitrag für das Studentenwerk, das Semesterticket, Verwaltungsgebühren und Pfand für die PUCK enthalten. Die PUCK habe ich mir am Dienstag in der ersten Woche des Mathevorkurses abgeholt. Wir haben extra etwas früher Schluss gemacht, damit wir noch Zeit haben, die Karte abzuholen. Übrigens habe ich auch vor dem offiziellen Brief von der Uni Potsdam eine Zulassungsbestätigung direkt von HPI bekommen
+Nach erfolgreichem Eingang und Prüfung bekommt man von der Uni Potsdam einen Überweisungsträger zugeschickt, um die Semestergebühren zu bezahlen (insgesamt 255,11 EUR). In den Gebühren sind der Beitrag für das Studentenwerk, das Semesterticket, Verwaltungsgebühren und Pfand für die PUCK enthalten. Die PUCK habe ich mir am Dienstag in der ersten Woche des Mathevorkurses abgeholt. Wir haben extra etwas früher Schluss gemacht, damit wir noch Zeit haben, die Karte abzuholen. Übrigens habe ich auch vor dem offiziellen Brief von der Uni Potsdam eine Zulassungsbestätigung direkt von HPI bekommen
 
 So viel dazu. Falls noch fragen sind, einfach posten. Ich freue mich jedenfalls riesig auf mein Studium.
 
 Übrigens, einer von den verfügbaren Posts zu diesem Thema findest du [hier](http://www.christian-schlender.de/zulassung-hpi-potsdam-softwaresystemtechnik/).
 
 Der NC im Wintersemester 2010/11 lag bei 1,8. Ich weiß aber auch von welchen, die noch mit schlechteren Noten angenommen wurden. Wichtig ist auch das Entscheidungsschreiben!!! Also, wie Hubert im Kommentar unten geschrieben hat, ob man z.B. schon mal beim Bwinf dabei war. Offizielle Zahlen gibt es übrigens [hier](http://www.uni-potsdam.de/formulare/zugang/auswahlgrenzen.pdf).
-  *[PUCK]: Potsdamer Universitätschipkarte
-  *[NC]: numerus clausus
+
+*[PUCK]: Potsdamer Universitätschipkarte
+*[NC]: numerus clausus

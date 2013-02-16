@@ -2,7 +2,6 @@
 comments: true
 date: 2011-10-31 21:05:59
 layout: post
-slug: '7000000000'
 title: '7000000000'
 wordpress_id: 1708
 tags:

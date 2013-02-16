@@ -2,7 +2,6 @@
 comments: true
 date: 2010-03-09 18:25:45
 layout: post
-slug: 3-bei-infowettbewerb
 title: 3. bei Infowettbewerb
 wordpress_id: 820
 tags:

@@ -2,8 +2,8 @@
 comments: true
 date: 2012-03-27 13:59:57
 layout: post
-slug: singing_vhdl_board
 title: The singing VHDL Board
+description: Ein Muskspieler mt Kartenleser programmiert
 wordpress_id: 1781
 tags:
 - FPGA

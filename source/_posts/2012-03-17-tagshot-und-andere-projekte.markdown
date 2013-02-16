@@ -2,8 +2,8 @@
 comments: true
 date: 2012-03-17 13:30:02
 layout: post
-slug: tagshot-und-andere-projekte
 title: Tagshot und andere Projekte
+description: Fotoverwaltung im Browser
 wordpress_id: 1763
 tags:
 - Browser
@@ -14,9 +14,7 @@ tags:
 - Tagshot
 ---
 
-Lang ist's her, dass ich hier mal was veröffentlicht habe. Dafür habe ich jetzt ein paar umso coolere Projekte, die ich gerne vorstellen möchte.
-
-Im letzten Semester habe ich an drei größeren Projekten gearbeitet. Darunter ein Spiel, eine Webbasiertes Fotoverwaltungstool und ein Programm zum [Optimieren von Einkaufswegen](http://www.domoritz.de/2012/03/shoppingtour-optimizer/). In diesem Artikel möchte ich das Fotoverwaltungstool vorstellen, was treffenderweise _Tagshot_ heißt.
+In diesem Artikel möchte ich das Fotoverwaltungstool vorstellen, was treffenderweise _Tagshot_ heißt.
 
 Das Programm habe ich mit vier Kommilitonen im Rahmen eines Studienseminars erstellt und soll dabei helfen, die große Anzahl an Photos, die am HPI aufgenommen werden, zu verwalten. Verwalten heißt dabei suchen, taggen, bewerten, herunterladen, löschen und auch nur einfach ansehen um gute Bilder zu finden.
 
