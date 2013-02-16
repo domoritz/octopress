@@ -14,33 +14,40 @@
   </div>
 
   <footer>
-    {% unless page.tags == null %}
-      {% assign tags_list = page.tags %}
+    <p class="meta">
+      {% include post/author.html %}
+      {% include post/categories.html %}
       {% include post/tags.html %}
-    {% endunless %}
-    {% unless page.sharing == false %}
-      {% include post/sharing.html %}
-    {% endunless %}
+    </p>
     <ul class="meta">
     {% if page.previous.url %}
       <li class="page-link-prev">
-        <a class="page-link" href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}"><i class=" icon-angle-left"></i></a>
+        <a class="page-link" href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}">
+          <i class=" icon-angle-left"></i>
+          <span>{{ page.previous.title }}</span>
+        </a>
       </li>
     {% endif %}
-      <li>
-        <a href="/blog/archives" class="archive-link"><i class="icon-calendar"></i> Blog archive</a>
+      <li class="archive-link">
+        <a href="/blog/archives"><i class="icon-calendar"></i> Blog archive</a>
       </li>
     {% if page.next.url %}
       <li class="page-link-next">
-        <a class="page-link" href="{{page.next.url}}" title="Next Post: {{page.next.title}}"> <i class=" icon-angle-right"></i></a>
+        <a class="page-link" href="{{page.next.url}}" title="Next Post: {{page.next.title}}">
+          <span>{{ page.next.title }}</span>
+          <i class=" icon-angle-right"></i>
+        </a>
       </li>
     {% endif %}
     </ul>
+    {% if page.sharing %}
+      {% include post/sharing.html %}
+    {% endif %}
   </footer>
 </article>
 {% if site.disqus_short_name and page.comments == true %}
   <section>
-    <h1>Comments</h1>
+    <h1 class="icon-comments-alt"> Comments</h1>
     <div id="disqus_thread" aria-live="polite">{% include post/disqus_thread.html %}</div>
   </section>
 {% endif %}

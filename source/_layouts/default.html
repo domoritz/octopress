@@ -16,13 +16,17 @@
 
 	{% unless page.sidebar == false %}
 	<div id="main" class="sidebar">
-		<div id="browser" class="browser">
-			<nav role="navigation" class="browser">
-				{% include browser.html %}
-			</nav>
+		<div id="sidebar">
+			{% include search.html %}
+			<div id="browser">
+				<nav role="navigation" class="browser">
+					{% include browser.html %}
+				</nav>
+			</div>
 		</div>
 	{% else %}
 	<div id="main">
+		{% include search.html %}
 	{% endunless %}
 		<div id="content">
 			{{ content | expand_urls: root_url }}

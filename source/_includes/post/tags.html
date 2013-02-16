@@ -1,7 +1,9 @@
+{% unless page.tags == null %}
 <span class="tags">
-  {% for tag in tags_list %}
+  {% for tag in page.tags %}
     <a href="/blog/tags/{{tag}}" class="icon-tag">
     	{{tag}}
     </a>
   {% endfor %}
 </span>
+{% endunless %}

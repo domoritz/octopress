@@ -46,7 +46,7 @@ body {
 }
 
 #main {
-  #browser {
+  #sidebar {
     float: left;
     width: $browser-width;
     padding-right: $browser-padding;
@@ -65,17 +65,33 @@ body {
     min-height: 300px;
   }
 
-  &.sidebar #content {
-    margin-left: $browser-width;
-    @include media(handheld) {
-      margin-left: 0;
+  &.sidebar {
+    margin-top: 20px;
+    #search {
+      position: relative;
+      width: $browser-width;
+      display: block;
+      margin-bottom: 30px;
+      @include media(handheld) {
+        display: none;
+      }
+    }
+    #content {
+      @include media(handheld) {
+        margin-left: 0;
+      }
     }
   }
-  &:not(.sidebar) #content {
-    @media only screen and (min-width: 980px) {
-      padding: 0 10%;
+  &:not(.sidebar) {
+    #search {
+      display: none;
     }
-    margin: auto;
+    #content {
+      @include media(display) {
+        padding: 0 10%;
+      }
+      margin: auto;
+    }
   }
 }
 

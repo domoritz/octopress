@@ -1,0 +1,17 @@
+#search {
+	position: relative;
+	padding: 0;
+	i {
+		top: 0.1em;
+		left: 0.5em;
+		position: absolute;
+	}
+	fieldset {
+		margin-left: 2.6em;
+		width: auto;
+		input {
+			width: 100%;
+			padding: 3px 5px;
+		}
+	}
+}
