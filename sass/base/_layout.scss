@@ -47,14 +47,18 @@ body {
 
 #main {
   #sidebar {
-    float: left;
-    width: $browser-width;
-    padding-right: $browser-padding;
-    @include media(handheld) {
-      display: none;
+    @include media(display) {
+      float: left;
+      width: $browser-width;
+      padding-right: $browser-padding;
     }
     @include media(wide) {
       width: $browser-width + 20px;
+    }
+    #browser {
+      @include media(handheld) {
+        display: none;
+      }
     }
   }
 
@@ -73,7 +77,7 @@ body {
       display: block;
       margin-bottom: 30px;
       @include media(handheld) {
-        display: none;
+        width: 100%;
       }
     }
     #content {
