@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "UTC vs GMT vs London Local Time (vs CET)"
-description: "Über die Verwirrungen durch Zeitstandards"
+title: UTC vs GMT vs London Local Time
+description: Über die Verwirrungen durch Zeitstandards
 date: 2012-04-09 20:15
 comments: true
 tags:
