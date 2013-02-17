@@ -7,9 +7,6 @@ body > header .title-header {
   	display: block;
   	margin-top: 3px;
   	color: $text-color-light;
-  	@include media(mobile) {
-      display: none;
-    }
   }
   .subtitle{
   	@include media(mobile) {

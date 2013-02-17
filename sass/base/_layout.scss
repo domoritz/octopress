@@ -27,6 +27,9 @@ body {
     font-size: $header-font-size;
     padding-top: $header-padding-top;
     padding-bottom: $header-padding-bottom;
+    @include media(handheld) {
+      padding-bottom: 0;
+    }
 
     nav.navigation {
       position: absolute;
@@ -40,6 +43,7 @@ body {
         position: relative;
         margin: 20px auto 0 auto;
         width: 100%;
+        top: 5px;
       }
     }
   }
