@@ -49,7 +49,6 @@ body {
   #sidebar {
     @include media(display) {
       float: left;
-      width: $browser-width;
       padding-right: $browser-padding;
     }
     @include media(wide) {
@@ -73,7 +72,6 @@ body {
     margin-top: 20px;
     #search {
       position: relative;
-      width: $browser-width;
       display: block;
       margin-bottom: 30px;
       @include media(handheld) {
