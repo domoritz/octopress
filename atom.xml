@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Dominik Moritz]]></title>
-  <link href="http://domoritz.github.com/atom.xml" rel="self"/>
-  <link href="http://domoritz.github.com/"/>
-  <updated>2013-02-17T22:47:47+01:00</updated>
-  <id>http://domoritz.github.com/</id>
+  <link href="http://domoritz.de/atom.xml" rel="self"/>
+  <link href="http://domoritz.de/"/>
+  <updated>2013-02-18T14:21:39+01:00</updated>
+  <id>http://domoritz.de/</id>
   <author>
     <name><![CDATA[Dominik Moritz]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[The London 4D experience]]></title>
-    <link href="http://domoritz.github.com/blog/2012/12/london-4D/"/>
+    <link href="http://domoritz.de/blog/2012/12/london-4D/"/>
     <updated>2012-12-15T23:52:00+01:00</updated>
-    <id>http://domoritz.github.com/blog/2012/12/london-4D</id>
+    <id>http://domoritz.de/blog/2012/12/london-4D</id>
     <content type="html"><![CDATA[<p>Lange ist es her, dass ich hier im Blog mal wieder etwas von mir gegeben habe. Die gute Nachricht, dass ich noch lebe, ist damit raus. Dafür, dass ich hier im Blog nichts geschrieben habe, habe ich auf <a href="http://twitter.com/doobly_doo">Twitter</a> kurze Infos von mir gegeben und auch auf Github einiges an Code produziert.</p>
 
 <p>Also, wie gesagt, ich lebe noch und ich studiere auch immer noch am <a href="http://www.hpi.uni-potsdam.de">HPI</a>. Mittlerweile aber im 5 Semester. Noch dieses und das nächste Semester und ich habe einen Bachelorabschluss. Im nächsten Jahr werde ich dann in den USA studieren. Mehr dazu muss noch bis zu einem späteren Artikel warten.</p>
@@ -32,9 +32,9 @@
   
   <entry>
     <title type="html"><![CDATA[UTC vs GMT vs London Local Time]]></title>
-    <link href="http://domoritz.github.com/blog/2012/04/utc-gmt-london-local/"/>
+    <link href="http://domoritz.de/blog/2012/04/utc-gmt-london-local/"/>
     <updated>2012-04-09T20:15:00+02:00</updated>
-    <id>http://domoritz.github.com/blog/2012/04/utc-gmt-london-local</id>
+    <id>http://domoritz.de/blog/2012/04/utc-gmt-london-local</id>
     <content type="html"><![CDATA[<p>Ich hab mich gerade gefragt, ob die GMT auch Sommerzeit mit einbezieht und wie denn die UTC dazu steht. Nach einiger Recherche konnte ich etwas Licht in das Dunkel bringen. Wen es also interessiert, hier die harten Fakten.</p>
 
 <p>GMT (Greenwich Mean Time) ist der alte Zeitstandard, an dem alles Zeitzonen ausgerichtet wurden. GMT wurde als primäre Referenz für das Britische Empire eingeführt und wurde schnell zum allgemeinen Standard. Der BBC World Service arbeitet nach GMT. Nun kam es jedoch, dass die Sonne und die Erde nicht so regelmäßig sind und die Zeit von Zeit zu Zeit angeglichen werden muss. Dabei geht es nicht um Sommer- und Winterzeit, sondern Schaltsekunden.</p>
@@ -57,9 +57,9 @@
   
   <entry>
     <title type="html"><![CDATA[The singing VHDL Board]]></title>
-    <link href="http://domoritz.github.com/blog/2012/03/singing_vhdl_board/"/>
+    <link href="http://domoritz.de/blog/2012/03/singing_vhdl_board/"/>
     <updated>2012-03-27T15:59:57+02:00</updated>
-    <id>http://domoritz.github.com/blog/2012/03/singing_vhdl_board</id>
+    <id>http://domoritz.de/blog/2012/03/singing_vhdl_board</id>
     <content type="html"><![CDATA[<p>Nach 6 Monaten warten ist es so weit! Es lebt.</p>
 
 <p>Vor etwas mehr als 6 Monaten habe ich mit einem <a href="http://blog.kaifabian.de/">Kommilitonen</a> angefangen an einem Musikplayer in VHDL zu arbeiten. Dadurch, dass wir im letzten Semester kaum Zeit gefunden haben, hat sich die Entwicklung etwas verzögert. Nichtsdestotrotz waren wir unheimlich stolz, als wir zum ersten Mal etwas hörten, was eine Melodie sein könnte und nach ein paar Bitoperationen auch richtige Musik hörten.</p>
@@ -84,9 +84,9 @@
   
   <entry>
     <title type="html"><![CDATA[Shopping tour Optimizer]]></title>
-    <link href="http://domoritz.github.com/blog/2012/03/shoppingtour-optimizer/"/>
+    <link href="http://domoritz.de/blog/2012/03/shoppingtour-optimizer/"/>
     <updated>2012-03-17T16:17:39+01:00</updated>
-    <id>http://domoritz.github.com/blog/2012/03/shoppingtour-optimizer</id>
+    <id>http://domoritz.de/blog/2012/03/shoppingtour-optimizer</id>
     <content type="html"><![CDATA[<p>Wie schon im letzten Jahr habe ich mit einigen Kommilitonen am InformatiCup teilgenommen. Dieses Mal ging es darum ein Programm zu schreiben, dass eine Einkaufstour optimiert. Gegeben ist eine Menge von Läden, in denen man Produkte kaufen kann und eine Einkaufsliste. Ziel ist es, möglichst günstig die Einkaufsliste abzuarbeiten. Problem ist dabei, dass es nicht alle Produkte überall gibt, die Preise für gleiche Produkte verschieden sind und die Läden an verschiedenen Orten liegen, sodass Fahrtkosten entstehen.</p>
 
 <p>Die Aufgabe gibt es <a href="http://www.gi.de/wir-ueber-uns/wettbewerbe/informaticup/informaticup-2012.html">hier</a>.</p>
@@ -102,9 +102,9 @@
   
   <entry>
     <title type="html"><![CDATA[Tagshot und andere Projekte]]></title>
-    <link href="http://domoritz.github.com/blog/2012/03/tagshot-und-andere-projekte/"/>
+    <link href="http://domoritz.de/blog/2012/03/tagshot-und-andere-projekte/"/>
     <updated>2012-03-17T14:30:02+01:00</updated>
-    <id>http://domoritz.github.com/blog/2012/03/tagshot-und-andere-projekte</id>
+    <id>http://domoritz.de/blog/2012/03/tagshot-und-andere-projekte</id>
     <content type="html"><![CDATA[<p>In diesem Artikel möchte ich das Fotoverwaltungstool vorstellen, was treffenderweise <em>Tagshot</em> heißt.</p>
 
 <p>Das Programm habe ich mit vier Kommilitonen im Rahmen eines Studienseminars erstellt und soll dabei helfen, die große Anzahl an Photos, die am HPI aufgenommen werden, zu verwalten. Verwalten heißt dabei suchen, taggen, bewerten, herunterladen, löschen und auch nur einfach ansehen um gute Bilder zu finden.</p>
@@ -144,9 +144,9 @@
   
   <entry>
     <title type="html"><![CDATA[7000000000]]></title>
-    <link href="http://domoritz.github.com/blog/2011/10/7000000000/"/>
+    <link href="http://domoritz.de/blog/2011/10/7000000000/"/>
     <updated>2011-10-31T22:05:59+01:00</updated>
-    <id>http://domoritz.github.com/blog/2011/10/7000000000</id>
+    <id>http://domoritz.de/blog/2011/10/7000000000</id>
     <content type="html"><![CDATA[<p>7 Milliarden Menschen auf der Erde. Das ist eine 7 mit 9 Nullen und damit soviel, wie noch nie und laut Wolfram Alpha sind das 6,6% der Anzahl von Menschen, die bisher gelebt haben.</p>
 
 <p>Für heute hat der <em>Bevölkerungsfonds der Vereinten Nationen</em> die Geburt des 7 Milliardensten lebenden Menschen vorhergesagt. Natürlich ist dies nur eine Schätzung und die Wirkliche Zahl kann um einige Millionen abweichen. Übrigens wird es mit einer Wahrscheinlichkeit von rund 15% mehrere 7 Milliardenste Menschen geben da ja auch ständig Menschen sterben. Allerdings wird auch das niemand genau feststellen können.</p>
@@ -157,9 +157,9 @@
   
   <entry>
     <title type="html"><![CDATA[C3PO-r2d2-POE]]></title>
-    <link href="http://domoritz.github.com/blog/2011/10/c3po-r2d2-poe/"/>
+    <link href="http://domoritz.de/blog/2011/10/c3po-r2d2-poe/"/>
     <updated>2011-10-10T01:52:31+02:00</updated>
-    <id>http://domoritz.github.com/blog/2011/10/c3po-r2d2-poe</id>
+    <id>http://domoritz.de/blog/2011/10/c3po-r2d2-poe</id>
     <content type="html"><![CDATA[<p>Der CCC hat ja eine <a href="http://ccc.de/de/updates/2011/staatstrojaner">Analyse des &#8220;Bundestrojaners&#8221;</a> durchgeführt und ist dabei auf einige Sicherheitslücken gestoßen. Falls es sich wirklich um das Produkt der Behörden handelt, it es mehr als Peinlich, was die da gebastelt haben. Ok, das die Daten nicht vollständig verschlüsselt sind kann ja mal passieren, aber Daten über die USA schicken und beliebige Software ohne Verifikation nachzuinstallieren ist doch schon etwas schwach.</p>
 
 <p>Und jetzt mal ehrlich, was soll bitte der String <em>C3PO-r2d2-POE</em> bei der Verifizierung der Kommunikation. Gab es da einen Clown zum Frühstück oder was soll die Star-Wars Referenz???</p>
@@ -168,9 +168,9 @@
   
   <entry>
     <title type="html"><![CDATA[Twain über fluffy words]]></title>
-    <link href="http://domoritz.github.com/blog/2011/10/fluffy-words/"/>
+    <link href="http://domoritz.de/blog/2011/10/fluffy-words/"/>
     <updated>2011-10-06T02:08:07+02:00</updated>
-    <id>http://domoritz.github.com/blog/2011/10/fluffy-words</id>
+    <id>http://domoritz.de/blog/2011/10/fluffy-words</id>
     <content type="html"><![CDATA[<blockquote><p>Substitute <em>damn</em> every time you’re inclined to write <em>very</em>; your editor will delete it and the writing will be just as it should be.</p></blockquote>
 
 <p>Mark Twain</p>
@@ -179,9 +179,9 @@
   
   <entry>
     <title type="html"><![CDATA[Drummy]]></title>
-    <link href="http://domoritz.github.com/blog/2011/09/drummy/"/>
+    <link href="http://domoritz.de/blog/2011/09/drummy/"/>
     <updated>2011-09-20T21:05:47+02:00</updated>
-    <id>http://domoritz.github.com/blog/2011/09/drummy</id>
+    <id>http://domoritz.de/blog/2011/09/drummy</id>
     <content type="html"><![CDATA[<p>So, mal wieder etwas neues! Ich habe in den letzten Wochen an einem Programm gearbeitet, das es Schlagzeugspielern ermöglicht Tabs mit Ihrem Schlagzeug aufzunehmen. Die Idee dazu kam von einem ehemaligen Mitschüler, der selber Schlagzeug spielt und selber die Tabs zu bestimmten Songs erstellen wollte. Es gibt ein <a href="http://www.911tabs.com/drum_tabs/">relativ verbreitetes</a> und halbwegs standardisiertes Format das in einer einfachen Textdatei gespeichert oder auf einer Website verbreitet werden kann. Man benötigt keine besonderen Tools, da man die Tabs mit einem normalen Texteditor schreiben kann. Das Problem ist allerdings, dass das nicht in Echtzeit geht und es sehr schwer ist die Tabs aus dem Gedächtnis aufzuschreiben.</p>
 
 <p>Für genau diesen Zweck habe ich ein Programm geschrieben mit dem Schlagzeug Tabs in Echtzeit aufgenommen werden können. Das Programm habe ich in C++ mit der Hilfe von <a href="http://qt.nokia.com/">Qt</a> geschrieben, sodass ich das Programm für Windows, Mac und Linux kompilieren kann. Auf der Projektseite habe ich bereits Downloadpakete für die drei Betriebssysteme postiert. Und wer will kann sich Drummy auch aus den Quellen bauen. Momentan befindet sich Drummy noch in der Betaphase und ich baue sehr auf Feedback.</p>
@@ -200,9 +200,9 @@
   
   <entry>
     <title type="html"><![CDATA[Staatsschulden mal nicht als Zahlen...]]></title>
-    <link href="http://domoritz.github.com/blog/2011/08/statsschulden-mal-nicht-als-zahlen/"/>
+    <link href="http://domoritz.de/blog/2011/08/statsschulden-mal-nicht-als-zahlen/"/>
     <updated>2011-08-02T22:49:03+02:00</updated>
-    <id>http://domoritz.github.com/blog/2011/08/statsschulden-mal-nicht-als-zahlen</id>
+    <id>http://domoritz.de/blog/2011/08/statsschulden-mal-nicht-als-zahlen</id>
     <content type="html"><![CDATA[<p>Ja, Staatsschulden sind im Allgemeinen sehr hoch. Doch, wie hoch sie wirklich sind, ist oft kaum vorstellbar. Mein Mathedozent sagt immer, dass Zahlen über 10 groß sind. Naja, und Billionen kann sich wirklich niemand richtig vorstellen.</p>
 
 <p>Und da heute die Schuldenkriese in den USA dadurch behoben wurde, indem die Schuldengrenze und die Aufgaben gesenkt werden, einmal eine kleine Visualisierung der ganzen Sache. Zu finden hier: <a href="http://usdebt.kleptocracy.us/">http://usdebt.kleptocracy.us/</a></p>
@@ -211,9 +211,9 @@
   
   <entry>
     <title type="html"><![CDATA[Zitatestunde]]></title>
-    <link href="http://domoritz.github.com/blog/2011/07/zitatestunde/"/>
+    <link href="http://domoritz.de/blog/2011/07/zitatestunde/"/>
     <updated>2011-07-25T22:07:05+02:00</updated>
-    <id>http://domoritz.github.com/blog/2011/07/zitatestunde</id>
+    <id>http://domoritz.de/blog/2011/07/zitatestunde</id>
     <content type="html"><![CDATA[<blockquote><p>Be nice to nerds. Chances are you&#8217;ll end up working for one.</p></blockquote>
 
 <ul>
@@ -225,9 +225,9 @@
   
   <entry>
     <title type="html"><![CDATA[Johnossi beim Sommerfest]]></title>
-    <link href="http://domoritz.github.com/blog/2011/07/johnossi-beim-sommerfest/"/>
+    <link href="http://domoritz.de/blog/2011/07/johnossi-beim-sommerfest/"/>
     <updated>2011-07-23T17:20:58+02:00</updated>
-    <id>http://domoritz.github.com/blog/2011/07/johnossi-beim-sommerfest</id>
+    <id>http://domoritz.de/blog/2011/07/johnossi-beim-sommerfest</id>
     <content type="html"><![CDATA[<p>Die Vorlesungszeit ist offiziell vorbei und gestern Abend war das Sommerfest. Special Guest waren Johnossi! Trotz, oder gerade wegen des Regenwetters war die Stimmung super und Johnossi haben die Bühne gerockt.</p>
 
 <p>Ein Zitat von dem Abend: von John Engelbert: <em>Does anyone here has a cigarette?</em> Als er dann eine bekommt, ruft jemand von hinten: <em>smoking kills.</em> Johns Antwort:</p>
@@ -240,9 +240,9 @@
   
   <entry>
     <title type="html"><![CDATA[Erlang: The movie]]></title>
-    <link href="http://domoritz.github.com/blog/2011/07/erlang-the-movie/"/>
+    <link href="http://domoritz.de/blog/2011/07/erlang-the-movie/"/>
     <updated>2011-07-12T01:21:51+02:00</updated>
-    <id>http://domoritz.github.com/blog/2011/07/erlang-the-movie</id>
+    <id>http://domoritz.de/blog/2011/07/erlang-the-movie</id>
     <content type="html"><![CDATA[<p>Einfach nur genial. Ich habe nichts weiter zu sagen.</p>
 
 <iframe width="420" height="315" src="https://www.youtube-nocookie.com/embed/uKfKtXYLG78" frameborder="0" allowfullscreen></iframe>
@@ -252,9 +252,9 @@
   
   <entry>
     <title type="html"><![CDATA[Besuch am PIK]]></title>
-    <link href="http://domoritz.github.com/blog/2011/06/besuch-am-pik/"/>
+    <link href="http://domoritz.de/blog/2011/06/besuch-am-pik/"/>
     <updated>2011-06-24T00:10:05+02:00</updated>
-    <id>http://domoritz.github.com/blog/2011/06/besuch-am-pik</id>
+    <id>http://domoritz.de/blog/2011/06/besuch-am-pik</id>
     <content type="html"><![CDATA[<p>Heute war ich am <a href="http://www.pik-potsdam.de/">Institut für Klimafolgenforschung in Potsdam</a> auf dem Telegrafenberg. Es gab einen Vortragsnachmittag (bis späten Nachmittag) mit drei Interessanten Vorträgen zum Thema Klimawandel und seinen Folgen. Der erste Vortrag drehte sich um die reinen Fakten und ein paar Ausblicke auf die Zukunft des Weltklimas. Der zweite war ein Vortrag, in dem es um die Wiederlegung der Argumente aus dem Buch <a href="http://www.amazon.de/Cool-Skeptical-Environmentalists-Global-Warming/dp/0307266923">&#8220;Cool It&#8221;</a> ging. Als letztes ging es um die ökonomischen Folgen des Klimawandels auf die Wirtschaft in Deutschland, Europa und der Welt.</p>
 
 <p><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Lightning_cloud_to_cloud_%28aka%29.jpg/600px-Lightning_cloud_to_cloud_%28aka%29.jpg"></p>
@@ -281,9 +281,9 @@
   
   <entry>
     <title type="html"><![CDATA[Zitatestunde]]></title>
-    <link href="http://domoritz.github.com/blog/2011/06/zitatestunde/"/>
+    <link href="http://domoritz.de/blog/2011/06/zitatestunde/"/>
     <updated>2011-06-04T01:42:16+02:00</updated>
-    <id>http://domoritz.github.com/blog/2011/06/zitatestunde</id>
+    <id>http://domoritz.de/blog/2011/06/zitatestunde</id>
     <content type="html"><![CDATA[<blockquote><p>There are two ways of constructing a software design: One way is to make it so simple that there are obviously no deficiencies, and the other way is to make it so complicated that there are no obvious deficiencies. The first method is far more difficult.</p></blockquote>
 
 <p><a href="http://en.wikipedia.org/wiki/C._A._R._Hoare">C.A.R. Hoare</a></p>
@@ -292,9 +292,9 @@
   
   <entry>
     <title type="html"><![CDATA[Youtube Server Error, ohne Worte]]></title>
-    <link href="http://domoritz.github.com/blog/2011/04/youtube-server-error-ohne-worte/"/>
+    <link href="http://domoritz.de/blog/2011/04/youtube-server-error-ohne-worte/"/>
     <updated>2011-04-13T22:50:53+02:00</updated>
-    <id>http://domoritz.github.com/blog/2011/04/youtube-server-error-ohne-worte</id>
+    <id>http://domoritz.de/blog/2011/04/youtube-server-error-ohne-worte</id>
     <content type="html"><![CDATA[<h1>500 Internal Server Error</h1>
 
 <p>Sorry, something went wrong.</p>
@@ -329,9 +329,9 @@
   
   <entry>
     <title type="html"><![CDATA[Asteroids auf beliebiger Website spielen]]></title>
-    <link href="http://domoritz.github.com/blog/2011/04/asteroids-auf-beliebiger-website-spielen/"/>
+    <link href="http://domoritz.de/blog/2011/04/asteroids-auf-beliebiger-website-spielen/"/>
     <updated>2011-04-04T01:13:22+02:00</updated>
-    <id>http://domoritz.github.com/blog/2011/04/asteroids-auf-beliebiger-website-spielen</id>
+    <id>http://domoritz.de/blog/2011/04/asteroids-auf-beliebiger-website-spielen</id>
     <content type="html"><![CDATA[<p>Für alle, sie gerne mal eine website zerstören, kann ich dieses kleine Javascript Stückchen empfehlen. Einfach auf einer beliebigen Seite in die URL-Leiste oder die Javascriptkonsole kopieren und bestätigen und los gehts. Viel Spaß.</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -345,9 +345,9 @@
   
   <entry>
     <title type="html"><![CDATA[Hello Genetic Algorithm]]></title>
-    <link href="http://domoritz.github.com/blog/2011/03/hello-genetic-algorithm/"/>
+    <link href="http://domoritz.de/blog/2011/03/hello-genetic-algorithm/"/>
     <updated>2011-03-30T00:44:57+02:00</updated>
-    <id>http://domoritz.github.com/blog/2011/03/hello-genetic-algorithm</id>
+    <id>http://domoritz.de/blog/2011/03/hello-genetic-algorithm</id>
     <content type="html"><![CDATA[<p>Hier mal ein Optimierungsalgorithmus, mit dem sich verschiedenste Probleme lassen können. Hier soll es einfach nur darum gehen, den Text &#8220;Hello World!&#8221; zu finden. das Problem ist insofern nicht so schwer, weil es keine lokalen Maxima gibt, in denen der Algorithmus hängen bleiben kann und es lässt sich einfach feststellen, dass das Optimum erreicht worden ist.</p>
 
 <p>An sich kann ein genetischer Algorithmus aber auch solche Probleme lösen, bei denen es lokale Maxima gibt oder nicht die optimale, sondern nur eine sehr gute Lösung gefunden werden soll. Ein andere Algorithmus für diese Art von Problemen ist die simulierte Abkühlung (<a href="http://www.dmoritz.bplaced.de/2011/01/informaticup-2011/">passender Blogeintrag</a>).</p>
@@ -596,9 +596,9 @@
   
   <entry>
     <title type="html"><![CDATA[Technik is (fast) Magie]]></title>
-    <link href="http://domoritz.github.com/blog/2011/03/technik-ist-magie/"/>
+    <link href="http://domoritz.de/blog/2011/03/technik-ist-magie/"/>
     <updated>2011-03-13T20:44:34+01:00</updated>
-    <id>http://domoritz.github.com/blog/2011/03/technik-ist-magie</id>
+    <id>http://domoritz.de/blog/2011/03/technik-ist-magie</id>
     <content type="html"><![CDATA[<blockquote><p>Technik, die kleine hässliche Schwester der Magie.</p></blockquote>
 
 <ul>
@@ -610,9 +610,9 @@
   
   <entry>
     <title type="html"><![CDATA[Über die Wegwerfgesellschaft und unsere Identität]]></title>
-    <link href="http://domoritz.github.com/blog/2011/02/uber-die-wegwerfgesellschaft-und-unsere-identitat/"/>
+    <link href="http://domoritz.de/blog/2011/02/uber-die-wegwerfgesellschaft-und-unsere-identitat/"/>
     <updated>2011-02-17T17:29:44+01:00</updated>
-    <id>http://domoritz.github.com/blog/2011/02/uber-die-wegwerfgesellschaft-und-unsere-identitat</id>
+    <id>http://domoritz.de/blog/2011/02/uber-die-wegwerfgesellschaft-und-unsere-identitat</id>
     <content type="html"><![CDATA[<blockquote><p>Es gibt genug für die Bedürfnisse aller, aber zu wenig für die Gier einzelner.</p></blockquote>
 
 <ul>

@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://domoritz.github.com/sitemap.xml 
+Sitemap: http://domoritz.de/sitemap.xml 
