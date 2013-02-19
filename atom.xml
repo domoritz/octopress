@@ -4,7 +4,7 @@
   <title><![CDATA[Dominik Moritz]]></title>
   <link href="http://domoritz.de/atom.xml" rel="self"/>
   <link href="http://domoritz.de/"/>
-  <updated>2013-02-20T00:39:01+01:00</updated>
+  <updated>2013-02-20T00:44:33+01:00</updated>
   <id>http://domoritz.de/</id>
   <author>
     <name><![CDATA[Dominik Moritz]]></name>
@@ -18,7 +18,7 @@
     <link href="http://domoritz.de/blog/2013/02/datenbestandsanalyse-govdata/"/>
     <updated>2013-02-20T00:18:00+01:00</updated>
     <id>http://domoritz.de/blog/2013/02/datenbestandsanalyse-govdata</id>
-    <content type="html"><![CDATA[<p>Die neue <a href="http://www.govdata.de">Datenplatform des Bundes</a> ist heute mit ein paar Startschwierigkeiten online gegangen. Der Datenbestand umfasst zur Zeit 1160 Datensätze. Ich habe mir mal ein Script geschrieben, dass etwas aggregiert, was für Daten auf der neuen Platform zu finden sind.</p>
+    <content type="html"><![CDATA[<p>Die neue <a href="http://www.govdata.de">Datenplattform des <abbr title="Bundesministerium des Innern">BMI</abbr></a> ist heute mit ein paar Startschwierigkeiten online gegangen. Der Datenbestand umfasst zur Zeit 1160 Datensätze. Ich habe mir mal ein Script geschrieben, dass etwas aggregiert, was für Daten auf der neuen Plattform zu finden sind.</p>
 
 <h1>Unter welchen Lizenzen stehen die Daten?</h1>
 
@@ -88,9 +88,9 @@
 </span><span class='line'>                                            'Stadt Köln': 13</span></code></pre></td></tr></table></div></figure>
 
 
-<h1>In welchen Fomraten liegen die Daten vor?</h1>
+<h1>In welchen Formaten liegen die Daten vor?</h1>
 
-<p>Dies ist eine Top-20 Liste der am öftensten verwendeten Formate. Formate sind dabei Resourcen zugeordnet. Ein Datensatz kann mehrere Resourcen besitzten. Es gibt insgesamt 2589 Resourcen.</p>
+<p>Dies ist eine Top-20 Liste der am öftesten verwendeten Formate. Formate sind dabei Resourcen zugeordnet. Ein Datensatz kann mehrere Resourcen besitzen. Es gibt insgesamt 2589 Resourcen.</p>
 
 <p>Aggregiert aus <code>result.resources.format</code>.</p>
 
@@ -151,7 +151,7 @@
 
 <p>Was mich aber viel mehr erstaunt hat, sind die unterschiedlichen Bezeichnungen für die Steine die vom Himmel fallen. Bisher hatte ich angenommen, dass es da nur Meteoriten und Asteroiden gibt.</p>
 
-<h2>Was ist also nun der Unterschied zwischen all diesen Dingen?</h2>
+<h1>Was ist also nun der Unterschied zwischen all diesen Dingen?</h1>
 
 <p><strong>Asteroid:</strong> Alles, was kleiner als ein Planet ist und die Sonne umrundet. Pluto ist übrigens keiner, weil er ein <a href="https://de.wikipedia.org/wiki/Zwergplanet">Zwergplanet</a> ist.</p>
 
