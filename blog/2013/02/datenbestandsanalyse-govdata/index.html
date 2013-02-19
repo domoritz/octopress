@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Über die Konstanten - Dominik Moritz</title>
+  <title>Datenbestandsanalyse GovData - Dominik Moritz</title>
   <meta name="author" content="Dominik Moritz">
 
   
-  <meta name="description" content="Was im Leben gleich bleiben muss">
+  <meta name="description" content="Was wir jetzt schon über die Daten im neuen Datenportal sagen können.">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://domoritz.de/blog/2010/03/uber-die-konstanten/">
+  <link rel="canonical" href="http://domoritz.de/blog/2013/02/datenbestandsanalyse-govdata/">
   <link rel="author" href="humans.txt" />
   <link href="/favicon.ico" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
@@ -3363,7 +3363,7 @@
 					<ul>
 	
   	
-    <li>
+    <li class="active">
     
 	  	<a href="/blog/2013/02/datenbestandsanalyse-govdata/">
 		    <div class="published" data-published="2013-02-20 00:18:00 +0100">February 2013</div>
@@ -3478,9 +3478,9 @@
 <article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Über Die Konstanten</h1>
+    <h1 class="entry-title">Datenbestandsanalyse GovData</h1>
     <h2 class="author hidden">Dominik Moritz</h2>
-    <p class="description">Was im Leben gleich bleiben muss</p>
+    <p class="description">Was wir jetzt schon über die Daten im neuen Datenportal sagen können.</p>
     <p class="meta" title="date published">
 
 
@@ -3493,18 +3493,164 @@
   
 
 
-<time datetime="2010-03-31T17:43:29+02:00" pubdate data-updated="true">Mar 31<span>st</span>, 2010</time></p>
+<time datetime="2013-02-20T00:18:00+01:00" pubdate data-updated="true">Feb 20<span>th</span>, 2013</time></p>
   </header>
   
 
   <div class="entry-content">
-    <p>Meine Schulzeit ist bald vorbei und ich weiß noch nicht so recht, was ich denken soll. Einerseits freue ich mich, dass es endlich vorbei ist. Andererseits bin ich traurig, dass es vorbei ist. Mir selber ist die Schulzeit nicht sehr schwer gefallen, aber es gab oft Zeiten, wo ich überlegt habe, was ich da eigentlich mache. Und vor allem wozu. Es gab manche Themen wo ich wirklich gezweifelt habe, ob das so relevant ist. Natürlich gab es auch viele Themen, die mich brennend interessiert haben und wo ich gerne mehr gelernt hätte.</p>
+    <p>Die neue <a href="http://www.govdata.de">Datenplatform des Bundes</a> ist heute mit ein paar Startschwierigkeiten online gegangen. Der Datenbestand umfasst zur Zeit 1160 Datensätze. Ich habe mir mal ein Script geschrieben, dass etwas aggregiert, was für Daten auf der neuen Platform zu finden sind.</p>
 
-<p>Nachdem ich das alles durchgemacht habe, frage ich mich, ob wir uns nicht an alles gewöhnen können. Menschen, die ohne Fortschritt leben sind nicht unglücklicher, obwohl sie weniger besitzen. Im Gegenteil sind sie oft sogar glücklicher (zumindest habe ich diese Behauptung gehört). Da frage ich mich doch, ob es wirklich von dem Level abhängt, wie man etwas einschätzt, oder mehr davon, wie die Veränderung war. Hängt das Glück von den Umständen ab oder von unserer Sichtweise? Ich glaube eher letzteres.</p>
+<h1>Unter welchen Lizenzen stehen die Daten?</h1>
 
-<p>Wir sind Gewohnheitstiere, die Konstanz brauchen. Vielleicht auch eine Verbesserung, aber große Umbrüche bereiten uns Unbehaglichkeit. Vielleicht ist es gerade das, was viele in der heutigen schnellen Gesellschaft so unglücklich macht.  Ich für mich denke, dass ich versuchen in keine Gewohnheit zu verfallen. Die Frage ist, welche Konstanten und wie viel wir brauchen und vielleicht sogar vertragen. Was sind wir ohne Konstanten? Und wozu machen uns die Konstanten?</p>
+<p>Aggregiert au <code>result.license_id</code>.</p>
 
-<p>Vielleicht kann man durch Distanz erreichen, über seine Konstanten im Leben nachzudenken. Ich werde es auf jeden Fall versuchen.</p>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>dl-de-by-1.0: 759
+</span><span class='line'>       cc-by: 277
+</span><span class='line'>      odc-by: 82
+</span><span class='line'>        None: 26
+</span><span class='line'>other-closed: 7
+</span><span class='line'>    cc-by-sa: 3
+</span><span class='line'>     cc-zero: 2
+</span><span class='line'>   official-work: 2
+</span><span class='line'>       cc-nc: 1
+</span><span class='line'>        gfdl: 1</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>odc-by</strong></p>
+
+<pre><code>Open Data Commons Namensnennung
+</code></pre>
+
+<p><strong>cc-zero</strong></p>
+
+<pre><code>Creative Commons Zero
+</code></pre>
+
+<p><strong>cc-by</strong></p>
+
+<pre><code>Creative Commons Namensnennung (CC-BY)
+</code></pre>
+
+<p><strong>cc-by-sa</strong></p>
+
+<pre><code>Creative Commons Attribution Weitergabe unter gleichen Bedingungen (CC-BY-SA)
+</code></pre>
+
+<p><strong>cc-nc</strong></p>
+
+<pre><code>Creative Commons Nicht-Kommerziell (CC-NC)
+</code></pre>
+
+<p><strong>gfdl</strong></p>
+
+<pre><code>GNU Free Documentation License
+</code></pre>
+
+<p><strong>bsd</strong></p>
+
+<pre><code>BSD Lizenz
+</code></pre>
+
+<p><strong>dl-de-by-1.0</strong></p>
+
+<pre><code>Datenlizenz Deutschland Namensnennung
+</code></pre>
+
+<p><strong>official-work</strong></p>
+
+<pre><code>Amtliches Werk, lizenzfrei nach §5 UrhG
+</code></pre>
+
+<p><strong>other-closed</strong></p>
+
+<pre><code>Andere eingeschränkte Lizenz
+</code></pre>
+
+<h1>Von wem stammen die Daten?</h1>
+
+<p>Hier die Top-10 Liste der Datenbereitsteller, sortiert nach der Anzahl der bereitgestellten Datensätze.</p>
+
+<p>Aggregiert au <code>result.author</code>.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>                               'Statistisches Bundesamt': 729
+</span><span class='line'>'Senatorin für Finanzen, Zentrales IT-Management und E-Government': 89
+</span><span class='line'>'Hansestadt Rostock – Kataster-, Vermessungs- und Liegenschaftsamt': 34
+</span><span class='line'>                                    'Gemeinde Wennigsen': 30
+</span><span class='line'>                                           'Stadt Moers': 27
+</span><span class='line'>   'Senatsverwaltung für Wirtschaft, Technologie und Frauen': 24
+</span><span class='line'>                        'Statistisches Landesamt Bremen': 19
+</span><span class='line'>              'Hansestadt Rostock – Hauptverwaltungsamt': 17
+</span><span class='line'>                  'Amt für Statistik Berlin-Brandenburg': 15
+</span><span class='line'>                                            'Stadt Köln': 13</span></code></pre></td></tr></table></div></figure>
+
+
+<h1>In welchen Fomraten liegen die Daten vor?</h1>
+
+<p>Dies ist eine Top-20 Liste der am öftensten verwendeten Formate. Formate sind dabei Resourcen zugeordnet. Ein Datensatz kann mehrere Resourcen besitzten. Es gibt insgesamt 2589 Resourcen.</p>
+
+<p>Aggregiert aus <code>result.resources.format</code>.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>   'csv': 957
+</span><span class='line'>   'xls': 815
+</span><span class='line'>   'xml': 116
+</span><span class='line'>  'json': 114
+</span><span class='line'>   'wms': 88
+</span><span class='line'>   'kml': 83
+</span><span class='line'>   'gml': 78
+</span><span class='line'>   'geojson': 72
+</span><span class='line'>   'pdf': 49
+</span><span class='line'>  'html': 48
+</span><span class='line'>   'txt': 28
+</span><span class='line'>   'kmz': 21
+</span><span class='line'> 'shapefile': 19
+</span><span class='line'>   'gpx': 18
+</span><span class='line'>  'jrss': 13
+</span><span class='line'>   'rss': 13
+</span><span class='line'> 'gjson': 10
+</span><span class='line'>   'shp': 4
+</span><span class='line'>   'doc': 3
+</span><span class='line'>   'tms': 3</span></code></pre></td></tr></table></div></figure>
+
 
   </div>
 
@@ -3521,27 +3667,24 @@
       
 <span class="tags">
   
+    <a href="/blog/tags/opendata" class="icon-tag">
+    	opendata
+    </a>
+  
 </span>
 
     </p>
     <ul class="meta">
     
       <li class="page-link-prev">
-        <a class="page-link" href="/blog/2010/03/7tev/" title="Previous Post: 7TeV">
+        <a class="page-link" href="/blog/2013/02/meteowas/" title="Previous Post: Meteo-was">
           <i class=" icon-angle-left"></i>
-          <span>7TeV</span>
+          <span>Meteo-was</span>
         </a>
       </li>
     
       <li class="archive-link">
         <a href="/blog/archives"><i class="icon-calendar"></i> Blog archive</a>
-      </li>
-    
-      <li class="page-link-next">
-        <a class="page-link" href="/blog/2010/04/uber-das-kritisieren/" title="Next Post: Über das Kritisieren">
-          <span>Über das Kritisieren</span>
-          <i class=" icon-angle-right"></i>
-        </a>
       </li>
     
     </ul>
@@ -3571,8 +3714,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://domoritz.de/blog/2010/03/uber-die-konstanten/';
-        var disqus_url = 'http://domoritz.de/blog/2010/03/uber-die-konstanten/';
+        var disqus_identifier = 'http://domoritz.de/blog/2013/02/datenbestandsanalyse-govdata/';
+        var disqus_url = 'http://domoritz.de/blog/2013/02/datenbestandsanalyse-govdata/';
         var disqus_script = 'embed.js';
       
     (function () {

@@ -4,7 +4,7 @@
   <title><![CDATA[Dominik Moritz]]></title>
   <link href="http://domoritz.de/atom.xml" rel="self"/>
   <link href="http://domoritz.de/"/>
-  <updated>2013-02-19T17:54:20+01:00</updated>
+  <updated>2013-02-20T00:34:37+01:00</updated>
   <id>http://domoritz.de/</id>
   <author>
     <name><![CDATA[Dominik Moritz]]></name>
@@ -12,6 +12,167 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Datenbestandsanalyse GovData]]></title>
+    <link href="http://domoritz.de/blog/2013/02/datenbestandsanalyse-govdata/"/>
+    <updated>2013-02-20T00:18:00+01:00</updated>
+    <id>http://domoritz.de/blog/2013/02/datenbestandsanalyse-govdata</id>
+    <content type="html"><![CDATA[<p>Die neue <a href="http://www.govdata.de">Datenplatform des Bundes</a> ist heute mit ein paar Startschwierigkeiten online gegangen. Der Datenbestand umfasst zur Zeit 1160 Datensätze. Ich habe mir mal ein Script geschrieben, dass etwas aggregiert, was für Daten auf der neuen Platform zu finden sind.</p>
+
+<h1>Unter welchen Lizenzen stehen die Daten?</h1>
+
+<p>Aggregiert au <code>result.license_id</code>.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>dl-de-by-1.0: 759
+</span><span class='line'>       cc-by: 277
+</span><span class='line'>      odc-by: 82
+</span><span class='line'>        None: 26
+</span><span class='line'>other-closed: 7
+</span><span class='line'>    cc-by-sa: 3
+</span><span class='line'>     cc-zero: 2
+</span><span class='line'>   official-work: 2
+</span><span class='line'>       cc-nc: 1
+</span><span class='line'>        gfdl: 1</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>odc-by</strong></p>
+
+<pre><code>Open Data Commons Namensnennung
+</code></pre>
+
+<p><strong>cc-zero</strong></p>
+
+<pre><code>Creative Commons Zero
+</code></pre>
+
+<p><strong>cc-by</strong></p>
+
+<pre><code>Creative Commons Namensnennung (CC-BY)
+</code></pre>
+
+<p><strong>cc-by-sa</strong></p>
+
+<pre><code>Creative Commons Attribution Weitergabe unter gleichen Bedingungen (CC-BY-SA)
+</code></pre>
+
+<p><strong>cc-nc</strong></p>
+
+<pre><code>Creative Commons Nicht-Kommerziell (CC-NC)
+</code></pre>
+
+<p><strong>gfdl</strong></p>
+
+<pre><code>GNU Free Documentation License
+</code></pre>
+
+<p><strong>bsd</strong></p>
+
+<pre><code>BSD Lizenz
+</code></pre>
+
+<p><strong>dl-de-by-1.0</strong></p>
+
+<pre><code>Datenlizenz Deutschland Namensnennung
+</code></pre>
+
+<p><strong>official-work</strong></p>
+
+<pre><code>Amtliches Werk, lizenzfrei nach §5 UrhG
+</code></pre>
+
+<p><strong>other-closed</strong></p>
+
+<pre><code>Andere eingeschränkte Lizenz
+</code></pre>
+
+<h1>Von wem stammen die Daten?</h1>
+
+<p>Hier die Top-10 Liste der Datenbereitsteller, sortiert nach der Anzahl der bereitgestellten Datensätze.</p>
+
+<p>Aggregiert au <code>result.author</code>.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>                               'Statistisches Bundesamt': 729
+</span><span class='line'>'Senatorin für Finanzen, Zentrales IT-Management und E-Government': 89
+</span><span class='line'>'Hansestadt Rostock – Kataster-, Vermessungs- und Liegenschaftsamt': 34
+</span><span class='line'>                                    'Gemeinde Wennigsen': 30
+</span><span class='line'>                                           'Stadt Moers': 27
+</span><span class='line'>   'Senatsverwaltung für Wirtschaft, Technologie und Frauen': 24
+</span><span class='line'>                        'Statistisches Landesamt Bremen': 19
+</span><span class='line'>              'Hansestadt Rostock – Hauptverwaltungsamt': 17
+</span><span class='line'>                  'Amt für Statistik Berlin-Brandenburg': 15
+</span><span class='line'>                                            'Stadt Köln': 13</span></code></pre></td></tr></table></div></figure>
+
+
+<h1>In welchen Fomraten liegen die Daten vor?</h1>
+
+<p>Dies ist eine Top-20 Liste der am öftensten verwendeten Formate. Formate sind dabei Resourcen zugeordnet. Ein Datensatz kann mehrere Resourcen besitzten. Es gibt insgesamt 2589 Resourcen.</p>
+
+<p>Aggregiert aus <code>result.resources.format</code>.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>   'csv': 957
+</span><span class='line'>   'xls': 815
+</span><span class='line'>   'xml': 116
+</span><span class='line'>  'json': 114
+</span><span class='line'>   'wms': 88
+</span><span class='line'>   'kml': 83
+</span><span class='line'>   'gml': 78
+</span><span class='line'>   'geojson': 72
+</span><span class='line'>   'pdf': 49
+</span><span class='line'>  'html': 48
+</span><span class='line'>   'txt': 28
+</span><span class='line'>   'kmz': 21
+</span><span class='line'> 'shapefile': 19
+</span><span class='line'>   'gpx': 18
+</span><span class='line'>  'jrss': 13
+</span><span class='line'>   'rss': 13
+</span><span class='line'> 'gjson': 10
+</span><span class='line'>   'shp': 4
+</span><span class='line'>   'doc': 3
+</span><span class='line'>   'tms': 3</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Meteo-was]]></title>
@@ -624,20 +785,6 @@
 
 <p><a href="http://www.obitko.com/tutorials/genetic-algorithms/index.php">http://www.obitko.com/tutorials/genetic-algorithms/index.php</a>
 <a href="http://www.ai-junkie.com/ga/intro/gat1.html">http://www.ai-junkie.com/ga/intro/gat1.html</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Technik is (fast) Magie]]></title>
-    <link href="http://domoritz.de/blog/2011/03/technik-ist-magie/"/>
-    <updated>2011-03-13T20:44:34+01:00</updated>
-    <id>http://domoritz.de/blog/2011/03/technik-ist-magie</id>
-    <content type="html"><![CDATA[<blockquote><p>Technik, die kleine hässliche Schwester der Magie.</p></blockquote>
-
-<ul>
-<li>Fil</li>
-</ul>
-
 ]]></content>
   </entry>
   
