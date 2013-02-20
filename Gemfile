@@ -3,7 +3,7 @@ source "http://rubygems.org"
 group :development do
   gem 'rake', '~> 0.9'
   gem 'rack', '~> 1.4.1'
-  gem 'jekyll', '~> 0.12'
+  gem 'jekyll', '~> 0.12.1'
   gem 'rdiscount', '~> 1.6.8'
   gem 'pygments.rb', '~> 0.3.4'
   gem 'RedCloth', '~> 4.2.9'
@@ -14,8 +14,9 @@ group :development do
   gem 'rb-fsevent', '~> 0.9'
   gem 'stringex', '~> 1.4.0'
   gem 'liquid', '~> 2.3.0'
-  gem 'kramdown'
-  gem 'coderay'
+  gem 'kramdown', '~> 0.14.2'
+  gem 'coderay', '~> 1.0.8'
+  gem 'coderay_bash', '~> 1.0.4'
 end
 
 gem 'sinatra', '~> 1.3.3'
