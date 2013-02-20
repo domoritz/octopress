@@ -9,18 +9,24 @@ tags:
 -  opendata
 ---
 
-Die neue [Datenplattform des <abbr title="Bundesministerium des Innern">BMI</abbr>](http://www.govdata.de) ist heute mit ein paar Startschwierigkeiten online gegangen. Der Datenbestand umfasst zur Zeit 1160 Datensätze. Ich habe mir mal ein Script geschrieben, dass etwas aggregiert, was für Daten auf der neuen Plattform zu finden sind.
+Die neue [Datenplattform des <abbr title="Bundesministerium des Innern">BMI</abbr>](http://www.govdata.de) ist heute mit ein paar Startschwierigkeiten online gegangen. Der Datenbestand umfasst zur Zeit 1123 Datensätze. Ich habe mir mal ein Script geschrieben, dass etwas aggregiert, was für Daten auf der neuen Plattform zu finden sind.
 
-# Unter welchen Lizenzen stehen die Daten?
+Die Rohdaten habe ich über die CKAN API erhalten. Einen Dump aller `packages` (Datensätze) mit `resources` gibt es mit `curl http://www.govdata.de/ckan/api/3/action/current_package_list_with_resources -d '{}' > data.json`.
 
-Aggregiert au `result.license_id`.
+# Datensätze
+
+Auf der GovData Plattform gibt es neben Datensätzen auch Dokumente und Apps. In dieser Zusammenfassung betrachte ich jedoch nur Datensätze.
+
+## Unter welchen Lizenzen stehen die Daten?
+
+Aggregiert aus `result.license_id`.
 
 ```
     dl-de-by-1.0: 759
-           cc-by: 277
+           cc-by: 265
           odc-by: 82
-            None: 26
-    other-closed: 7
+            None: 4
+    other-closed: 4
         cc-by-sa: 3
          cc-zero: 2
    official-work: 2
@@ -39,11 +45,11 @@ Aggregiert au `result.license_id`.
 * **official-work:** Amtliches Werk, lizenzfrei nach §5 UrhG
 * **other-closed:** Andere eingeschränkte Lizenz
 
-# Von wem stammen die Daten?
+## Von wem stammen die Daten?
 
 Hier die Top-10 Liste der Datenbereitsteller, sortiert nach der Anzahl der bereitgestellten Datensätze.
 
-Aggregiert au `result.author`.
+Aggregiert aus `result.author`.
 
 ```
                                    'Statistisches Bundesamt': 729
@@ -55,12 +61,15 @@ Aggregiert au `result.author`.
                             'Statistisches Landesamt Bremen': 19
                   'Hansestadt Rostock – Hauptverwaltungsamt': 17
                       'Amt für Statistik Berlin-Brandenburg': 15
-                                                'Stadt Köln': 13
+             'VBB - Verkehrsverbund Berlin-Brandenburg GmbH': 12
 ```
+# Ressourcen
 
-# In welchen Formaten liegen die Daten vor?
+Ein Datensatz kann mehrere Ressourcen besitzen. Es gibt insgesamt 2551 Ressourcen.
 
-Dies ist eine Top-20 Liste der am öftesten verwendeten Formate. Formate sind dabei Resourcen zugeordnet. Ein Datensatz kann mehrere Resourcen besitzen. Es gibt insgesamt 2589 Resourcen.
+## In welchen Formaten liegen die Daten vor?
+
+Dies ist eine Top-20 Liste der am öftesten verwendeten Formate. Formate sind dabei Ressourcen und nicht Datensätzen  zugeordnet, da ein Datensatz Ressourcen in unterschiedlichen Formaten besitzen kann.
 
 Aggregiert aus `result.resources.format`.
 
@@ -73,9 +82,9 @@ Aggregiert aus `result.resources.format`.
        'kml': 83
        'gml': 78
    'geojson': 72
-       'pdf': 49
-      'html': 48
+       'pdf': 37
        'txt': 28
+      'html': 24
        'kmz': 21
  'shapefile': 19
        'gpx': 18
