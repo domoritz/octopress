@@ -3503,7 +3503,9 @@
   <div class="entry-content">
     <p>Die neue <a href="http://www.govdata.de">Datenplattform des <abbr title="Bundesministerium des Innern">BMI</abbr></a> ist heute mit ein paar Startschwierigkeiten online gegangen. Der Datenbestand umfasst zur Zeit 1123 Datensätze. Ich habe mir mal ein Script geschrieben, dass etwas aggregiert, was für Daten auf der neuen Plattform zu finden sind.</p>
 
-<p>Die Rohdaten habe ich über die CKAN API erhalten. Einen Dump aller <code>packages</code> (Datensätze) mit <code>resources</code> gibt es mit <code>curl http://www.govdata.de/ckan/api/3/action/current_package_list_with_resources -d '{}' &gt; data.json</code>.</p>
+<p>Die Rohdaten habe ich über die CKAN API erhalten. Einen Dump aller <code>packages</code> (Datensätze) mit <code>resources</code> gibt es mit <code lang="bash">curl http://www.govdata.de/ckan/api/3/action/current_package_list_with_resources -d '{}' &gt; data.json</code>.</p>
+
+<p>Da GovData gerade offline ist, hier der <a href="https://dl.dropbox.com/u/12770094/govdata/data-19-2-2013.json">Link zum Datendump</a></p>
 
 <h1 id="datenstze">Datensätze</h1>
 
@@ -3523,16 +3525,16 @@
 <span class="line-number">8</span>
 <span class="line-number">9</span>
 <span class="line-number">10</span>
-</pre></td><td class="code"><pre><code class=""><span class="line">dl-de-by-1.0: 759
-</span><span class="line">       cc-by: 265
-</span><span class="line">      odc-by: 82
-</span><span class="line">        None: 4
-</span><span class="line">other-closed: 4
-</span><span class="line">    cc-by-sa: 3
-</span><span class="line">     cc-zero: 2
-</span><span class="line">   official-work: 2
-</span><span class="line">       cc-nc: 1
-</span><span class="line">        gfdl: 1</span></code></pre></td></tr></table></div></figure></notextile></div>
+</pre></td><td class="code"><pre><code class=""><span class="line"> dl-de-by-1.0: 759
+</span><span class="line">        cc-by: 265
+</span><span class="line">       odc-by: 82
+</span><span class="line">         None: 4
+</span><span class="line"> other-closed: 4
+</span><span class="line">     cc-by-sa: 3
+</span><span class="line">      cc-zero: 2
+</span><span class="line">official-work: 2
+</span><span class="line">        cc-nc: 1
+</span><span class="line">         gfdl: 1</span></code></pre></td></tr></table></div></figure></notextile></div>
 
 <ul>
   <li><strong>odc-by:</strong> Open Data Commons Namensnennung</li>
