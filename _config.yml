@@ -34,8 +34,13 @@ plugins: plugins
 code_dir: downloads/code
 category_dir: blog/categories
 tag_dir: blog/tags
-markdown: rdiscount
 pygments: false # default python pygments have been replaced by pygments.rb
+markdown: kramdown # rdiscount
+kramdown:
+  use_coderay: true
+  coderay:
+    coderay_line_numbers: table
+    coderay_css: class
 
 tag_title_prefix: "Tag: "
 category_title_prefix: "Category: "

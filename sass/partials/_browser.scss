@@ -5,6 +5,7 @@
     li {
       background: $browser-bg;
       margin-bottom: 8px;
+      @include border-radius(2px);
       &:hover {
         background: $browser-bg-hover;
       }

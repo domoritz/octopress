@@ -4,7 +4,7 @@
 		position: relative;
 		width: 100%;
 		input[type=text] {
-			padding-left: 1em;
+			padding-left: 0.8em;
 			display: block;
 			width: 100%;
 			@include box-sizing(border-box);
@@ -15,6 +15,11 @@
 			}
 			border: 1px solid #aaa;
 			@include border-radius(2px);
+			&:focus {
+				border-color: rgba(82, 168, 236, 0.8);
+				@include box-shadow(rgba(82, 168, 236, 0.8) 0 0 10px);
+				outline: none;
+			}
 		}
 		button[type=submit] {
 			position: absolute;

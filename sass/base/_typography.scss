@@ -1,8 +1,8 @@
 $blockquote: $type-border !default;
 $sans: "PT Sans", "Helvetica Neue", Arial, sans-serif !default;
 $serif: "Palatino Linotype", "Book Antiqua", Palatino, FreeSerif, serif !default;
-$mono: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace !default;
-$heading-font-family: "Verdana", sans-serif !default;
+$mono: "Source Code Pro", monospace !default;
+$heading-font-family: "HelveticaNeue", sans-serif !default;
 $header-title-font-family: "HelveticaNeue-Light", sans-serif !default;
 
 // Fonts
@@ -125,7 +125,7 @@ article {
 }
 
 h1 {
-  font-size: 2.2em;
+  font-size: 1.8em;
   line-height: 1.2em;
 }
 

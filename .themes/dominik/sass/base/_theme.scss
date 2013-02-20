@@ -45,3 +45,8 @@ $nav-color-active: $browser-color-active !default;
 $footer-color: lighten($text-color, 38) !default;
 $footer-link-color: darken($footer-color, 10) !default;
 $footer-link-color-hover: darken($footer-color, 25) !default;
+
+/* non highlighted code colors */
+$code-bg: #fff;
+$code-color: $text-color;
+$line-nb-bg: $light-bg;

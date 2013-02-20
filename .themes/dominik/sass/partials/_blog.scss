@@ -54,19 +54,25 @@ article {
     padding-top: .5em;
     margin-bottom: 1em;
     padding-bottom: 1em;
-    font-size: 2.0em; font-style: italic;
+    font-size: 2.0em;
+    font-style: italic;
     line-height: 1.3em;
   }
-  h2:before{
-    counter-increment: section;
-    content: counter(section) "";
-
-    background: $base02;
-    color: $base2;
-
-    margin-right: 20px;
-    padding: 2px 5px;
-    font-weight: bold;
+  .entry-content > h1 {
+    margin-top: 1.4em;
+    &:before{
+      counter-increment: section;
+      content: counter(section) "";
+      background: $main-color;
+      color: #fff;
+      margin-right: 10px;
+      padding: 2px 5px;
+      font-weight: bold;
+      font-size: 0.8em;
+      bottom: 0.1em;
+      position: relative;
+      @include border-radius(2px);
+    }
   }
   img, video, .flash-video {
     @include shadow-box;

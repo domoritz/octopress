@@ -52,6 +52,7 @@ body {
 #main {
   #sidebar {
     @include media(display) {
+      width: $browser-width;
       float: left;
       padding-right: $browser-padding;
     }
@@ -73,7 +74,7 @@ body {
   }
 
   &.sidebar {
-    margin-top: 20px;
+    margin-top: 10px;
     #search {
       position: relative;
       display: block;

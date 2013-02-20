@@ -63,6 +63,7 @@ Aggregiert aus `result.author`.
                       'Amt für Statistik Berlin-Brandenburg': 15
              'VBB - Verkehrsverbund Berlin-Brandenburg GmbH': 12
 ```
+
 # Ressourcen
 
 Ein Datensatz kann mehrere Ressourcen besitzen. Es gibt insgesamt 2551 Ressourcen.
