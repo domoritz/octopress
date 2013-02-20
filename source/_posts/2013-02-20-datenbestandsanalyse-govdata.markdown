@@ -13,6 +13,8 @@ Die neue [Datenplattform des <abbr title="Bundesministerium des Innern">BMI</abb
 
 Die Rohdaten habe ich über die CKAN API erhalten. Einen Dump aller `packages` (Datensätze) mit `resources` gibt es mit `curl http://www.govdata.de/ckan/api/3/action/current_package_list_with_resources -d '{}' > data.json`{:lang="bash"}.
 
+Da GovData gerade offline ist, hier der [Link zum Datendump](https://dl.dropbox.com/u/12770094/govdata/data-19-2-2013.json)
+
 # Datensätze
 
 Auf der GovData Plattform gibt es neben Datensätzen auch Dokumente und Apps. In dieser Zusammenfassung betrachte ich jedoch nur Datensätze.
@@ -22,16 +24,16 @@ Auf der GovData Plattform gibt es neben Datensätzen auch Dokumente und Apps. In
 Aggregiert aus `result.license_id`.
 
 ```
-    dl-de-by-1.0: 759
-           cc-by: 265
-          odc-by: 82
-            None: 4
-    other-closed: 4
-        cc-by-sa: 3
-         cc-zero: 2
-   official-work: 2
-           cc-nc: 1
-            gfdl: 1
+     dl-de-by-1.0: 759
+            cc-by: 265
+           odc-by: 82
+             None: 4
+     other-closed: 4
+         cc-by-sa: 3
+          cc-zero: 2
+official-work: 2
+            cc-nc: 1
+             gfdl: 1
 ```
 
 * **odc-by:** Open Data Commons Namensnennung
