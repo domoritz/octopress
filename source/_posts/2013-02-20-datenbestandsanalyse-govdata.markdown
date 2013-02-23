@@ -11,7 +11,7 @@ tags:
 
 Die neue [Datenplattform des <abbr title="Bundesministerium des Innern">BMI</abbr>](http://www.govdata.de) ist heute mit ein paar Startschwierigkeiten online gegangen. Der Datenbestand umfasst zur Zeit 1123 Datensätze. Ich habe mir mal ein Script geschrieben, dass etwas aggregiert, was für Daten auf der neuen Plattform zu finden sind.
 
-Die Rohdaten habe ich über die CKAN API erhalten. Einen Dump aller `packages` (Datensätze) mit `resources` gibt es mit `curl http://www.govdata.de/ckan/api/3/action/current_package_list_with_resources -d '{}' > data.json`{:lang="bash"}.
+Die Rohdaten habe ich über die [CKAN API](http://docs.ckan.org/en/latest/api.html) erhalten. Einen Dump aller `packages` (Datensätze) mit `resources` gibt es mit `curl http://www.govdata.de/ckan/api/3/action/current_package_list_with_resources -d '{}' > data.json`{:lang="bash"}.
 
 Da GovData gerade offline ist, hier der [Link zum Datendump](https://dl.dropbox.com/u/12770094/govdata/data-19-2-2013.json)
 
