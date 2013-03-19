@@ -4,7 +4,7 @@
   <title><![CDATA[Dominik Moritz]]></title>
   <link href="http://domoritz.de/atom.xml" rel="self"/>
   <link href="http://domoritz.de/"/>
-  <updated>2013-03-08T12:20:05+01:00</updated>
+  <updated>2013-03-19T17:58:11+01:00</updated>
   <id>http://domoritz.de/</id>
   <author>
     <name><![CDATA[Dominik Moritz]]></name>
@@ -12,6 +12,27 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Auf nach Amerika]]></title>
+    <link href="http://domoritz.de/blog/2013/03/auf-nach-amerika/"/>
+    <updated>2013-03-19T14:33:00+01:00</updated>
+    <id>http://domoritz.de/blog/2013/03/auf-nach-amerika</id>
+    <content type="html"><![CDATA[<p>Ab Herbst gehe ich für ein Jahr an die <a href="https://www.washington.edu/">University of Washington</a> in Seattle um dort am <a href="http://www.cs.washington.edu/">Department of Computer Science and Engieering</a> zu studieren. Vor einigen Tagen kam die Zusage von der University of Washington (oder auch liebevoll UDub). Während des akademischen Jahres, das ich in den USA bleibe, werde ich von einem <a href="https://en.wikipedia.org/wiki/Fulbright_Program">Fulbright</a> Jahresstipendium unterstützt. Zurückhaltenderweise würde ich sagen, dass das eines der wichtigsten Erlebnisse meines Lebens wird.</p>
+
+<p><img src="https://lh3.googleusercontent.com/-WFTZpOclcw4/UUh8_fy2xwI/AAAAAAAABvk/xgYiv-vIrf8/s600/seattle.png" /></p>
+
+<p>Vor etwa einem Jahr habe ich damit angefangen, mich für Stipendien und Austauschprogramme zu bewerben. Genauer gesagt habe ich mich bei Fulbright, dem <a href="https://www.daad.org/">DAAD</a> und beim Akademischen Ausladsamt (AAA) der Uni Potsdam beworben. Ich hatte schon lange vorher geplant nach meinem Bachelor ins Ausland, am Besten die USA, zu gehen. Nachdem ich mich beworben habe, bei den Auswahlgesprächen in Bonn (DAAD), Berlin (Fulbright) und Potsdam war, habe ich überraschenderweise Zusagen von allen Programmen bekommen. Damit stand ich vor der Frage wie ich in die USA gehe. Von Fulbright wurde ich für die University of Washington nominiert. Alternativ hätte ich auch über das Austauschprogramm der Uni Potsdam an die University of California gehen können; allerdings nur als <em>undergraduate</em>. An der UW bin ich jetzt im <em>PhD program</em>, also auf <em>graduate level</em>. Außerdem passt das Kurs- und Forschungsprogramm in Seattle viel besser auf meine Interessen.</p>
+
+<p>Die ganze Vorbereitung war schon sehr aufwändig und ich viele Stunden Zeit in das Schreiben von Statements, Vergleichen von Unis und im Kontakt mit Professoren und anderen Leuten, die mir beim Vorbereiten der Bewerbung und mit Gutachten geholfen haben, gesteckt. Sehr wichtig waren auch die Gutachten von meinen Professoren an der Uni und die Hilfe beim Gegenlesen meiner Texte. Ich bin froh, dass das letztendlich alles so super ausgegangen ist.</p>
+
+<p><img src="https://lh6.googleusercontent.com/-N4F_wuqRSjw/UUiLZxSbb3I/AAAAAAAABv8/6pe-Bovy6F4/s600/IMG_20130318_182816.jpg" /></p>
+
+<p>Ich habe mich von der Fulbright Kommission platzieren lassen, aber einen großen Teil der Bewerbung an der UW habe ich selber machen müssen. Die Nominierung ist an die Uni gebunden, sodass ich bei einer Absage auch das Stipendium verloren hätte. Vor etwa einer Woche habe ich dann die Zusage aus Washington bekommen, sodass jetzt alles in trockenen Tüchern ist. Am letzten Wochenende war ich beim Fulbright Vorbereitungstreffen und habe die anderen Stipendiaten aus Deutschland und Fulbrighter aus den USA - die zur Zeit in Europa sind - kennen gelernt, den Aufenthalt vorbereitet und über die Unterschiede sowie Gemeinsamkeiten Europas und der USA diskutiert.</p>
+
+<p>Ich freue mich also sehr auf mein Jahr in den USA und bin begeistert, dass ich dabei vom Fulbright Programm unterstützt werde.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Datenbestandsanalyse GovData]]></title>
@@ -505,254 +526,6 @@
 </span></code></pre></td></tr></table></div></figure></notextile></div>
 
 <p>Dank geht an <a href="http://erkie.github.com/">Erik Rothoff Andersson</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Hello Genetic Algorithm]]></title>
-    <link href="http://domoritz.de/blog/2011/03/hello-genetic-algorithm/"/>
-    <updated>2011-03-30T00:44:57+02:00</updated>
-    <id>http://domoritz.de/blog/2011/03/hello-genetic-algorithm</id>
-    <content type="html"><![CDATA[<p>Hier mal ein Optimierungsalgorithmus, mit dem sich verschiedenste Probleme lassen können. Hier soll es einfach nur darum gehen, den Text “Hello World!” zu finden. das Problem ist insofern nicht so schwer, weil es keine lokalen Maxima gibt, in denen der Algorithmus hängen bleiben kann und es lässt sich einfach feststellen, dass das Optimum erreicht worden ist.</p>
-
-<p>An sich kann ein genetischer Algorithmus aber auch solche Probleme lösen, bei denen es lokale Maxima gibt oder nicht die optimale, sondern nur eine sehr gute Lösung gefunden werden soll. Ein andere Algorithmus für diese Art von Problemen ist die simulierte Abkühlung (<a href="http://www.dmoritz.bplaced.de/2011/01/informaticup-2011/">passender Blogeintrag</a>).</p>
-
-<p>Genug der Worte, hier der Code. Ich muss dazu sagen, dass ich ich ihn auf einer Bahnfahrt zusammengehackt habe und das Prinzip des genetischen Algorithmus aus den Gedächtnis herleiten musste, wobei dies das erste Mal ist, dass ich überhaupt einen genetischen Algorithmus geschrieben habe. Kommentare willkommen, aber bitte nicht über den Stil, es ging nicht um schönen Code, sondern einfach mal den Versuch, zur Lösung zu kommen.</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-<span class="line-number">8</span>
-<span class="line-number">9</span>
-<span class="line-number">10</span>
-<span class="line-number">11</span>
-<span class="line-number">12</span>
-<span class="line-number">13</span>
-<span class="line-number">14</span>
-<span class="line-number">15</span>
-<span class="line-number">16</span>
-<span class="line-number">17</span>
-<span class="line-number">18</span>
-<span class="line-number">19</span>
-<span class="line-number">20</span>
-<span class="line-number">21</span>
-<span class="line-number">22</span>
-<span class="line-number">23</span>
-<span class="line-number">24</span>
-<span class="line-number">25</span>
-<span class="line-number">26</span>
-<span class="line-number">27</span>
-<span class="line-number">28</span>
-<span class="line-number">29</span>
-<span class="line-number">30</span>
-<span class="line-number">31</span>
-<span class="line-number">32</span>
-<span class="line-number">33</span>
-<span class="line-number">34</span>
-<span class="line-number">35</span>
-<span class="line-number">36</span>
-<span class="line-number">37</span>
-<span class="line-number">38</span>
-<span class="line-number">39</span>
-<span class="line-number">40</span>
-<span class="line-number">41</span>
-<span class="line-number">42</span>
-<span class="line-number">43</span>
-<span class="line-number">44</span>
-<span class="line-number">45</span>
-<span class="line-number">46</span>
-<span class="line-number">47</span>
-<span class="line-number">48</span>
-<span class="line-number">49</span>
-<span class="line-number">50</span>
-<span class="line-number">51</span>
-<span class="line-number">52</span>
-<span class="line-number">53</span>
-<span class="line-number">54</span>
-<span class="line-number">55</span>
-<span class="line-number">56</span>
-<span class="line-number">57</span>
-<span class="line-number">58</span>
-<span class="line-number">59</span>
-<span class="line-number">60</span>
-<span class="line-number">61</span>
-<span class="line-number">62</span>
-<span class="line-number">63</span>
-<span class="line-number">64</span>
-<span class="line-number">65</span>
-<span class="line-number">66</span>
-<span class="line-number">67</span>
-<span class="line-number">68</span>
-<span class="line-number">69</span>
-<span class="line-number">70</span>
-<span class="line-number">71</span>
-<span class="line-number">72</span>
-<span class="line-number">73</span>
-<span class="line-number">74</span>
-<span class="line-number">75</span>
-<span class="line-number">76</span>
-<span class="line-number">77</span>
-<span class="line-number">78</span>
-<span class="line-number">79</span>
-<span class="line-number">80</span>
-<span class="line-number">81</span>
-<span class="line-number">82</span>
-<span class="line-number">83</span>
-<span class="line-number">84</span>
-<span class="line-number">85</span>
-<span class="line-number">86</span>
-<span class="line-number">87</span>
-<span class="line-number">88</span>
-<span class="line-number">89</span>
-<span class="line-number">90</span>
-<span class="line-number">91</span>
-<span class="line-number">92</span>
-<span class="line-number">93</span>
-<span class="line-number">94</span>
-<span class="line-number">95</span>
-<span class="line-number">96</span>
-<span class="line-number">97</span>
-<span class="line-number">98</span>
-<span class="line-number">99</span>
-<span class="line-number">100</span>
-<span class="line-number">101</span>
-<span class="line-number">102</span>
-<span class="line-number">103</span>
-<span class="line-number">104</span>
-<span class="line-number">105</span>
-<span class="line-number">106</span>
-</pre></td><td class="code"><pre><code class="python"><span class="line"><span class="c">#!/usr/bin/python</span>
-</span><span class="line"><span class="c"># -*- coding: UTF-8 -*-</span>
-</span><span class="line">
-</span><span class="line"><span class="kn">import</span> <span class="nn">random</span>
-</span><span class="line">
-</span><span class="line"><span class="k">def</span> <span class="nf">bewertung</span><span class="p">(</span><span class="n">individuum</span><span class="p">):</span>
-</span><span class="line">	<span class="c">#return sum( abs(ord(individuum[i])-ord(z)) for i,z in enumerate(ziel))</span>
-</span><span class="line">	<span class="k">return</span> <span class="nb">sum</span><span class="p">(</span><span class="mi">1</span> <span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">x</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">ziel</span><span class="p">)</span> <span class="k">if</span> <span class="n">individuum</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">!=</span> <span class="n">x</span><span class="p">)</span>
-</span><span class="line">
-</span><span class="line"><span class="k">def</span> <span class="nf">mutation</span><span class="p">(</span><span class="n">individuum</span><span class="p">):</span>
-</span><span class="line">	<span class="n">pos</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span><span class="o">*</span><span class="nb">len</span><span class="p">(</span><span class="n">individuum</span><span class="p">))</span>
-</span><span class="line">	<span class="n">ran</span> <span class="o">=</span> <span class="n">moegl</span><span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span><span class="o">*</span><span class="nb">len</span><span class="p">(</span><span class="n">moegl</span><span class="p">))]</span>
-</span><span class="line">	<span class="n">indivliste</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">individuum</span><span class="p">)</span>
-</span><span class="line">	<span class="n">indivliste</span><span class="p">[</span><span class="n">pos</span><span class="p">]</span><span class="o">=</span><span class="n">ran</span>
-</span><span class="line">	<span class="n">individuum</span> <span class="o">=</span> <span class="s">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">indivliste</span><span class="p">)</span>
-</span><span class="line">	<span class="k">return</span> <span class="n">individuum</span>
-</span><span class="line">
-</span><span class="line"><span class="k">def</span> <span class="nf">paarenLassen</span><span class="p">(</span><span class="n">individuum1</span><span class="p">,</span> <span class="n">individuum2</span><span class="p">):</span>
-</span><span class="line">	<span class="n">individuum1</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">individuum1</span><span class="p">)</span>
-</span><span class="line">	<span class="n">individuum2</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">individuum2</span><span class="p">)</span>
-</span><span class="line">	<span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">x</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">individuum1</span><span class="p">):</span>
-</span><span class="line">		<span class="k">if</span> <span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span> <span class="o">&gt;=</span> <span class="mf">0.5</span><span class="p">:</span>
-</span><span class="line">			<span class="n">individuum1</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">individuum2</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
-</span><span class="line">	<span class="k">return</span> <span class="s">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">individuum1</span><span class="p">)</span>
-</span><span class="line">
-</span><span class="line"><span class="k">def</span> <span class="nf">findLooser</span><span class="p">(</span><span class="n">population</span><span class="p">):</span>
-</span><span class="line">	<span class="n">gewichte</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="n">bewertung</span><span class="p">,</span><span class="n">population</span><span class="p">)</span>
-</span><span class="line">	<span class="nb">max</span> <span class="o">=</span> <span class="n">gewichte</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-</span><span class="line">	<span class="n">maxpos</span> <span class="o">=</span> <span class="mi">0</span>
-</span><span class="line">	<span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">x</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">gewichte</span><span class="p">):</span>
-</span><span class="line">		<span class="n">maxpos</span><span class="p">,</span> <span class="nb">max</span> <span class="o">=</span> <span class="p">(</span><span class="n">maxpos</span><span class="p">,</span> <span class="nb">max</span><span class="p">)</span> <span class="k">if</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="nb">max</span> <span class="k">else</span> <span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="n">x</span><span class="p">)</span>
-</span><span class="line">	<span class="k">return</span> <span class="n">maxpos</span>
-</span><span class="line">
-</span><span class="line"><span class="k">def</span> <span class="nf">findMinMax</span><span class="p">(</span><span class="n">anz</span><span class="p">,</span><span class="n">reverse</span><span class="p">):</span>
-</span><span class="line">	<span class="n">liste</span> <span class="o">=</span> <span class="p">[]</span>
-</span><span class="line">	<span class="k">for</span> <span class="n">individuum</span> <span class="ow">in</span> <span class="n">population</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
-</span><span class="line">		<span class="n">liste</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">individuum</span><span class="p">,</span><span class="n">population</span><span class="p">[</span><span class="n">individuum</span><span class="p">][</span><span class="mi">1</span><span class="p">]))</span>
-</span><span class="line">	<span class="n">liste</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="nb">cmp</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">:</span> <span class="nb">cmp</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="n">b</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span><span class="o">*</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span> <span class="k">if</span> <span class="n">reverse</span> <span class="k">else</span> <span class="mi">1</span><span class="p">))</span>
-</span><span class="line">	<span class="n">liste</span> <span class="o">=</span> <span class="n">liste</span><span class="p">[:</span><span class="n">anz</span><span class="p">]</span>
-</span><span class="line">	<span class="k">return</span> <span class="p">[</span><span class="n">a</span> <span class="k">for</span> <span class="n">a</span><span class="p">,</span><span class="n">b</span> <span class="ow">in</span> <span class="n">liste</span><span class="p">]</span>
-</span><span class="line">
-</span><span class="line"><span class="k">def</span> <span class="nf">printAll</span><span class="p">():</span>
-</span><span class="line">	<span class="k">for</span> <span class="n">individuum</span> <span class="ow">in</span> <span class="n">population</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
-</span><span class="line">		<span class="k">print</span> <span class="n">individuum</span><span class="p">,</span> <span class="n">population</span><span class="p">[</span><span class="n">individuum</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="n">population</span><span class="p">[</span><span class="n">individuum</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
-</span><span class="line">	<span class="k">print</span> <span class="s">&quot;###############&quot;</span>
-</span><span class="line">
-</span><span class="line"><span class="n">ziel</span> <span class="o">=</span> <span class="s">&quot;Hello World!&quot;</span>
-</span><span class="line"><span class="n">moegl</span> <span class="o">=</span> <span class="s">&quot;abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ !@$%^&amp;*()=+-?&lt;&gt;&quot;</span>
-</span><span class="line"><span class="n">population</span> <span class="o">=</span> <span class="p">{}</span>
-</span><span class="line">
-</span><span class="line"><span class="c">#Anfangspopulation</span>
-</span><span class="line"><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">30</span><span class="p">):</span>
-</span><span class="line">	<span class="n">individuum</span> <span class="o">=</span> <span class="s">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">moegl</span><span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span><span class="o">*</span><span class="nb">len</span><span class="p">(</span><span class="n">moegl</span><span class="p">))]</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">ziel</span><span class="p">))])</span>
-</span><span class="line">	<span class="n">population</span><span class="p">[</span><span class="n">individuum</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">bewertung</span><span class="p">(</span><span class="n">individuum</span><span class="p">),</span><span class="mi">0</span><span class="p">]</span>
-</span><span class="line">
-</span><span class="line"><span class="k">print</span> <span class="s">&quot;Ausgangspopulation:&quot;</span>
-</span><span class="line"><span class="n">printAll</span><span class="p">()</span>
-</span><span class="line">
-</span><span class="line"><span class="n">anzahl</span> <span class="o">=</span> <span class="mi">0</span>
-</span><span class="line"><span class="k">while</span> <span class="n">ziel</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">population</span><span class="p">:</span>
-</span><span class="line">	<span class="n">anzahl</span> <span class="o">+=</span> <span class="mi">1</span>
-</span><span class="line">
-</span><span class="line">	<span class="c">#print &#39;neue Generation&#39;</span>
-</span><span class="line">
-</span><span class="line">	<span class="c">#Bewertung</span>
-</span><span class="line">	<span class="k">for</span> <span class="n">individuum</span> <span class="ow">in</span> <span class="n">population</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
-</span><span class="line">		<span class="n">population</span><span class="p">[</span><span class="n">individuum</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">bewertung</span><span class="p">(</span><span class="n">individuum</span><span class="p">),</span><span class="mi">0</span><span class="p">]</span>
-</span><span class="line">		<span class="n">population</span><span class="p">[</span><span class="n">individuum</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">population</span><span class="p">[</span><span class="n">individuum</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="n">random</span><span class="o">.</span><span class="n">randrange</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span><span class="mi">11</span><span class="p">)</span><span class="o">*</span><span class="mf">0.1</span>
-</span><span class="line">	<span class="c">#print &#39;Bewertung&#39;</span>
-</span><span class="line">	<span class="c">#printAll()</span>
-</span><span class="line">
-</span><span class="line">	<span class="c">#Selektion</span>
-</span><span class="line">	<span class="n">selektion</span> <span class="o">=</span> <span class="n">findMinMax</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="bp">False</span><span class="p">)</span>
-</span><span class="line">	<span class="c">#print &#39;selektion&#39;, selektion</span>
-</span><span class="line">
-</span><span class="line">	<span class="c">#Rekombination, Crossover</span>
-</span><span class="line">	<span class="n">kinder</span> <span class="o">=</span> <span class="p">[]</span>
-</span><span class="line">	<span class="n">selektion2</span> <span class="o">=</span> <span class="n">selektion</span><span class="p">[:]</span>
-</span><span class="line">	<span class="n">random</span><span class="o">.</span><span class="n">shuffle</span><span class="p">(</span><span class="n">selektion2</span><span class="p">)</span>
-</span><span class="line">	<span class="n">random</span><span class="o">.</span><span class="n">shuffle</span><span class="p">(</span><span class="n">selektion</span><span class="p">)</span>
-</span><span class="line">	<span class="k">while</span> <span class="n">selektion</span><span class="p">:</span>
-</span><span class="line">		<span class="n">kinder</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">paarenLassen</span><span class="p">(</span><span class="n">selektion</span><span class="o">.</span><span class="n">pop</span><span class="p">(),</span> <span class="n">selektion</span><span class="o">.</span><span class="n">pop</span><span class="p">()))</span>
-</span><span class="line">		<span class="n">kinder</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">paarenLassen</span><span class="p">(</span><span class="n">selektion2</span><span class="o">.</span><span class="n">pop</span><span class="p">(),</span> <span class="n">selektion2</span><span class="o">.</span><span class="n">pop</span><span class="p">()))</span>
-</span><span class="line">	<span class="c">#print &#39;kinder&#39;, kinder</span>
-</span><span class="line">
-</span><span class="line">	<span class="c">#Mutation</span>
-</span><span class="line">	<span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">kind</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">kinder</span><span class="p">):</span>
-</span><span class="line">		<span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
-</span><span class="line">			<span class="n">mutant</span> <span class="o">=</span> <span class="n">mutation</span><span class="p">(</span><span class="n">kind</span><span class="p">)</span>
-</span><span class="line">			<span class="k">if</span> <span class="ow">not</span> <span class="n">mutant</span> <span class="ow">in</span> <span class="n">population</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">mutant</span> <span class="ow">in</span> <span class="n">kinder</span><span class="p">:</span>
-</span><span class="line">				<span class="k">break</span>
-</span><span class="line">		<span class="n">kinder</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="o">=</span> <span class="n">mutant</span>
-</span><span class="line">	<span class="c">#print &#39;mutierte Kinder&#39;, kinder</span>
-</span><span class="line">
-</span><span class="line">	<span class="c">#sterben lassen</span>
-</span><span class="line">	<span class="n">maxima</span> <span class="o">=</span> <span class="n">findMinMax</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="bp">True</span><span class="p">)</span>
-</span><span class="line">	<span class="k">for</span> <span class="n">maximum</span> <span class="ow">in</span> <span class="n">maxima</span><span class="p">:</span>
-</span><span class="line">		<span class="n">population</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="n">maximum</span><span class="p">)</span>
-</span><span class="line">
-</span><span class="line">	<span class="c">#neue Population</span>
-</span><span class="line">	<span class="k">for</span> <span class="n">individuum</span> <span class="ow">in</span> <span class="n">kinder</span><span class="p">:</span>
-</span><span class="line">		<span class="n">population</span><span class="p">[</span><span class="n">individuum</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span>
-</span><span class="line">
-</span><span class="line"><span class="k">print</span> <span class="s">&quot;Letzte Population:&quot;</span>
-</span><span class="line"><span class="n">printAll</span><span class="p">()</span>
-</span><span class="line"><span class="k">print</span> <span class="s">&quot;Benötigte Generationen:&quot;</span><span class="p">,</span> <span class="n">anzahl</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<h3 id="ausblick-was-man-noch-verbessern-sollte">Ausblick (was man noch verbessern sollte):</h3>
-
-<ul>
-  <li>Objektorientiert</li>
-  <li>Kommentare</li>
-  <li>variable Parameter
-    <ul>
-      <li>Größe der Population</li>
-      <li>Anzahl der Kinder</li>
-      <li>Stärke der Mutation</li>
-      <li>mehr/weniger Zufall bei der Auswahl für Rekombination</li>
-      <li>am besten neu schreiben, so unsauber, wie das ist :-)</li>
-    </ul>
-  </li>
-</ul>
-
-<h3 id="noch-zwei-ganz-nette-seiten-zum-thema">Noch zwei ganz nette Seiten zum Thema</h3>
-
-<p><a href="http://www.obitko.com/tutorials/genetic-algorithms/index.php">http://www.obitko.com/tutorials/genetic-algorithms/index.php</a>
-<a href="http://www.ai-junkie.com/ga/intro/gat1.html">http://www.ai-junkie.com/ga/intro/gat1.html</a></p>
 ]]></content>
   </entry>
   
