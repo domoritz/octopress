@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: plain
 title: "Blog"
 comments: true
 sharing: true
@@ -8,5 +8,11 @@ weight: 1
 ---
 
 {% assign page = site.posts.first %}
-{% assign content = page.content %}
-{% include post.html %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<META http-equiv="refresh" content="0;URL={{ page.url }}">
+</head>
+<body></body>
+</html>
