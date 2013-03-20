@@ -1,5 +1,5 @@
 <ul>
-	{% for weight in (1..10) %}
+	{% for weight in (1..6) %}
 	  {% for node in pages_list %}
 	    {% if node.weight == weight %}
 	    	{% if node.menu-title %}
@@ -14,7 +14,7 @@
 	          {% else %}
 	          <li>
 	          {% endif %}
-	          <a href="{{ BASE_PATH }}{{node.url}}">{{title}}</a></li>
+	          <a href="{{ BASE_PATH }}{{ node.url | remove:'index.html' }}">{{title}}</a></li>
 	        {% endif %}
 	      {% endif %}
 	    {% endif %}
