@@ -37,6 +37,7 @@ body > header > nav {
         }
       }
   		a {
+        text-align: center;
         border: none;
         display: block;
         @include transition-property(border-color color);
