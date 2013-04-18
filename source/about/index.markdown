@@ -14,6 +14,8 @@ weight: 4
 
 Hi, I'm Dominik. CS student at [Hasso Plattner Institute](http://www.hpi.uni-potsdam.de) at the University of Potsdam, Germany. I took part in the Summer of Code 2012, work on [CKAN](http://www.ckan.org) from the [Open Knowledge Foundation](http://www.okfn.org) and receive a scholarship from the [German National Academic Foundation](http://www.studienstiftung.de/). Later this year, I will study at the [University of Washington](https://www.washington.edu/) in Seattle supported by a [Fulbright](https://en.wikipedia.org/wiki/Fulbright_Program) grant.
 
+Also, check out my [publications](/about/publications).
+
 <span class="clearfix"></span>
 
 Feel free to follow me on:
