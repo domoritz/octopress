@@ -3,8 +3,9 @@ body > footer {
   font-size: .8em;
   color: $footer-color;
   position: relative;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  border-top: solid 1px $border-color;
   z-index: 1;
   a {
     @include link-colors($footer-link-color, $footer-link-color-hover, $visited: $footer-link-color);
