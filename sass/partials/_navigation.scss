@@ -3,7 +3,6 @@ body > header > nav {
   overflow: hidden;
   @include media(handheld) {
     @include border-radius(3px);
-    background-color: $nav-bg;
     line-height: 1.5em;
   }
   ul {
@@ -13,7 +12,6 @@ body > header > nav {
   		float: left;
       padding: 0;
       margin: 0;
-      background-color: $nav-bg;
       @include transition-property(border-color color background-color);
       @include transition-duration(0.5s);
       &:first-child {
@@ -21,20 +19,6 @@ body > header > nav {
       }
       &:last-child {
         @include border-right-radius(3px);
-      }
-  		&:hover {
-  			background-color: $nav-bg-hover;
-        a {
-          border: none;
-          color: $nav-color-hover;
-        }
-  		}
-      &.active {
-        background-color: $nav-bg-active;
-        a {
-          border: none;
-          color: $nav-color-active;
-        }
       }
   		a {
         text-align: center;
@@ -49,10 +33,22 @@ body > header > nav {
           padding: 8px 20px;
           @include border-radius(3px);
         }
-        &:hover {
-          border: none;
+        &:visited {
+          color: $nav-color;
         }
   		}
+      &:hover {
+        a {
+          border: none;
+          color: $nav-color-hover;
+        }
+      }
+      &.active {
+        a {
+          border: none;
+          color: $nav-color-active;
+        }
+      }
   	}
   }
 }

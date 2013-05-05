@@ -5,7 +5,7 @@
     <h1 class="entry-title">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</h1>
     <h2 class="author hidden">{{ site.author }}</h2>
     {% if page.description %}<p class="description">{{ page.description }}</p>{% endif %}
-    {% if page.date %}<p class="meta" title="date published">{% include post/date.html %}{{ time }}</p>{% endif %}
+    {% if page.date %}<p class="meta" title="date published">{% include post/date.html %}{% if updated %}{{ updated }}{% else %}{{ time }}</p>{% endif %}
   </header>
   {% endif %}
 
@@ -47,7 +47,6 @@
 </article>
 {% if site.disqus_short_name and page.comments == true %}
   <section>
-    <h1 class="icon-comments-alt"> Comments</h1>
     <div id="disqus_thread" aria-live="polite">{% include post/disqus_thread.html %}</div>
   </section>
 {% endif %}

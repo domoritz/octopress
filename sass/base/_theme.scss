@@ -1,24 +1,30 @@
 /* Main Section Colors */
-$main-bg: #f0efe7 !default;
 $main-color: #002b36 !default;
 $second-color: darken(#DDDDDB, 5) !default;
-$light-bg: #DDDDDB !default;
-$border-color: #d8d7cf !default;
 
-$title-color: #383D3D !default;
+$orange: #f14e32;
+$blue: #009099;
 
-$text-color: #222 !default;
-$text-color-light: lighten($text-color, 30) !default;
-$text-color-verylight: lighten($text-color, 60) !default;
-$type-border: #ddd !default;
+$main-bg: #f0efe7 !default;
+$border-color: #C9C9C9 !default;
+$article-bg: #fcfcfa !default;
+
+$light-bg: #E7E7E7 !default;
+$border-color-light: darken($light-bg, 20) !default;
+
+/* Texts */
+$title-color: $main-color !default;
+
+$text-color: #3F3F3F !default;
+$text-color-light: #797979 !default;
+
+$heading-color: $orange !default;
 
 /* Main Link Colors */
-$link-color: darken($text-color, 2) !default;
-$link-color-border: lighten($link-color, 60) !default;
-$link-color-hover: $main-color !default;
-$link-color-border-hover: $link-color-hover !default;
-$link-color-visited: adjust-color($link-color, $hue: 80, $lightness: -4) !default;
-$link-color-active: adjust-color($link-color-hover, $lightness: -15) !default;
+$link-color: #0388a6 !default;
+$link-color-hover: lighten($link-color, 10) !default;
+$link-color-visited: $link-color !default;
+$link-color-active: $link-color-hover !default;
 
 /* Browser */
 $browser-color: $main-color !default;
@@ -36,16 +42,14 @@ $browser-published-color-active: $browser-color-active !default;
 $browser-description-color-active: adjust-color($browser-bg-active, $saturation: -85, $lightness: 45) !default;
 
 /* Navigation */
-$nav-bg: $light-bg !default;
-$nav-bg-hover: darken($second-color, 10) !default;
-$nav-bg-active: $main-color !default;
 $nav-color: $main-color !default;
-$nav-color-hover:  darken($main-color, 10) !default;
-$nav-color-active: $browser-color-active !default;
+$nav-color-hover: $orange !default;
+$nav-color-active: $orange !default;
 
-$footer-color: lighten($text-color, 38) !default;
-$footer-link-color: $link-color !default;
-$footer-link-color-hover: $link-color-hover !default;
+/* Footer */
+$footer-color: $text-color-light !default;
+$footer-link-color: darken($footer-color, 35) !default;
+$footer-link-color-hover: darken($footer-color, 55) !default;
 
 /* non highlighted code colors */
 $code-bg: #fff;

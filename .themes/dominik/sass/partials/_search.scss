@@ -13,7 +13,7 @@
 				height: 41px;
 				@include border-radius(5px);
 			}
-			border: 1px solid #aaa;
+			border: 1px solid $border-color;
 			@include border-radius(2px);
 			&:focus {
 				border-color: rgba(0, 113, 117, 0.8);

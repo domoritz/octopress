@@ -2,19 +2,23 @@
 $main-color: #002b36 !default;
 $second-color: darken(#DDDDDB, 5) !default;
 
-$main-bg: #f0efe7 !default;
-$border-color: #d8d7cf !default;
+$orange: #f14e32;
+$blue: #009099;
 
-$light-bg: #DDDDDB !default;
+$main-bg: #f0efe7 !default;
+$border-color: #C9C9C9 !default;
+$article-bg: #fcfcfa !default;
+
+$light-bg: #E7E7E7 !default;
 $border-color-light: darken($light-bg, 20) !default;
 
 /* Texts */
 $title-color: $main-color !default;
 
-$text-color: #4e443c !default;
-$text-color-light: #9a9994 !default;
+$text-color: #3F3F3F !default;
+$text-color-light: #797979 !default;
 
-$heading-color: $main-color !default;
+$heading-color: $orange !default;
 
 /* Main Link Colors */
 $link-color: #0388a6 !default;
@@ -38,14 +42,9 @@ $browser-published-color-active: $browser-color-active !default;
 $browser-description-color-active: adjust-color($browser-bg-active, $saturation: -85, $lightness: 45) !default;
 
 /* Navigation */
-$nav-bg: $light-bg !default;
 $nav-color: $main-color !default;
-
-$nav-bg-hover: darken($second-color, 10) !default;
-$nav-color-hover:  darken($nav-color, 30) !default;
-
-$nav-bg-active: $main-color !default;
-$nav-color-active: $browser-color-active !default;
+$nav-color-hover: $orange !default;
+$nav-color-active: $orange !default;
 
 /* Footer */
 $footer-color: $text-color-light !default;
@@ -56,6 +55,3 @@ $footer-link-color-hover: darken($footer-color, 55) !default;
 $code-bg: #fff;
 $code-color: $text-color;
 $line-nb-bg: $light-bg;
-
-$orange: #f14e32;
-$blue: #009099;

@@ -3,7 +3,7 @@
 		white-space: nowrap;
 		margin-right: 0.6em;
 		padding: 0.3em 0.4em;
-		color: $text-color-light;
+		color: lighten($text-color, 30);
 		border: 1px solid $border-color-light;
 		background-color: $light-bg;
 		@include border-radius(2px);

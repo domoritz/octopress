@@ -3,7 +3,8 @@
   {% if page.title %}
   <header>
     <h1 class="entry-title">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</h1>
-    {% if page.date %}<p class="meta" title="last updated">{% include post/date.html %}{{ time }}</p>{% endif %}
+    {% if page.description %}<p class="description">{{ page.description }}</p>{% endif %}
+    {% if page.date %}<p class="meta" title="last updated">{% include post/date.html %}{% if updated %}{{ updated }}{% else %}{{ time }}</p>{% endif %}
   </header>
   {% endif %}
   <div class="entry-content">
@@ -13,7 +14,6 @@
     <footer>
       {% if page.date or page.author %}<p class="meta">
         {% if page.author %}{% include post/author.html %}{% endif %}
-        {% include post/date.html %}{% if updated %}{{ updated }}{% else %}{{ time }}{% endif %}
         {% if page.categories %}{% include post/categories.html %}{% endif %}
       </p>{% endif %}
       {% unless page.sharing == false %}
@@ -24,7 +24,6 @@
 </article>
 {% if site.disqus_short_name and page.comments == true %}
   <section>
-    <h1>Comments</h1>
     <div id="disqus_thread" aria-live="polite">{% include post/disqus_thread.html %}</div>
   </section>
 {% endif %}
