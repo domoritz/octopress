@@ -1,7 +1,9 @@
 ---
 layout: page
 title: "Publications"
+description: "Papers and thesises"
 date: 2013-04-18 20:32
+updated: 2013-05-05 17:00
 comments: false
 sharing: false
 sidebar: false

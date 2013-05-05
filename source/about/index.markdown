@@ -1,8 +1,10 @@
 ---
 layout: page
 title: "About me"
+description: "Learn more about me"
 menu-title: "About"
 date: 2013-02-09 12:48
+updated: 2013-05-05 17:00
 comments: false
 sharing: false
 sidebar: false
