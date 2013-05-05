@@ -49,8 +49,8 @@ body > header > nav {
           padding: 8px 20px;
           @include border-radius(3px);
         }
-        &:hover {
-          border: none;
+        &:visited {
+          color: $nav-color;
         }
   		}
   	}

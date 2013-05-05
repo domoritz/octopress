@@ -1,24 +1,26 @@
 /* Main Section Colors */
-$main-bg: #f0efe7 !default;
 $main-color: #002b36 !default;
 $second-color: darken(#DDDDDB, 5) !default;
-$light-bg: #DDDDDB !default;
+
+$main-bg: #f0efe7 !default;
 $border-color: #d8d7cf !default;
 
-$title-color: #383D3D !default;
+$light-bg: #DDDDDB !default;
+$border-color-light: darken($light-bg, 20) !default;
 
-$text-color: #222 !default;
-$text-color-light: lighten($text-color, 30) !default;
-$text-color-verylight: lighten($text-color, 60) !default;
-$type-border: #ddd !default;
+/* Texts */
+$title-color: $main-color !default;
+
+$text-color: #4e443c !default;
+$text-color-light: #9a9994 !default;
+
+$heading-color: $main-color !default;
 
 /* Main Link Colors */
-$link-color: darken($text-color, 2) !default;
-$link-color-border: lighten($link-color, 60) !default;
-$link-color-hover: $main-color !default;
-$link-color-border-hover: $link-color-hover !default;
-$link-color-visited: adjust-color($link-color, $hue: 80, $lightness: -4) !default;
-$link-color-active: adjust-color($link-color-hover, $lightness: -15) !default;
+$link-color: #0388a6 !default;
+$link-color-hover: lighten($link-color, 10) !default;
+$link-color-visited: $link-color !default;
+$link-color-active: $link-color-hover !default;
 
 /* Browser */
 $browser-color: $main-color !default;
@@ -37,17 +39,23 @@ $browser-description-color-active: adjust-color($browser-bg-active, $saturation:
 
 /* Navigation */
 $nav-bg: $light-bg !default;
-$nav-bg-hover: darken($second-color, 10) !default;
-$nav-bg-active: $main-color !default;
 $nav-color: $main-color !default;
-$nav-color-hover:  darken($main-color, 10) !default;
+
+$nav-bg-hover: darken($second-color, 10) !default;
+$nav-color-hover:  darken($nav-color, 30) !default;
+
+$nav-bg-active: $main-color !default;
 $nav-color-active: $browser-color-active !default;
 
-$footer-color: lighten($text-color, 38) !default;
-$footer-link-color: $link-color !default;
-$footer-link-color-hover: $link-color-hover !default;
+/* Footer */
+$footer-color: $text-color-light !default;
+$footer-link-color: darken($footer-color, 35) !default;
+$footer-link-color-hover: darken($footer-color, 55) !default;
 
 /* non highlighted code colors */
 $code-bg: #fff;
 $code-color: $text-color;
 $line-nb-bg: $light-bg;
+
+$orange: #f14e32;
+$blue: #009099;

@@ -13,15 +13,8 @@ body {
 a {
   @include link-colors($link-color, $hover: $link-color-hover, $focus: $link-color-hover, $visited: $link-color-visited, $active: $link-color-active);
   text-decoration: none;
-  border-bottom: 1px solid $link-color-border;
-  padding: 0 0 -1px 0;
-  &:hover {
-		border-bottom: 1px solid $link-color-border-hover;
-  }
-}
-
-.active a {
-  border-bottom: 1px solid $link-color-border-hover;
+  @include transition-property(color);
+  @include transition-duration(0.5s);
 }
 
 img { max-width: 100%; }

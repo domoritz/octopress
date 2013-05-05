@@ -22,7 +22,7 @@ article {
     }
     p {
       font-size: .9em;
-      color: $text-color-verylight;
+      color: $text-color-light;
       margin: 0;
       &.meta {
         @extend .sans;
@@ -43,6 +43,9 @@ article {
 
   padding-top: 1em;
   a { @extend .force-wrap; }
+  h1, h2, h3, h4, h5 {
+    color: $heading-color;
+  }
   h2 {
     padding-top: 0.8em;
     counter-reset: sub-section;
