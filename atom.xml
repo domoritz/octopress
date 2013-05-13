@@ -4,7 +4,7 @@
   <title><![CDATA[Dominik Moritz]]></title>
   <link href="http://domoritz.de/atom.xml" rel="self"/>
   <link href="http://domoritz.de/"/>
-  <updated>2013-05-05T17:11:01+02:00</updated>
+  <updated>2013-05-13T19:08:36+02:00</updated>
   <id>http://domoritz.de/</id>
   <author>
     <name><![CDATA[Dominik Moritz]]></name>
@@ -12,6 +12,25 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[CKAN 2.0 ist da]]></title>
+    <link href="http://domoritz.de/blog/2013/05/ckan-2-dot-0-ist-da/"/>
+    <updated>2013-05-13T08:58:00+02:00</updated>
+    <id>http://domoritz.de/blog/2013/05/ckan-2-dot-0-ist-da</id>
+    <content type="html"><![CDATA[<p>Heute gibt es den finalen Release von <a href="http://ckan.org/">CKAN</a> 2.0. CKAN 2.0 ist der erste große Versionssprung und wartet mit einigen neuen Features und Verbesserungen auf. Darunter ein neues Templatesystem, das es wesentlich einfacher macht das Design anzupassen. Dazu gibt es gleich noch ein neues Standardtheme (welches signifikant cooler ist, als das das von 1.x). Dazu kommt ein neues Authorisierungssystem, Unterstützung von Organisationen, mehr eingebaute Vorschauen, Nachrichtenströme und viele, viele kleine Verbesserungen.</p>
+
+<p><a href="http://ckan.org/2013/05/13/announcing-ckan-2-0/">Zum offiziellen Blogpost</a>.</p>
+
+<p>CKAN ist ein Datenmanagement System, welches von Regierungen und Organisationen weltweit verwendet wird, um Daten offen und durchsuchbar für die Öffentlichkeit bereitzustellen. Es hat mit der Open Data Plattform der Britischen Regierung auf <a href="http://data.gov.uk/">data.gov.uk</a> begonnen und mittlerweile benutzen Regierungen auf der ganzen Welt CKAN. Darunter <a href="https://data.qld.gov.au">Australien</a>, <a href="http://govdata.de/">Deutschland</a>, <a href="http://data.cityofsantacruz.com/">USA</a>, <a href="http://daten.berlin.de/">Berlin</a> und <a href="http://data.buenosaires.gob.ar/">Buenos Aires</a>.</p>
+
+<p><img src="http://farm8.staticflickr.com/7424/8723159396_1e444664f5.jpg" /></p>
+
+<p>CKAN wird hauptsächlich von Entwicklern der <a href="http://okfn.org/">Open Knowledge Foundation</a> entwickelt. Seit <a href="http://domoritz.de/blog/2012/12/london-4D/">letztem Sommer</a> bin ich auch an der Entwicklung beteiligt. Ich habe mich in CKAN hauptsächlich mit dem <a href="http://ckan.org/2012/10/26/introducing-the-new-datastore/">Datastore</a> und den <a href="http://ckan.org/2013/03/13/custom-previews/">Vorschauen</a> beschäftigt und bin nicht wenig Stolz, dass wir CKAN 2.0 endlich released haben.</p>
+
+<p>Die neue Version CKAN 2.0 wird schon von <a href="http://publicdata.eu/">publicdata.eu</a>, <a href="https://offenedaten.de/">offenedaten.de</a>, <a href="http://data.sa.gov.au/">data.sa.gov.au</a>, vielen weiteren und bald auch <a href="http://data.gov/">data.gov</a> verwendet. Mit dem offiziellen Release werden auch in der nächsten Zeit noch einige neue CKAN 2.0 Seiten entstehen.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Auf nach Amerika]]></title>
@@ -511,21 +530,6 @@
 </span><span class="line">_uEzjxoaZReSNCH3laBooH7mPctUfy7h0Az_vteySES6WG6dmoFLocAPRC6U
 </span><span class="line">PwqWSo84BOc_MnrZnWGcKJOKeskrvMzZ56lKusX2V7fYvKzZXjYlDUL7rVwV
 </span><span class="line">[...]</span></code></pre></td></tr></table></div></figure></notextile></div>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Asteroids auf beliebiger Website spielen]]></title>
-    <link href="http://domoritz.de/blog/2011/04/asteroids-auf-beliebiger-website-spielen/"/>
-    <updated>2011-04-04T01:13:22+02:00</updated>
-    <id>http://domoritz.de/blog/2011/04/asteroids-auf-beliebiger-website-spielen</id>
-    <content type="html"><![CDATA[<p>Für alle, sie gerne mal eine website zerstören, kann ich dieses kleine Javascript Stückchen empfehlen. Einfach auf einer beliebigen Seite in die URL-Leiste oder die Javascriptkonsole kopieren und bestätigen und los gehts. Viel Spaß.</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-</pre></td><td class="code"><pre><code class="javascript"><span class="line"><span class="nx">javascript</span><span class="o">:</span><span class="kd">var</span><span class="o">%</span><span class="mi">20</span><span class="nx">s</span><span class="o">%</span><span class="mi">20</span><span class="o">=%</span><span class="mi">20</span><span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">&#39;script&#39;</span><span class="p">);</span><span class="nx">s</span><span class="p">.</span><span class="nx">type</span><span class="o">=</span><span class="s1">&#39;text/javascript&#39;</span><span class="p">;</span><span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">s</span><span class="p">);</span><span class="nx">s</span><span class="p">.</span><span class="nx">src</span><span class="o">=</span><span class="s1">&#39;http://erkie.github.com/asteroids.min.js&#39;</span><span class="p">;</span><span class="k">void</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<p>Dank geht an <a href="http://erkie.github.com/">Erik Rothoff Andersson</a></p>
 ]]></content>
   </entry>
   
