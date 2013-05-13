@@ -32,6 +32,6 @@ Für mich besonders wichtig waren diese Aussagen:
   * Sonnenenergie hat ökonomisch Zukunft. Wenn man sich die Preisentwicklung anschaut, gab es dort die größte Verbesserung.
   * Die Klimasimulationen sind positiv gerechnet.
 
-Sehr interessant ist folgende Broschüre direkt vom PIK: [http://www.pik-potsdam.de/infothek/buecher_broschueren/broschuere_cms_100.pdf](http://www.pik-potsdam.de/infothek/buecher_broschueren/broschuere_cms_100.pdf)
+Sehr interessant ist die [Broschüre direkt vom PIK](http://www.pik-potsdam.de/infothek/buecher_broschueren/broschuere_cms_100.pdf).
 
-Die Einladung zu dem Vortragsabend habe ich übrigens vom Verein "Alumni der Studienstiftung" erhalten.
+Die Einladung zu dem Vortragsabend habe ich übrigens vom Verein "Alumni der Studienstiftung" bekommen.
