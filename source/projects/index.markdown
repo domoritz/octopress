@@ -10,21 +10,48 @@ group: navigation
 weight: 3
 ---
 
+This is an incomplete list of projects I have done or contributed to in the past or currently work on.
+
+
 # CKAN
 
-[CKAN](http://www.ckan.org) is a powerful data management system that makes data accessible – by providing tools to streamline publishing, sharing, finding and using data. CKAN is aimed at data publishers (national and regional governments, companies and organizations) wanting to make their data open and available.
+[CKAN](http://www.ckan.org) is the world’s leading open-source data portal platform used by [data.gov.uk](http://data.gov.uk), [data.gov](http://catalog.data.gov/) and [publicdata.eu](http://publicdata.eu/) among many others.
+
+It is a powerful data management system that makes data accessible – by providing tools to streamline publishing, sharing, finding and using data. CKAN is aimed at data publishers (national and regional governments, companies and organizations) wanting to make their data open and available. CKAN is mainly developed by the [Open Knowledge Foundation](http://okfn.org/).
 
 Development happens on [GitHub](https://github.com/okfn/ckan).
 
+I also developed and contributed to many other tools related to CKAN like [messytables](https://github.com/okfn/messytables) and the [datapusher](https://github.com/okfn/datapusher).
+
+
 # Leaflet plugins
 
-* LocateControl
+## LocateControl
 
-[https://github.com/domoritz/leaflet-locatecontrol](https://github.com/domoritz/leaflet-locatecontrol)
+A simple control to find your current location on a leaflet map.
 
-* MaskCanvas
+[github.com/domoritz/leaflet-locatecontrol](https://github.com/domoritz/leaflet-locatecontrol)
 
-[https://github.com/domoritz/leaflet-maskcanvas](https://github.com/domoritz/leaflet-maskcanvas)
+
+## MaskCanvas
+
+Visualize coverage on a leaflet map. The data is store in a quad-tree to make queries to the data super fast.
+
+[github.com/domoritz/leaflet-maskcanvas](https://github.com/domoritz/leaflet-maskcanvas)
+
+
+## Heatmap layer
+
+For this project I combined the MaskCanvas layer and `heatmap.js` from my friend [Patrick](http://www.patrick-wied.at).
+
+[www.patrick-wied.at/static/heatmapjs/example-heatmap-leaflet.html](http://www.patrick-wied.at/static/heatmapjs/example-heatmap-leaflet.html)
+
+
+# SoSat
+
+A SAT solver that uses different statistical optimization algorithms to solve SAT problems encoded in the DIMACS format. This solver is written in Python and uses [Numpy](http://www.numpy.org/) to speed up calculations. The two main algorithms in this solver are an *ant colony optimization algorithm* and a *genetic algorithm*. To support these algorithms, there are some preprocessing algorithms.
+
+[github.com/domoritz/SoSAT](https://github.com/domoritz/SoSAT)
 
 # Many more...
 
