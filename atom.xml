@@ -4,7 +4,7 @@
   <title><![CDATA[Dominik Moritz]]></title>
   <link href="http://domoritz.de/atom.xml" rel="self"/>
   <link href="http://domoritz.de/"/>
-  <updated>2013-06-09T22:58:47+02:00</updated>
+  <updated>2013-07-30T20:39:07+02:00</updated>
   <id>http://domoritz.de/</id>
   <author>
     <name><![CDATA[Dominik Moritz]]></name>
@@ -262,7 +262,7 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[The singing VHDL Board]]></title>
+    <title type="html"><![CDATA[The singing VHDL board]]></title>
     <link href="http://domoritz.de/blog/2012/03/singing_vhdl_board/"/>
     <updated>2012-03-27T15:59:57+02:00</updated>
     <id>http://domoritz.de/blog/2012/03/singing_vhdl_board</id>
@@ -274,16 +274,13 @@
 
 <p>Das Ganze haben wir auf einem Spartan 3 <a href="http://en.wikipedia.org/wiki/Fpga">FPGA</a> Board aufgebaut, an das wir über eine Schnittstelle einen SD/MMC Slot und einen <a href="http://en.wikipedia.org/wiki/Digital-to-analog_converter">DAC</a> mit einem Kopfhörerausgang angeschlossen haben. Die Musik ist liegt als unkomprimiertes <a href="http://en.wikipedia.org/wiki/Wav">WAV/RIFF</a> auf der Karte.</p>
 
+<iframe width="560" height="315" src="http://domoritz.de//www.youtube.com/embed/qsjFVgriZzY" frameborder="0" allowfullscreen=""></iframe>
+
 <p>Der Player besteht aus vier Hauptkomponenten. Als erstes gibt es einen MMC/SD Kartenleser, welcher das <a href="http://en.wikipedia.org/wiki/Serial_Peripheral_Interface_Bus">SPI</a> Protokoll zur Kommunikation mit der Karte implementiert. Dazu mussten wir uns durch die Dokumentation der Karten arbeiten und die verschiedenen Schritte zur Initialisierung der Karte, dem Senden von Befehlen und Empfangen von Datenblöcken implementieren. Da die Karte immer 512 Byte Blöcke auf einmal liefert und wir diesen nicht auf dem FPGA Chip speichern können (das sind immerhin 512*8 = 4096 Bit!) nutzen wir eine Blockram Fifo, die auf dem Board verbaut ist. Die Ausgangsseite der Fifo ist an eine weitere Komponente angeschlossen, die auch wieder per (dieses Mal sehr einfachen) SPI mit dem DAC kommuniziert. Der DAC wandelt dann eine digitale 12 Bit Zahl, die von der Karte durch die Fifo kam, in eine analoge Spannung um. Und das ist dann das, was der Kopfhörer oder Lautsprecher ausgibt.</p>
 
 <p>Besonders interessant fand ich bei der Entwicklung den MMC Kartenleser. Dabei hat uns besonders das Datenblatt von Samsung geholfen, dass du <a href="http://html.alldatasheet.com/html-pdf/141187/SAMSUNG/MC2GH512NMCA-2SA00/616/2/MC2GH512NMCA-2SA00.html">hier</a> finden kannst. Der Sourcecode ist auf <a href="https://github.com/domoritz/S76D">Github</a>. Wer also auch einen SD/MMC Kartenleser in VHDL bauen will, kann sich dann inspirieren lassen.</p>
 
 <p>Das Programm ist noch nicht ganz fertig und wir arbeiten gerade noch an der Tastatursteuerung per PS/3 Tastatur. Stay tuned.</p>
-
-<ul>
-  <li></li>
-  <li></li>
-</ul>
 ]]></content>
   </entry>
   
