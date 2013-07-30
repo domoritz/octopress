@@ -12,7 +12,7 @@ sidebar: false
 
 ## Algorithms for the Visualization of Software System Evolution, 2013
 
-My Bachelor's thesis.
+My bachelor's thesis.
 
 
 ## The glass is half full, 2012
