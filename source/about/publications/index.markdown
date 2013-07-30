@@ -9,6 +9,12 @@ sharing: false
 sidebar: false
 ---
 
+
+## Algorithms for the Visualization of Software System Evolution, 2013
+
+My Bachelor's thesis.
+
+
 ## The glass is half full, 2012
 
 A seminar paper on the application of an optimistic approach to concurrency control schemes. I wrote this paper for the seminar *Beauty is our Business*  in the summer term 2012.
@@ -17,9 +23,8 @@ A seminar paper on the application of an optimistic approach to concurrency cont
 
 ## MapLink: Transfer features between maps on small touch devices, 2013
 
-Paper for HCI class about a mobile GIS application that we developed for the iPod nano. With Willi Müller, Ilkka Pale, Thomas Werkmeister.
+Paper for HCI class about a mobile GIS application that we developed for the iPod nano. With [Willi Müller](http://jups42.de/), Ilkka Pale, Thomas Werkmeister.
 
-to be continued...
 
 *[HCI]:     Human computer interaction
 *[GIS]:     Geographic information system
