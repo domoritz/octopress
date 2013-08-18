@@ -10,6 +10,7 @@ sharing: false
 sidebar: false
 group: navigation
 weight: 4
+icon: envelope
 ---
 
 {% img right https://lh4.googleusercontent.com/-pQ7AqQIZkZQ/THOvXggKWaI/AAAAAAAAAA0/i7JSVqagXdw/s128/avatar.png %}
@@ -24,7 +25,8 @@ Feel free to follow me on:
 
 * <i class="icon-twitter icon-large"></i> [Twitter](https://twitter.com/doobly_doo)
 * <i class="icon-github icon-large"></i> [Github](https://github.com/domoritz)
-* <i class="icon-facebook icon-large"></i> [Facebook](https://www.facebook.com/moritz.dominik)
+* <i class="icon-facebook-sign icon-large"></i> [Facebook](https://www.facebook.com/moritz.dominik)
+* <i class="icon-linkedin icon-large"></i> [Linkedn](https://www.linkedin.com/pub/dominik-moritz/24/b81/409)
 * <i class="icon-google-plus-sign icon-large"></i> [Google+](https://plus.google.com/110111947282446666823)
 
 <pre>
