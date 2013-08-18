@@ -4,7 +4,7 @@ $browser-padding: 20px !default;
 $browser-padding-wide: 30px !default;
 
 $header-font-size: 1.0em !default;
-$header-margin-top: 25px !default;
+$header-margin-top: 20px !default;
 $header-margin-bottom: 40px !default;
 
 $pad-min: 10px;
@@ -40,7 +40,7 @@ body {
     .banner {
       float: left;
       @include media(default) {
-        margin-top: 12px;
+        margin-top: 14px;
       }
     }
 
