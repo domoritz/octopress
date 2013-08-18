@@ -20,17 +20,25 @@ body {
   > header {
     font-family: $header-title-font-family;
     .title {
-      font-size: 1.3em;
+      font-size: 1.8em;
       font-weight: normal;
       line-height: 1.2em;
       @include media(mobile) {
-        font-size: 1.5em;
+        font-size: 1.6em;
+      }
+      .description {
+        @include media(mobile) {
+          font-size: 0.9em;
+        }
       }
     }
     .navigation {
       font-size: 0.95em;
       font-weight: bold;
       @include media(handheld) {
+        font-size: 1.0em;
+      }
+      @include media(wide) {
         font-size: 1.0em;
       }
     }

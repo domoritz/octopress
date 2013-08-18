@@ -1,8 +1,8 @@
 {% capture root_url %}{{ site.root | strip_slash }}{% endcapture %}
 {% include head.html %}
 <body>
-	<header>
-	  <div role="banner">
+	<header class="clearfix">
+	  <div role="banner" class="banner">
 	  	{% include header.html %}
 	  </div>
 
@@ -10,7 +10,6 @@
 	  	{% assign pages_list = site.pages %}
     	{% assign group = 'navigation' %}
 	  	{% include navigation.html %}
-	  	<div class="mini-nav"><i class="icon-reorder"></i></div>
 	  </nav>
 	</header>
 

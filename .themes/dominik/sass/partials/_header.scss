@@ -1,16 +1,12 @@
-body > header .title-header {
-  color: $title_color;
-  a, a:visited, a:hover {
-    color: $text-color;
-	}
-	.description {
-  	display: block;
-  	margin-top: 3px;
-  	color: $text-color-light;
-  }
-  .subtitle{
-  	@include media(mobile) {
-      display: none;
+body > header {
+  .title-header {
+    color: $title_color;
+    a, a:visited, a:hover {
+      color: $text-color;
+  	}
+  	.description {
+    	margin-top: 3px;
+    	color: $text-color-light;
     }
   }
 }

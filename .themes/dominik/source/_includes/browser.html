@@ -1,10 +1,10 @@
 <ul>
 	{% for post in site.posts limit: site.recent_posts %}
-  	{% if page.url == post.url or page.url == '/index.html' and post == site.posts.first %}
-    <li class="active">
-    {% else %}
-    <li>
-    {% endif %}
+	  	{% if page.url == post.url or page.url == '/index.html' and post == site.posts.first %}
+		    <li class="active">
+	    {% else %}
+		    <li>
+	    {% endif %}
 	  	<a href="{{post.url}}">
 		    <div class="published" data-published="{{ post.date }}">{{ post.date | date: "%B %Y" }}</div>
 		    <div class="title">{{ post.title }}</div>
@@ -18,6 +18,6 @@
   {% else %}
   <li class="archive">
   {% endif %}
-		<a href="/blog/archives"><div><i class="icon-calendar"></i> Archive</div></a>
+		<a href="/blog/archives"><div><i class="icon-archive"></i> Archive</div></a>
 	</li>
 </ul>

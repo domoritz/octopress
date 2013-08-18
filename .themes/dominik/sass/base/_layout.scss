@@ -4,16 +4,17 @@ $browser-padding: 20px !default;
 $browser-padding-wide: 30px !default;
 
 $header-font-size: 1.0em !default;
-$header-padding-top: 25px !default;
-$header-padding-bottom: 40px !default;
+$header-margin-top: 25px !default;
+$header-margin-bottom: 40px !default;
 
 $pad-min: 10px;
-$pad-medium: 15px;
-$pad-wide: 60px;
+$pad-medium: 20px;
+$pad-wide: 70px;
 
 .group { @include pie-clearfix; }
 
 body {
+  min-width: 360px;
   -webkit-text-size-adjust: auto;
   position: relative;
   margin: 0 auto;
@@ -25,27 +26,34 @@ body {
     padding: 0 $pad-wide;
   }
   > header {
-    position: relative;
     font-size: $header-font-size;
-    padding-top: $header-padding-top;
-    padding-bottom: $header-padding-bottom;
+    margin-top: $header-margin-top;
+    margin-bottom: $header-margin-bottom;
     @include media(handheld) {
-      padding-bottom: 0;
+      margin-bottom: 0.5*$header-margin-bottom;
+    }
+    @include media(wide) {
+      margin-top: 1.2*$header-margin-top;
+      margin-bottom: 1.2*$header-margin-bottom;
+    }
+
+    .banner {
+      float: left;
+      @include media(default) {
+        margin-top: 12px;
+      }
     }
 
     nav.navigation {
-      position: absolute;
-      top: 29px;
-      right: 0;
-      line-height: 35px;
-      .mini-nav {
-        display: none;
-      }
+      float: right;
       @include media(handheld) {
         position: relative;
         margin: 20px auto 0 auto;
         width: 100%;
         top: 5px;
+      }
+      @include media(wide) {
+        margin-top: 6px;
       }
     }
   }
