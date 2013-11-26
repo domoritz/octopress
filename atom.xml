@@ -4,7 +4,7 @@
   <title><![CDATA[Dominik Moritz]]></title>
   <link href="http://domoritz.de/atom.xml" rel="self"/>
   <link href="http://domoritz.de/"/>
-  <updated>2013-08-18T21:36:30+02:00</updated>
+  <updated>2013-11-26T12:04:15-08:00</updated>
   <id>http://domoritz.de/</id>
   <author>
     <name><![CDATA[Dominik Moritz]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[CKAN 2.0 ist da]]></title>
     <link href="http://domoritz.de/blog/2013/05/ckan-2-dot-0-ist-da/"/>
-    <updated>2013-05-13T08:58:00+02:00</updated>
+    <updated>2013-05-13T08:58:00-07:00</updated>
     <id>http://domoritz.de/blog/2013/05/ckan-2-dot-0-ist-da</id>
     <content type="html"><![CDATA[<p>Heute gibt es den finalen Release von <a href="http://ckan.org/">CKAN</a> 2.0. CKAN 2.0 ist der erste große Versionssprung und wartet mit einigen neuen Features und Verbesserungen auf. Darunter ein neues Templatesystem, das es wesentlich einfacher macht das Design anzupassen. Dazu gibt es gleich noch ein neues Standardtheme (welches signifikant cooler ist, als das das von 1.x). Dazu kommt ein neues Authorisierungssystem, Unterstützung von Organisationen, mehr eingebaute Vorschauen, Nachrichtenströme und viele, viele kleine Verbesserungen.</p>
 
@@ -35,7 +35,7 @@
   <entry>
     <title type="html"><![CDATA[Auf nach Amerika]]></title>
     <link href="http://domoritz.de/blog/2013/03/auf-nach-amerika/"/>
-    <updated>2013-03-19T14:33:00+01:00</updated>
+    <updated>2013-03-19T14:33:00-07:00</updated>
     <id>http://domoritz.de/blog/2013/03/auf-nach-amerika</id>
     <content type="html"><![CDATA[<p>Ab Herbst gehe ich für ein Jahr an die <a href="https://www.washington.edu/">University of Washington</a> in Seattle um dort am <a href="http://www.cs.washington.edu/">Department of Computer Science and Engieering</a> zu studieren. Vor einigen Tagen kam die Zusage von der University of Washington (oder auch liebevoll UDub). Während des akademischen Jahres, für das ich in den USA bleibe, werde ich von einem <a href="https://en.wikipedia.org/wiki/Fulbright_Program">Fulbright</a> Jahresstipendium unterstützt. Mit Zurückhaltung würde ich sagen, dass das eines der wichtigsten Erlebnisse meines Lebens wird.</p>
 
@@ -56,7 +56,7 @@
   <entry>
     <title type="html"><![CDATA[Datenbestandsanalyse GovData]]></title>
     <link href="http://domoritz.de/blog/2013/02/datenbestandsanalyse-govdata/"/>
-    <updated>2013-02-20T00:18:00+01:00</updated>
+    <updated>2013-02-20T00:18:00-08:00</updated>
     <id>http://domoritz.de/blog/2013/02/datenbestandsanalyse-govdata</id>
     <content type="html"><![CDATA[<p>Die neue <a href="http://www.govdata.de">Datenplattform des <abbr title="Bundesministerium des Innern">BMI</abbr></a> ist heute mit ein paar Startschwierigkeiten online gegangen. Der Datenbestand umfasst zur Zeit 1123 Datensätze. Ich habe mir mal ein Script geschrieben, dass etwas aggregiert, was für Daten auf der neuen Plattform zu finden sind.</p>
 
@@ -189,7 +189,7 @@
   <entry>
     <title type="html"><![CDATA[Meteo-was]]></title>
     <link href="http://domoritz.de/blog/2013/02/meteowas/"/>
-    <updated>2013-02-19T17:03:00+01:00</updated>
+    <updated>2013-02-19T17:03:00-08:00</updated>
     <id>http://domoritz.de/blog/2013/02/meteowas</id>
     <content type="html"><![CDATA[<p>Vor einer Woche ist in Russland ein <a href="http://www.bbc.co.uk/news/world-europe-21468116">Meteor eingeschlagen</a>. Nahezu Zeitgleich ist der Asteroid 2012 DA14 <a href="http://www.bbc.co.uk/news/science-environment-21442863">an der Erde vorbeigerauscht</a> und kam uns dabei näher, als es geostationäre Satelliten sind. Die NASA versichert uns, dass diese beiden Ereignisse vollkommen unabhängig sind.</p>
 
@@ -222,7 +222,7 @@
   <entry>
     <title type="html"><![CDATA[The London 4D experience]]></title>
     <link href="http://domoritz.de/blog/2012/12/london-4D/"/>
-    <updated>2012-12-15T23:52:00+01:00</updated>
+    <updated>2012-12-15T23:52:00-08:00</updated>
     <id>http://domoritz.de/blog/2012/12/london-4D</id>
     <content type="html"><![CDATA[<p>Lange ist es her, dass ich hier im Blog mal wieder etwas von mir gegeben habe. Die gute Nachricht, dass ich noch lebe, ist damit raus. Dafür, dass ich hier im Blog nichts geschrieben habe, habe ich auf <a href="http://twitter.com/doobly_doo">Twitter</a> kurze Infos von mir gegeben und auch auf Github einiges an Code produziert.</p>
 
@@ -239,7 +239,7 @@
   <entry>
     <title type="html"><![CDATA[UTC vs GMT vs London Local Time]]></title>
     <link href="http://domoritz.de/blog/2012/04/utc-gmt-london-local/"/>
-    <updated>2012-04-09T20:15:00+02:00</updated>
+    <updated>2012-04-09T20:15:00-07:00</updated>
     <id>http://domoritz.de/blog/2012/04/utc-gmt-london-local</id>
     <content type="html"><![CDATA[<p>Ich hab mich gerade gefragt, ob die GMT auch Sommerzeit mit einbezieht und wie denn die UTC dazu steht. Nach einiger Recherche konnte ich etwas Licht in das Dunkel bringen. Wen es also interessiert, hier die harten Fakten.</p>
 
@@ -264,7 +264,7 @@
   <entry>
     <title type="html"><![CDATA[The singing VHDL board]]></title>
     <link href="http://domoritz.de/blog/2012/03/singing_vhdl_board/"/>
-    <updated>2012-03-27T15:59:57+02:00</updated>
+    <updated>2012-03-27T06:59:57-07:00</updated>
     <id>http://domoritz.de/blog/2012/03/singing_vhdl_board</id>
     <content type="html"><![CDATA[<p>Nach 6 Monaten warten ist es so weit! Es lebt.</p>
 
@@ -287,7 +287,7 @@
   <entry>
     <title type="html"><![CDATA[Shopping tour Optimizer]]></title>
     <link href="http://domoritz.de/blog/2012/03/shoppingtour-optimizer/"/>
-    <updated>2012-03-17T16:17:39+01:00</updated>
+    <updated>2012-03-17T08:17:39-07:00</updated>
     <id>http://domoritz.de/blog/2012/03/shoppingtour-optimizer</id>
     <content type="html"><![CDATA[<p>Wie schon im letzten Jahr habe ich mit einigen Kommilitonen am InformatiCup teilgenommen. Dieses Mal ging es darum ein Programm zu schreiben, dass eine Einkaufstour optimiert. Gegeben ist eine Menge von Läden, in denen man Produkte kaufen kann und eine Einkaufsliste. Ziel ist es, möglichst günstig die Einkaufsliste abzuarbeiten. Problem ist dabei, dass es nicht alle Produkte überall gibt, die Preise für gleiche Produkte verschieden sind und die Läden an verschiedenen Orten liegen, sodass Fahrtkosten entstehen.</p>
 
@@ -304,7 +304,7 @@
   <entry>
     <title type="html"><![CDATA[Tagshot und andere Projekte]]></title>
     <link href="http://domoritz.de/blog/2012/03/tagshot-und-andere-projekte/"/>
-    <updated>2012-03-17T14:30:02+01:00</updated>
+    <updated>2012-03-17T06:30:02-07:00</updated>
     <id>http://domoritz.de/blog/2012/03/tagshot-und-andere-projekte</id>
     <content type="html"><![CDATA[<p>In diesem Artikel möchte ich das Fotoverwaltungstool vorstellen, was treffenderweise <em>Tagshot</em> heißt.</p>
 
@@ -343,7 +343,7 @@
   <entry>
     <title type="html"><![CDATA[7000000000]]></title>
     <link href="http://domoritz.de/blog/2011/10/7000000000/"/>
-    <updated>2011-10-31T22:05:59+01:00</updated>
+    <updated>2011-10-31T14:05:59-07:00</updated>
     <id>http://domoritz.de/blog/2011/10/7000000000</id>
     <content type="html"><![CDATA[<p>7 Milliarden Menschen auf der Erde. Das ist eine 7 mit 9 Nullen und damit soviel, wie noch nie und laut Wolfram Alpha sind das 6,6% der Anzahl von Menschen, die bisher gelebt haben.</p>
 
@@ -357,7 +357,7 @@
   <entry>
     <title type="html"><![CDATA[C3PO-r2d2-POE]]></title>
     <link href="http://domoritz.de/blog/2011/10/c3po-r2d2-poe/"/>
-    <updated>2011-10-10T01:52:31+02:00</updated>
+    <updated>2011-10-09T16:52:31-07:00</updated>
     <id>http://domoritz.de/blog/2011/10/c3po-r2d2-poe</id>
     <content type="html"><![CDATA[<p>Der CCC hat ja eine <a href="http://ccc.de/de/updates/2011/staatstrojaner">Analyse des “Bundestrojaners”</a> durchgeführt und ist dabei auf einige Sicherheitslücken gestoßen. Falls es sich wirklich um das Produkt der Behörden handelt, it es mehr als Peinlich, was die da gebastelt haben. Ok, das die Daten nicht vollständig verschlüsselt sind kann ja mal passieren, aber Daten über die USA schicken und beliebige Software ohne Verifikation nachzuinstallieren ist doch schon etwas schwach.</p>
 
@@ -368,7 +368,7 @@
   <entry>
     <title type="html"><![CDATA[Twain über fluffy words]]></title>
     <link href="http://domoritz.de/blog/2011/10/fluffy-words/"/>
-    <updated>2011-10-06T02:08:07+02:00</updated>
+    <updated>2011-10-05T17:08:07-07:00</updated>
     <id>http://domoritz.de/blog/2011/10/fluffy-words</id>
     <content type="html"><![CDATA[<blockquote>
   <p>Substitute <em>damn</em> every time you’re inclined to write <em>very</em>; your editor will delete it and the writing will be just as it should be.</p>
@@ -381,7 +381,7 @@
   <entry>
     <title type="html"><![CDATA[Drummy]]></title>
     <link href="http://domoritz.de/blog/2011/09/drummy/"/>
-    <updated>2011-09-20T21:05:47+02:00</updated>
+    <updated>2011-09-20T12:05:47-07:00</updated>
     <id>http://domoritz.de/blog/2011/09/drummy</id>
     <content type="html"><![CDATA[<p>So, mal wieder etwas neues! Ich habe in den letzten Wochen an einem Programm gearbeitet, das es Schlagzeugspielern ermöglicht Tabs mit Ihrem Schlagzeug aufzunehmen. Die Idee dazu kam von einem ehemaligen Mitschüler, der selber Schlagzeug spielt und selber die Tabs zu bestimmten Songs erstellen wollte. Es gibt ein <a href="http://www.911tabs.com/drum_tabs/">relativ verbreitetes</a> und halbwegs standardisiertes Format das in einer einfachen Textdatei gespeichert oder auf einer Website verbreitet werden kann. Man benötigt keine besonderen Tools, da man die Tabs mit einem normalen Texteditor schreiben kann. Das Problem ist allerdings, dass das nicht in Echtzeit geht und es sehr schwer ist die Tabs aus dem Gedächtnis aufzuschreiben.</p>
 
@@ -402,7 +402,7 @@
   <entry>
     <title type="html"><![CDATA[Staatsschulden mal nicht als Zahlen...]]></title>
     <link href="http://domoritz.de/blog/2011/08/statsschulden-mal-nicht-als-zahlen/"/>
-    <updated>2011-08-02T22:49:03+02:00</updated>
+    <updated>2011-08-02T13:49:03-07:00</updated>
     <id>http://domoritz.de/blog/2011/08/statsschulden-mal-nicht-als-zahlen</id>
     <content type="html"><![CDATA[<p>Ja, Staatsschulden sind im Allgemeinen sehr hoch. Doch, wie hoch sie wirklich sind, ist oft kaum vorstellbar. Mein Mathedozent sagt immer, dass Zahlen über 10 groß sind. Naja, und Billionen kann sich wirklich niemand richtig vorstellen.</p>
 
@@ -413,7 +413,7 @@
   <entry>
     <title type="html"><![CDATA[Zitatestunde]]></title>
     <link href="http://domoritz.de/blog/2011/07/zitatestunde/"/>
-    <updated>2011-07-25T22:07:05+02:00</updated>
+    <updated>2011-07-25T13:07:05-07:00</updated>
     <id>http://domoritz.de/blog/2011/07/zitatestunde</id>
     <content type="html"><![CDATA[<blockquote>
   <p>Be nice to nerds. Chances are you’ll end up working for one.</p>
@@ -428,7 +428,7 @@
   <entry>
     <title type="html"><![CDATA[Johnossi beim Sommerfest]]></title>
     <link href="http://domoritz.de/blog/2011/07/johnossi-beim-sommerfest/"/>
-    <updated>2011-07-23T17:20:58+02:00</updated>
+    <updated>2011-07-23T08:20:58-07:00</updated>
     <id>http://domoritz.de/blog/2011/07/johnossi-beim-sommerfest</id>
     <content type="html"><![CDATA[<p>Die Vorlesungszeit ist offiziell vorbei und gestern Abend war das Sommerfest. Special Guest waren Johnossi! Trotz, oder gerade wegen des Regenwetters war die Stimmung super und Johnossi haben die Bühne gerockt.</p>
 
@@ -445,7 +445,7 @@
   <entry>
     <title type="html"><![CDATA[Erlang: The movie]]></title>
     <link href="http://domoritz.de/blog/2011/07/erlang-the-movie/"/>
-    <updated>2011-07-12T01:21:51+02:00</updated>
+    <updated>2011-07-11T16:21:51-07:00</updated>
     <id>http://domoritz.de/blog/2011/07/erlang-the-movie</id>
     <content type="html"><![CDATA[<p>Einfach nur genial. Ich habe nichts weiter zu sagen.</p>
 
@@ -456,7 +456,7 @@
   <entry>
     <title type="html"><![CDATA[Besuch am PIK]]></title>
     <link href="http://domoritz.de/blog/2011/06/besuch-am-pik/"/>
-    <updated>2011-06-24T00:10:05+02:00</updated>
+    <updated>2011-06-23T15:10:05-07:00</updated>
     <id>http://domoritz.de/blog/2011/06/besuch-am-pik</id>
     <content type="html"><![CDATA[<p>Heute war ich am <a href="http://www.pik-potsdam.de/">Institut für Klimafolgenforschung in Potsdam</a> auf dem Telegrafenberg. Es gab einen Vortragsnachmittag (bis späten Nachmittag) mit drei Interessanten Vorträgen zum Thema Klimawandel und seinen Folgen. Der erste Vortrag drehte sich um die reinen Fakten und ein paar Ausblicke auf die Zukunft des Weltklimas. Der zweite war ein Vortrag, in dem es um die Wiederlegung der Argumente aus dem Buch <a href="http://www.amazon.de/Cool-Skeptical-Environmentalists-Global-Warming/dp/0307266923">“Cool It”</a> ging. Als letztes ging es um die ökonomischen Folgen des Klimawandels auf die Wirtschaft in Deutschland, Europa und der Welt.</p>
 
@@ -484,7 +484,7 @@
   <entry>
     <title type="html"><![CDATA[Zitatestunde]]></title>
     <link href="http://domoritz.de/blog/2011/06/zitatestunde/"/>
-    <updated>2011-06-04T01:42:16+02:00</updated>
+    <updated>2011-06-03T16:42:16-07:00</updated>
     <id>http://domoritz.de/blog/2011/06/zitatestunde</id>
     <content type="html"><![CDATA[<blockquote>
   <p>There are two ways of constructing a software design: One way is to make it so simple that there are obviously no deficiencies, and the other way is to make it so complicated that there are no obvious deficiencies. The first method is far more difficult.</p>
@@ -497,7 +497,7 @@
   <entry>
     <title type="html"><![CDATA[Youtube Server Error, ohne Worte]]></title>
     <link href="http://domoritz.de/blog/2011/04/youtube-server-error-ohne-worte/"/>
-    <updated>2011-04-13T22:50:53+02:00</updated>
+    <updated>2011-04-13T13:50:53-07:00</updated>
     <id>http://domoritz.de/blog/2011/04/youtube-server-error-ohne-worte</id>
     <content type="html"><![CDATA[<h1 id="internal-server-error">500 Internal Server Error</h1>
 
