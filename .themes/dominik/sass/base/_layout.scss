@@ -7,9 +7,9 @@ $header-font-size: 1.0em !default;
 $header-margin-top: 20px !default;
 $header-margin-bottom: 40px !default;
 
-$pad-min: 10px;
-$pad-medium: 20px;
-$pad-wide: 70px;
+$pad-min: 15px;
+$pad-medium: 50px;
+$pad-wide: 80px;
 
 .group { @include pie-clearfix; }
 
@@ -105,14 +105,16 @@ body {
       display: none;
     }
     #content {
-      padding: 0 40px;
+      margin: 0; 
+      @include media(handheld) {
+        padding: 0 10px;
+      }
       @include media(display) {
-        margin: 0 5%;
+        padding: 0 10%;
       }
       @include media(wide) {
-        margin: 0 10%;
+        padding: 0 20%;
       }
-      margin: auto;
     }
   }
 }
