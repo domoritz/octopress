@@ -105,11 +105,12 @@ body {
       display: none;
     }
     #content {
+      padding: 0 40px;
       @include media(display) {
-        padding: 0 5%;
+        margin: 0 5%;
       }
       @include media(wide) {
-        padding: 0 10%;
+        margin: 0 10%;
       }
       margin: auto;
     }

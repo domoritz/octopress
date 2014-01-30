@@ -6,7 +6,7 @@ url: http://domoritz.de
 title: Dominik Moritz
 author: Dominik Moritz
 simple_search: http://google.com/search
-description: My braindump in the cloud...
+description: CSE PhD Student at UW
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
@@ -105,7 +105,7 @@ disqus_show_comment_count: false
 google_analytics_tracking_id: UA-3992453-11
 
 # Facebook Like
-facebook_like: true
+facebook_like: false
 facebook_user: moritz.dominik
 
 # Linkedin

@@ -86,10 +86,10 @@ nav {
 
 article {
   font-size: 1em;
-  line-height: 1.5em;
+  line-height: 1.6em;
   @include media(wide) {
     font-size: 1.1em;
-    line-height: 1.7em;
+    line-height: 1.8em;
   }
 
   header {
@@ -162,7 +162,7 @@ h6, section h5, section section h4, section section section h3 {
   font-size: .8em;
 }
 p, blockquote, ul, ol {
-  margin: 0.5em 0;
+  margin-bottom: 0.8em;
 }
 
 ul { list-style-type: disc;

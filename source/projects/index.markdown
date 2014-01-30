@@ -2,7 +2,8 @@
 layout: page
 title: "Projects"
 description: "Recent and current projects"
-date: 2013-02-09 12:48
+date: 2013-02-09 00:00
+updated: 2014-01-30 00:00
 comments: false
 sharing: false
 sidebar: false
@@ -14,15 +15,20 @@ icon: terminal
 This is an incomplete list of projects I have done or contributed to in the past or currently work on.
 
 
+# Myria
+
+[Myria](http://myria.cs.washington.edu/) is a distributed Big Data management system in the cloud which is being developed in the [Database group](http://db.cs.washington.edu/) at the [University of Washington](hppt://uw.edu/).
+
+
 # CKAN
 
 [CKAN](http://www.ckan.org) is the world’s leading open-source data portal platform used by [data.gov.uk](http://data.gov.uk), [data.gov](http://catalog.data.gov/) and [publicdata.eu](http://publicdata.eu/) among many others.
 
 It is a powerful data management system that makes data accessible – by providing tools to streamline publishing, sharing, finding and using data. CKAN is aimed at data publishers (national and regional governments, companies and organizations) wanting to make their data open and available. CKAN is mainly developed by the [Open Knowledge Foundation](http://okfn.org/).
 
-Development happens on [GitHub](https://github.com/okfn/ckan).
+Development happens on [GitHub](https://github.com/ckan/ckan).
 
-I also developed and contributed to many other tools related to CKAN like [messytables](https://github.com/okfn/messytables) and the [datapusher](https://github.com/okfn/datapusher).
+I also developed and contributed to many other tools related to CKAN like [messytables](https://github.com/okfn/messytables) and the [datapusher](https://github.com/ckan/datapusher).
 
 
 # Leaflet plugins

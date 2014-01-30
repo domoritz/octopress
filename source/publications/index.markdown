@@ -1,12 +1,15 @@
 ---
 layout: page
 title: "Publications"
-description: "Papers and thesises"
-date: 2013-04-18 20:32
-updated: 2013-05-05 17:00
+description: "Research papers"
+date: 2013-02-9 00:00
+updated: 2014-01-30 00:00
 comments: false
 sharing: false
 sidebar: false
+group: navigation
+weight: 2
+icon: user
 ---
 
 ## Visualization of Varying Hierarchies by Stable Layout of Voronoi Treemaps
@@ -38,7 +41,6 @@ Evaluation of project in *Statistical optimization* seminar at University of Pot
 A seminar paper on the application of an optimistic approach to concurrency control schemes. I wrote this paper for the seminar *Beauty is our Business* in the summer term 2012.
 
 [Link to paper](https://dl.dropboxusercontent.com/u/12770094/the_glass_is_half_full.pdf)
-
 
 *[HCI]:     Human computer interaction
 *[GIS]:     Geographic information system

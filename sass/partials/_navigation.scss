@@ -29,6 +29,9 @@ body > header > nav {
       @include transition-property(color);
       @include transition-duration(0.5s);
       margin-left: 25px;
+      @include media(display) {
+      margin-left: 15px;
+      }
       @include media(handheld) {
         margin: 0;
       }
