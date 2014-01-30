@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: OKFN | Dominik Moritz]]></title>
+  <link href="http://domoritz.de/blog/categories/okfn/atom.xml" rel="self"/>
+  <link href="http://domoritz.de/"/>
+  <updated>2013-11-26T12:04:15-08:00</updated>
+  <id>http://domoritz.de/</id>
+  <author>
+    <name><![CDATA[Dominik Moritz]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[CKAN 2.0 ist da]]></title>
+    <link href="http://domoritz.de/blog/2013/05/ckan-2-dot-0-ist-da/"/>
+    <updated>2013-05-13T08:58:00-07:00</updated>
+    <id>http://domoritz.de/blog/2013/05/ckan-2-dot-0-ist-da</id>
+    <content type="html"><![CDATA[<p>Heute gibt es den finalen Release von <a href="http://ckan.org/">CKAN</a> 2.0. CKAN 2.0 ist der erste große Versionssprung und wartet mit einigen neuen Features und Verbesserungen auf. Darunter ein neues Templatesystem, das es wesentlich einfacher macht das Design anzupassen. Dazu gibt es gleich noch ein neues Standardtheme (welches signifikant cooler ist, als das das von 1.x). Dazu kommt ein neues Authorisierungssystem, Unterstützung von Organisationen, mehr eingebaute Vorschauen, Nachrichtenströme und viele, viele kleine Verbesserungen.</p>
+
+<p><a href="http://ckan.org/2013/05/13/announcing-ckan-2-0/">Zum offiziellen Blogpost</a>.</p>
+
+<p>CKAN ist ein Datenmanagement System, welches von Regierungen und Organisationen weltweit verwendet wird, um Daten offen und durchsuchbar für die Öffentlichkeit bereitzustellen. Es hat mit der Open Data Plattform der Britischen Regierung auf <a href="http://data.gov.uk/">data.gov.uk</a> begonnen und mittlerweile benutzen Regierungen auf der ganzen Welt CKAN. Darunter <a href="https://data.qld.gov.au">Australien</a>, <a href="http://govdata.de/">Deutschland</a>, <a href="http://data.cityofsantacruz.com/">USA</a>, <a href="http://daten.berlin.de/">Berlin</a> und <a href="http://data.buenosaires.gob.ar/">Buenos Aires</a>.</p>
+
+<p><img src="http://farm8.staticflickr.com/7424/8723159396_1e444664f5.jpg"></p>
+
+<p>CKAN wird hauptsächlich von Entwicklern der <a href="http://okfn.org/">Open Knowledge Foundation</a> entwickelt. Seit <a href="/blog/2012/12/london-4D/">letztem Sommer</a> bin ich auch an der Entwicklung beteiligt. Ich habe mich in CKAN hauptsächlich mit dem <a href="http://ckan.org/2012/10/26/introducing-the-new-datastore/">Datastore</a> und den <a href="http://ckan.org/2013/03/13/custom-previews/">Vorschauen</a> beschäftigt und bin nicht wenig Stolz, dass wir CKAN 2.0 endlich released haben.</p>
+
+<p>Die neue Version CKAN 2.0 wird schon von <a href="http://publicdata.eu/">publicdata.eu</a>, <a href="https://offenedaten.de/">offenedaten.de</a>, <a href="http://data.sa.gov.au/">data.sa.gov.au</a>, vielen weiteren und bald auch <a href="http://data.gov/">data.gov</a> verwendet. Mit dem offiziellen Release werden auch in der nächsten Zeit noch einige neue CKAN 2.0 Seiten entstehen.</p>
+]]></content>
+  </entry>
+  
+</feed>
