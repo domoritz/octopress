@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Publications"
-description: "Research papers"
+description: "Research papers and class papers"
 date: 2013-02-9 00:00
 updated: 2014-01-30 00:00
 comments: false
@@ -14,14 +14,18 @@ icon: user
 
 ## Visualization of Varying Hierarchies by Stable Layout of Voronoi Treemaps
 
-Published in *Proceedings of the 5th International Conference on Information Visualization Theory and Applications (IVAPP 2014)*.
+Publication of algorithms I developed for my bachelor thesis.
+
+**Authors**: Sebastian Schmechel, Jonas Trümper, Dominik Moritz and Jürgen Döllner
+
+**Published in**: *Proceedings of the 5th International Conference on Information Visualization Theory and Applications (IVAPP 2014)*.
 
 [Publication website](http://www.hpi.uni-potsdam.de/doellner/publications/year/2014/2334/STMD2014.html)
 
 
 ## Algorithms for the Visualization of Software System Evolution, 2013
 
-My bachelor's thesis. Not published due to non disclosure agreement.
+My bachelor thesis. Not published due to non disclosure agreement.
 
 
 ## MapLink: Transfer features between maps on small touch devices, 2013
