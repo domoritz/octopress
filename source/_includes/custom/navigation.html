@@ -1,21 +1,14 @@
-{% for weight in (1..10) %}
-  {% for node in pages_list %}
-    {% if node.weight == weight %}
-    	{% if node.menu-title %}
-    	  {% assign title = node.menu-title %}
-    	{% elsif node.title %}
-    	  {% assign title = node.title %}
-    	{% endif %}
-      {% if title != null %}
-        {% if group == node.group %}
-          {% if page.url == node.url %}
-          <li class="active">
-          {% else %}
-          <li>
-          {% endif %}
-          <a href="{{ BASE_PATH }}{{node.url}}">{{title}}</a></li>
-        {% endif %}
-      {% endif %}
-    {% endif %}
-  {% endfor %}
-{% endfor %}
+<ul>
+	<li {% if page.url == '/index.html' %} class="active"{% endif %}>
+		<a href="/"><i class="icon icon-envelope"></i> About</a>
+	</li>
+	<li {% if page.url == '/publications/index.html' %} class="active"{% endif %}>
+		<a href="/publications/"><i class="icon icon-user"></i> Publications</a>
+	</li>
+	<li {% if page.url == '/projects/index.html' %} class="active"{% endif %}>
+		<a href="/projects/"><i class="icon icon-terminal"></i> Projects</a>
+	</li>
+	<li {% if page.url.start_with? '/blog/' %} class="active"{% endif %}>
+		<a href="{{ site.posts.first.url }}"><i class="icon icon-comment"></i> Blog</a>
+	</li>
+</ul>

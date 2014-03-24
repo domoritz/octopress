@@ -1,15 +1,11 @@
 ---
 layout: page
 title: "Dominik Moritz"
-menu-title: "About"
 date: 2013-02-09 00:00
 updated: 2014-01-30 00:00
 comments: false
 sharing: false
 sidebar: false
-group: navigation
-weight: 1
-icon: envelope
 ---
 
 {% img right https://lh4.googleusercontent.com/-pQ7AqQIZkZQ/THOvXggKWaI/AAAAAAAAAA0/i7JSVqagXdw/s180/avatar.png %}

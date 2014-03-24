@@ -7,9 +7,6 @@ updated: 2014-01-30 00:00
 comments: false
 sharing: false
 sidebar: false
-group: navigation
-weight: 2
-icon: user
 ---
 
 ## Visualization of Varying Hierarchies by Stable Layout of Voronoi Treemaps

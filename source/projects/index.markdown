@@ -7,9 +7,6 @@ updated: 2014-01-30 00:00
 comments: false
 sharing: false
 sidebar: false
-group: navigation
-weight: 3
-icon: terminal
 ---
 
 This is an incomplete list of projects I have done or contributed to in the past or currently work on.
