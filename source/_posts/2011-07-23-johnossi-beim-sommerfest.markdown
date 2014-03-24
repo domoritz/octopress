@@ -7,9 +7,7 @@ description: Zitat und bild vom HPI Sommerfest
 wordpress_id: 1649
 tags:
 - HPI
-- Indie
 - Johnossi
-- Licht
 - Photo
 - Rock
 ---

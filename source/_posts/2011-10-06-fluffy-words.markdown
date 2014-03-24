@@ -7,7 +7,6 @@ description: Trick für bessere Texte
 wordpress_id: 1681
 categories: Quotes
 tags:
-- Author
 - Mark Twain
 ---
 

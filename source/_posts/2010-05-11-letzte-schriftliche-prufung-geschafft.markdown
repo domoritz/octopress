@@ -6,7 +6,6 @@ slug: letzte-schriftliche-prufung-geschafft
 title: letzte schriftliche Prüfung geschafft
 wordpress_id: 917
 tags:
-- letzte
 - Mathematik
 - Physik
 - Prüfung

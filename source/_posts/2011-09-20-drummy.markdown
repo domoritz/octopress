@@ -9,7 +9,6 @@ tags:
 - Drummy
 - Open Source
 - Qt
-- Schlagzeug
 ---
 
 So, mal wieder etwas neues! Ich habe in den letzten Wochen an einem Programm gearbeitet, das es Schlagzeugspielern ermöglicht Tabs mit Ihrem Schlagzeug aufzunehmen. Die Idee dazu kam von einem ehemaligen Mitschüler, der selber Schlagzeug spielt und selber die Tabs zu bestimmten Songs erstellen wollte. Es gibt ein [relativ verbreitetes](http://www.911tabs.com/drum_tabs/) und halbwegs standardisiertes Format das in einer einfachen Textdatei gespeichert oder auf einer Website verbreitet werden kann. Man benötigt keine besonderen Tools, da man die Tabs mit einem normalen Texteditor schreiben kann. Das Problem ist allerdings, dass das nicht in Echtzeit geht und es sehr schwer ist die Tabs aus dem Gedächtnis aufzuschreiben.

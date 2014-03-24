@@ -6,10 +6,7 @@ title: '7000000000'
 wordpress_id: 1708
 tags:
 - 7 billion
-- Erde
-- Menschen
 - overpopulation
-- Überbevölkerung
 ---
 
 7 Milliarden Menschen auf der Erde. Das ist eine 7 mit 9 Nullen und damit soviel, wie noch nie und laut Wolfram Alpha sind das 6,6% der Anzahl von Menschen, die bisher gelebt haben.

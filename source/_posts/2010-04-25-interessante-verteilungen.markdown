@@ -8,7 +8,7 @@ wordpress_id: 884
 tags:
 - Benford
 - Mathematik
-- verteilung
+- Verteilung
 ---
 
 Nach einigen Jahren Mathe-LK kann ich die Finger nicht von interessanten Zusammenhängen zwischen dem Wahren Leben und der Mathematik lassen. Zwei interessante Verteilungen fand ich besonders toll und du solltest dich auch mal damit beschäftigen :-) Viel Spaß.

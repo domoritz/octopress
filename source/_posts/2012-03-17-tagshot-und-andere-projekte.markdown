@@ -6,11 +6,9 @@ title: Tagshot und andere Projekte
 description: Fotoverwaltung im Browser
 wordpress_id: 1763
 tags:
-- Browser
 - HPI
 - jQuery
 - Photos
-- Rails
 - Tagshot
 ---
 

@@ -8,7 +8,6 @@ wordpress_id: 1434
 tags:
 - CERN
 - Internet
-- www
 ---
 
 Heute vor genau 20 Jahren hat Tim Berners-Lee einen Vorschlag für ein "HyperText Project" veröffentlicht und damit den Grundstein für das WWW gelegt, welches die letzten Jahre verändert hat, wie kaum eine zweite Entwicklung. Nach der Veröffentlichung des Vorschlags kam die Entwicklung von HTTP, HTML, dem ersten Browser, den ersten Webseiten. Die Entwicklung des www begann am CERN in Genf und hat bis heute praktisch jeden Winkel der Erde erreicht.
