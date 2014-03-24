@@ -4,10 +4,9 @@ title: "Auf nach Amerika"
 description: "Mit Fulbright Stipendium an die UW"
 date: 2013-03-19 14:33
 comments: true
-categories: USA
+categories: UW
 tags:
 - USA
-- UW
 - Fulbright
 ---
 
