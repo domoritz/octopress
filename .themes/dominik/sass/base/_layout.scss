@@ -9,7 +9,7 @@ $header-margin-bottom: 36px !default;
 
 $pad-min: 15px;
 $pad-medium: 50px;
-$pad-wide: 80px;
+$pad-wide: 100px;
 
 .group { @include pie-clearfix; }
 
@@ -33,8 +33,8 @@ body {
       margin-bottom: 0.5*$header-margin-bottom;
     }
     @include media(wide) {
-      margin-top: 1.2*$header-margin-top;
-      margin-bottom: 1.2*$header-margin-bottom;
+      margin-top: 1.3*$header-margin-top;
+      margin-bottom: 1.4*$header-margin-bottom;
     }
 
     .banner {
@@ -105,15 +105,13 @@ body {
       display: none;
     }
     #content {
-      margin: 0; 
+      margin: 0;
+      padding: 0 10%;
       @include media(handheld) {
         padding: 0 10px;
       }
-      @include media(display) {
-        padding: 0 10%;
-      }
       @include media(wide) {
-        padding: 0 20%;
+        padding: 0 18%;
       }
     }
   }
