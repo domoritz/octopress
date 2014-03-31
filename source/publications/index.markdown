@@ -9,13 +9,22 @@ sharing: false
 sidebar: false
 ---
 
+## Demonstration of the Myria Big Data Management Service
+
+*to appear*
+
+Demo paper about the [Myria system](http://myria.cs.washington.edu/).
+
+**Published in**:  [SIGMOD 2014](http://www.sigmod2014.org/).
+
+
 ## Visualization of Varying Hierarchies by Stable Layout of Voronoi Treemaps
 
-Publication of algorithms I developed for my bachelor thesis.
+Publication of algorithms that I developed for my bachelor thesis.
 
 **Authors**: Sebastian Schmechel, Jonas Trümper, Dominik Moritz and Jürgen Döllner
 
-**Published in**: *Proceedings of the 5th International Conference on Information Visualization Theory and Applications (IVAPP 2014)*.
+**Published in**: [*Proceedings of the 5th International Conference on Information Visualization Theory and Applications (IVAPP 2014)*](http://www.ivapp.visigrapp.org/).
 
 [Publication website](http://www.hpi.uni-potsdam.de/doellner/publications/year/2014/2334/STMD2014.html)
 
