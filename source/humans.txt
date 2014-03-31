@@ -1,6 +1,6 @@
 /* TEAM */
 	Author/Theme:Dominik Moritz
-	Twitter: @doobly_doo
+	Twitter: @domoritz
 	From:Berlin, Germany
 
 /* THANKS */
