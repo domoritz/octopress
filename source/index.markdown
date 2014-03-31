@@ -1,8 +1,8 @@
 ---
 layout: page
 title: "Dominik Moritz"
-date: 2013-02-09 00:00
-updated: 2014-01-30 00:00
+date: 2013-02-09
+updated: 2014-03-30
 comments: false
 sharing: false
 sidebar: false

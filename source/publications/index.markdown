@@ -2,8 +2,8 @@
 layout: page
 title: "Publications"
 description: "Research papers and class papers"
-date: 2013-02-9 00:00
-updated: 2014-01-30 00:00
+date: 2013-02-09
+updated: 2014-03-30
 comments: false
 sharing: false
 sidebar: false
