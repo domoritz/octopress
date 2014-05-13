@@ -16,7 +16,7 @@ Before going to UW, I studied IT-Systems Engineering at [Hasso Plattner Institut
 Check out my [publications](/publications), [projects](/projects) and [my blog](/blog).
 
 * **Email:** domoritz[at]cs.washington.edu
-* **Office:** CSE 405
+* **Office:** [CSE](http://www.washington.edu/maps/?q=cse) 405
 
 <span class="clearfix"></span>
 
