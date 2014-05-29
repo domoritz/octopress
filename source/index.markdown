@@ -2,7 +2,7 @@
 layout: page
 title: "Dominik Moritz"
 date: 2013-02-09
-updated: 2014-03-30
+updated: 2014-05-29
 comments: false
 sharing: false
 sidebar: false
@@ -16,7 +16,7 @@ Before going to UW, I studied IT-Systems Engineering at [Hasso Plattner Institut
 Check out my [publications](/publications), [projects](/projects) and [my blog](/blog).
 
 * **Email:** domoritz[at]cs.washington.edu
-* **Office:** [CSE](http://www.washington.edu/maps/?q=cse) 405
+* **Office:** [CSE](http://www.washington.edu/maps/?q=cse) 486
 
 <span class="clearfix"></span>
 
