@@ -3,15 +3,13 @@ layout: page
 title: "Publications"
 description: "Research papers and class papers"
 date: 2013-02-09
-updated: 2014-03-30
+updated: 2014-08-26
 comments: false
 sharing: false
 sidebar: false
 ---
 
 ## Demonstration of the Myria Big Data Management Service
-
-*to appear*
 
 Demo paper about the [Myria system](http://myria.cs.washington.edu/).
 
