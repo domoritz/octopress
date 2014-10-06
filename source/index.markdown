@@ -9,7 +9,7 @@ sidebar: false
 ---
 
 {% img right https://lh4.googleusercontent.com/-pQ7AqQIZkZQ/THOvXggKWaI/AAAAAAAAAA0/i7JSVqagXdw/s180/avatar.png %}
-Hi, I am a Computer Science PhD student at the [University of Washington (UW)](http://www.washington.edu/) in Seattle in the department of [Computer Science & Engineering (CSE)](http://www.cs.washington.edu/). My advisors are [Bill Howe](http://homes.cs.washington.edu/~billhowe/) from the [Database Group](http://db.cs.washington.edu/) and [Jeffrey Heer](http://homes.cs.washington.edu/~jheer/) from the [Interactive Data Lab](http://idl.cs.washington.edu/). My research interest is combining large-scale systems with interactive data visualizations.
+Hi, I am a Computer Science PhD student at the [University of Washington (UW)](http://www.washington.edu/) in Seattle in the department of [Computer Science & Engineering (CSE)](http://www.cs.washington.edu/). My advisors are [Bill Howe](http://homes.cs.washington.edu/~billhowe/) from the [eScience Institute](http://escience.washington.edu/) and the [Database Group](http://db.cs.washington.edu/) and [Jeffrey Heer](http://homes.cs.washington.edu/~jheer/) from the [Interactive Data Lab](http://idl.cs.washington.edu/). My research interest is combining large-scale systems with interactive data visualizations.
 
 During my first year at the UW I was supported by a [Fulbright grant](https://en.wikipedia.org/wiki/Fulbright_Program).
 
