@@ -2,14 +2,16 @@
 layout: page
 title: "Dominik Moritz"
 date: 2013-02-09
-updated: 2014-05-29
+updated: 2014-10-06
 comments: false
 sharing: false
 sidebar: false
 ---
 
 {% img right https://lh4.googleusercontent.com/-pQ7AqQIZkZQ/THOvXggKWaI/AAAAAAAAAA0/i7JSVqagXdw/s180/avatar.png %}
-Hi, I am a first year PhD Student in the [Database Group](http://db.cs.washington.edu/) in [Computer Science & Engineering (CSE)](http://www.cs.washington.edu/) at the [University of Washington (UW)](http://www.washington.edu/) in Seattle. My first year at the UW is funded by a [Fulbright grant](https://en.wikipedia.org/wiki/Fulbright_Program).
+Hi, I am a Computer Science PhD student at the [University of Washington (UW)](http://www.washington.edu/) in Seattle in the department of [Computer Science & Engineering (CSE)](http://www.cs.washington.edu/). My advisors are [Bill Howe](http://homes.cs.washington.edu/~billhowe/) from the [Database Group](http://db.cs.washington.edu/) and [Jeffrey Heer](http://homes.cs.washington.edu/~jheer/) from the [Interactive Data Lab](http://idl.cs.washington.edu/). My research interest is combining large-scale systems with interactive data visualizations.
+
+During my first year at the UW I was supported by a [Fulbright grant](https://en.wikipedia.org/wiki/Fulbright_Program).
 
 Until 2013, I studied IT-Systems Engineering at [Hasso Plattner Institute](http://www.hpi.uni-potsdam.de) at the University of Potsdam, Germany. I also worked on [CKAN](http://www.ckan.org) from the [Open Knowledge Foundation](http://www.okfn.org), took part in the Summer of Code 2012, and receive a scholarship from the [German National Academic Foundation](http://www.studienstiftung.de/).
 
