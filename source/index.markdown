@@ -24,8 +24,8 @@ Check out my [CV](/dominik_moritz_cv.pdf), [publications](/publications), [proje
 
 Feel free to follow me on:
 
-* <i class="icon-twitter icon-large"></i> [Twitter](https://twitter.com/domoritz)
-* <i class="icon-github icon-large"></i> [Github](https://github.com/domoritz)
-* <i class="icon-facebook-sign icon-large"></i> [Facebook](https://www.facebook.com/moritz.dominik)
-* <i class="icon-linkedin icon-large"></i> [Linkedn](https://www.linkedin.com/pub/dominik-moritz/24/b81/409)
-* <i class="icon-google-plus-sign icon-large"></i> [Google+](https://plus.google.com/110111947282446666823)
+* <i class="fa fa-twitter fa-lg"></i> [Twitter](https://twitter.com/domoritz)
+* <i class="fa fa-github fa-lg"></i> [Github](https://github.com/domoritz)
+* <i class="fa fa-facebook-square fa-lg"></i> [Facebook](https://www.facebook.com/moritz.dominik)
+* <i class="fa fa-linkedin fa-lg"></i> [Linkedn](https://www.linkedin.com/pub/dominik-moritz/24/b81/409)
+* <i class="fa fa-google-plus fa-lg"></i> [Google+](https://plus.google.com/110111947282446666823)
