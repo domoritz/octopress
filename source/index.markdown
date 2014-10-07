@@ -15,7 +15,7 @@ During my first year at the UW I was supported by a [Fulbright grant](https://en
 
 Until 2013, I studied IT-Systems Engineering at [Hasso Plattner Institute](http://www.hpi.uni-potsdam.de) at the University of Potsdam, Germany. I also worked on [CKAN](http://www.ckan.org) from the [Open Knowledge Foundation](http://www.okfn.org), took part in the Summer of Code 2012, and receive a scholarship from the [German National Academic Foundation](http://www.studienstiftung.de/).
 
-Check out my [publications](/publications), [projects](/projects) and [my blog](/blog).
+Check out my [CV](/dominik_moritz_cv.pdf), [publications](/publications), [projects](/projects) and [my blog](/blog).
 
 * **Email:** &#100;&#111;&#109;&#111;&#114;&#105;&#116;&#122;&#91;&#97;&#116;&#93;&#99;&#115;&#46;&#119;&#97;&#115;&#104;&#105;&#110;&#103;&#116;&#111;&#110;&#46;&#101;&#100;&#117;
 * **Office:** [CSE](http://www.washington.edu/maps/?q=cse) 486
