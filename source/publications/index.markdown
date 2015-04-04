@@ -3,11 +3,18 @@ layout: page
 title: "Publications"
 description: "Research papers and class papers"
 date: 2013-02-09
-updated: 2014-08-26
+updated: 2015-04-04
 comments: false
 sharing: false
 sidebar: false
 ---
+
+## Perfopticon: Visual Query Analysis for Distributed Databases
+
+**Authors**: Dominik Moritz, Daniel Halperin, Bill Howe, and Jeffrey Heer
+
+**Published in**: [Eurovis 2015](http://www.eurovis2015.it/)
+
 
 ## Demonstration of the Myria Big Data Management Service
 
