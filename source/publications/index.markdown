@@ -31,7 +31,7 @@ Publication of algorithms that I developed for my bachelor thesis.
 
 **Published in**: [*Proceedings of the 5th International Conference on Information Visualization Theory and Applications (IVAPP 2014)*](http://www.ivapp.visigrapp.org/).
 
-[Publication website](http://www.hpi.uni-potsdam.de/doellner/publications/year/2014/2334/STMD2014.html)
+[Publication website](https://hpi.de/de/computer-graphics-systems/publications/year/2014/102334/STMD2014.html)
 
 
 ## Algorithms for the Visualization of Software System Evolution, 2013
