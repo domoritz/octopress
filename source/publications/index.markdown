@@ -15,6 +15,8 @@ sidebar: false
 
 **Published in**: [Eurovis 2015](http://www.eurovis2015.it/)
 
+[Publication page on IDL](https://idl.cs.washington.edu/papers/perfopticon)
+
 
 ## Demonstration of the Myria Big Data Management Service
 
