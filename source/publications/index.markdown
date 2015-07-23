@@ -3,7 +3,7 @@ layout: page
 title: "Publications"
 description: "Research papers and class papers"
 date: 2013-02-09
-updated: 2015-04-04
+updated: 2015-07-23
 comments: false
 sharing: false
 sidebar: false
