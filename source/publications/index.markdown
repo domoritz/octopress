@@ -57,7 +57,7 @@ Evaluation of project in *Statistical optimization* seminar at University of Pot
 
 A seminar paper on the application of an optimistic approach to concurrency control schemes. I wrote this paper for the seminar *Beauty is our Business* in the summer term 2012.
 
-[Link to paper](https://dl.dropboxusercontent.com/u/12770094/the_glass_is_half_full.pdf)
+[Link to paper](the_glass_is_half_full.pdf)
 
 *[HCI]:     Human computer interaction
 *[GIS]:     Geographic information system
