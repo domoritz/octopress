@@ -3,11 +3,21 @@ layout: page
 title: "Publications"
 description: "Research papers and class papers"
 date: 2013-02-09
-updated: 2015-07-23
+updated: 2015-09-05
 comments: false
 sharing: false
 sidebar: false
 ---
+
+## Voyager: Exploratory Analysis via Faceted Browsing of Visualization Recommendations
+
+**Authors**: Kanit Wongsuphasawat, Dominik Moritz, Anushka Anand, Jock Mackinlay, Bill Howe, Jeffrey Heer
+
+**Published in**: [VIS 2015](http://ieeevis.org/)
+
+[Publication page on IDL website](https://idl.cs.washington.edu/papers/voyager)
+[All the code](https://vega.github.io/)
+
 
 ## Perfopticon: Visual Query Analysis for Distributed Databases
 
@@ -15,7 +25,7 @@ sidebar: false
 
 **Published in**: [Eurovis 2015](http://www.eurovis2015.it/)
 
-[Publication page on IDL](https://idl.cs.washington.edu/papers/perfopticon)
+[Publication page on IDL website](https://idl.cs.washington.edu/papers/perfopticon)
 
 
 ## Demonstration of the Myria Big Data Management Service
