@@ -12,6 +12,11 @@ sidebar: false
 This is an incomplete list of projects I have done or contributed to in the past or currently work on.
 
 
+# Vega, Vega-Lite, Voyager, Polestar and others
+
+With the interactive data lab, we have build the [Vega stack](https://vega.github.io/) and a number of tools for data exploration based on it.
+
+
 # Myria
 
 [Myria](http://myria.cs.washington.edu/) is a distributed Big Data management system in the cloud which is being developed in the [Database group](http://db.cs.washington.edu/) at the [University of Washington](hppt://uw.edu/).

@@ -3,11 +3,20 @@ layout: page
 title: "Publications"
 description: "Research papers and class papers"
 date: 2013-02-09
-updated: 2015-09-05
+updated: 2016-04-12
 comments: false
 sharing: false
 sidebar: false
 ---
+
+## Dynamic Client-Server Optimization for Scalable Interactive Visualization on the Web
+
+**Authors**: Dominik Moritz, Jeffrey Heer, and Bill Howe.
+
+**Published in**: [The 1st Workshop on Data Systems for Interactive Analysis](http://www.interactive-analysis.org/)
+
+[Paper](http://www.interactive-analysis.org/papers/2015/moritz.pdf)
+
 
 ## Voyager: Exploratory Analysis via Faceted Browsing of Visualization Recommendations
 
