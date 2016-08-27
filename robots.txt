@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: 
-
-Sitemap: http://domoritz.github.io/octopress/sitemap.xml 
