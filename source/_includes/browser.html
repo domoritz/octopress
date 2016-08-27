@@ -5,7 +5,7 @@
 	    {% else %}
 		    <li>
 	    {% endif %}
-	  	<a href="{{post.url}}">
+	  	<a href="{{root_url}}{{post.url}}">
 		    <div class="published" data-published="{{ post.date }}">{{ post.date | date: "%B %Y" }}</div>
 		    <div class="title">{{ post.title }}</div>
 		    <div class="description">{{ post.description }}</div>

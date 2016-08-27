@@ -22,7 +22,7 @@
     <ul class="meta">
     {% if page.previous.url %}
       <li class="page-link-prev">
-        <a class="page-link" href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}">
+        <a class="page-link" href="{{root_url}}{{page.previous.url}}" title="Previous Post: {{page.previous.title}}">
           <i class=" icon-angle-left"></i>
           <span>{{ page.previous.title }}</span>
         </a>
@@ -33,7 +33,7 @@
       </li>
     {% if page.next.url %}
       <li class="page-link-next">
-        <a class="page-link" href="{{page.next.url}}" title="Next Post: {{page.next.title}}">
+        <a class="page-link" href="{{root_url}}{{page.next.url}}" title="Next Post: {{page.next.title}}">
           <span>{{ page.next.title }}</span>
           <i class=" icon-angle-right"></i>
         </a>
