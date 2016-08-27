@@ -1,0 +1,377 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Neuer Weltrekord bei der Berechnung von PI - Dominik Moritz</title>
+  <meta name="author" content="Dominik Moritz">
+
+  
+  <meta name="description" content="Ok, stimmt nicht ganz. Die Berechnung von PI mit einer extrem großen Genauigkeit hat keinen praktischen Nutzen, ist aber trotzdem eine tolle &hellip;">
+  
+    <meta name="keywords" content="Computeri7PI">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="/octopresshttp://domoritz.github.io/octopress/blog/2010/01/neuer-weltrekord-bei-der-berechnung-von-pi/">
+  <link rel="author" href="/octopress/humans.txt" />
+  <link href="/octopress/favicon.ico" rel="icon">
+  <link href="/octopress/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/octopress/javascripts/modernizr-2.0.js"></script>
+  <link href="/octopress/atom.xml" rel="alternate" title="Dominik Moritz" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href='//fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3992453-11']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body>
+	<header class="clearfix">
+	  <div role="banner" class="banner">
+	  	<hgroup class="title-header">
+  <a href="/octopress/">
+    <span class="title">
+      Dominik Moritz
+    </span>
+    <br/>
+    <span class="description">
+	    
+	      CSE PhD Student at UW
+	    
+    </span>
+  </a>
+</hgroup>
+
+	  </div>
+
+	  <nav role="navigation" class="navigation">
+	  	<ul>
+	<li >
+		<a href="/octopress/" title="Main page"><i class="fa fa-home fa-lg"></i></a>
+	</li>
+	<li >
+		<a href="/octopress/publications/" title="Publications"><i class="fa fa-university"></i> Papers</a>
+	</li>
+	<li >
+		<a href="/octopress/projects/"><i class="fa fa-terminal"></i> Projects</a>
+	</li>
+	<li >
+		<a href="/blog/2014/09/code-retreat/"><i class="fa fa-comment"></i> Blog</a>
+	</li>
+	<li>
+		<a href="/octopress/dominik_moritz_cv.pdf"><i class="fa fa-user"></i> CV</a>
+	</li>
+</ul>
+
+<ul class="social-links">
+  <li>
+      <a href="https://twitter.com/domoritz" title="Twitter"><i class="fa fa-lg fa-twitter"></i></a>
+    </li>
+    <li>
+      <a href="https://github.com/domoritz" title="Github"><i class="fa fa-lg fa-github"></i></a>
+    </li>
+    <li>
+      <a href="https://www.facebook.com/moritz.dominik" title="Facebook"><i class="fa fa-lg fa-facebook"></i></a>
+    </li>
+    <li>
+      <a href="http://www.linkedin.com/pub/dominik-moritz/24/b81/409" title="Linkedin"><i class="fa fa-lg fa-linkedin"></i></a>
+    </li>
+</ul>
+
+	  </nav>
+	</header>
+
+	
+	<div id="main" class="sidebar">
+		<div id="sidebar">
+			
+<form action="https://google.com/search" method="get" id="search">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:domoritz.github.io/octopress" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search" />
+     <button type="submit" class="btn btn-success">
+        <i class="icon-search icon-large"></i>
+    </button>
+  </fieldset>
+</form>
+
+			<div id="browser">
+				<nav role="navigation" class="browser">
+					<ul>
+	
+	  	
+		    <li>
+	    
+	  	<a href="/blog/2014/09/code-retreat/">
+		    <div class="published" data-published="2014-09-29 09:55:44 -0700">September 2014</div>
+		    <div class="title">Code retreats improve coding abilities</div>
+		    <div class="description">Game of Life in Python and Go</div>
+		  </a>
+		</li>
+	
+	  	
+		    <li>
+	    
+	  	<a href="/blog/2014/03/data-visualizations/">
+		    <div class="published" data-published="2014-03-23 23:50:21 -0700">March 2014</div>
+		    <div class="title">Data visualizations</div>
+		    <div class="description">CSE512 at UW and other projects</div>
+		  </a>
+		</li>
+	
+	  	
+		    <li>
+	    
+	  	<a href="/blog/2013/05/ckan-2-dot-0-ist-da/">
+		    <div class="published" data-published="2013-05-13 08:58:00 -0700">May 2013</div>
+		    <div class="title">CKAN 2.0 ist da</div>
+		    <div class="description">Neue Version der Datenbank für Metadaten</div>
+		  </a>
+		</li>
+	
+	  	
+		    <li>
+	    
+	  	<a href="/blog/2013/03/auf-nach-amerika/">
+		    <div class="published" data-published="2013-03-19 14:33:00 -0700">March 2013</div>
+		    <div class="title">Auf nach Amerika</div>
+		    <div class="description">Mit Fulbright Stipendium an die UW</div>
+		  </a>
+		</li>
+	
+	  	
+		    <li>
+	    
+	  	<a href="/blog/2013/02/datenbestandsanalyse-govdata/">
+		    <div class="published" data-published="2013-02-20 00:18:00 -0800">February 2013</div>
+		    <div class="title">Datenbestandsanalyse GovData</div>
+		    <div class="description">Was wir jetzt schon über die Daten im neuen Datenportal sagen können.</div>
+		  </a>
+		</li>
+	
+	  	
+		    <li>
+	    
+	  	<a href="/blog/2013/02/meteowas/">
+		    <div class="published" data-published="2013-02-19 17:03:00 -0800">February 2013</div>
+		    <div class="title">Meteo-was</div>
+		    <div class="description">Namen für Steine aus dem Weltall</div>
+		  </a>
+		</li>
+	
+	  	
+		    <li>
+	    
+	  	<a href="/blog/2012/12/london-4D/">
+		    <div class="published" data-published="2012-12-15 23:52:00 -0800">December 2012</div>
+		    <div class="title">The London 4D experience</div>
+		    <div class="description">Über meine zwei Monate in London</div>
+		  </a>
+		</li>
+	
+	  	
+		    <li>
+	    
+	  	<a href="/blog/2012/04/utc-gmt-london-local/">
+		    <div class="published" data-published="2012-04-09 20:15:00 -0700">April 2012</div>
+		    <div class="title">UTC vs GMT vs London Local Time</div>
+		    <div class="description">Über die Verwirrungen durch Zeitstandards</div>
+		  </a>
+		</li>
+	
+	  	
+		    <li>
+	    
+	  	<a href="/blog/2012/03/singing_vhdl_board/">
+		    <div class="published" data-published="2012-03-27 06:59:57 -0700">March 2012</div>
+		    <div class="title">The singing VHDL board</div>
+		    <div class="description">Ein Muskspieler mt Kartenleser programmiert</div>
+		  </a>
+		</li>
+	
+	  	
+		    <li>
+	    
+	  	<a href="/blog/2012/03/shoppingtour-optimizer/">
+		    <div class="published" data-published="2012-03-17 08:17:39 -0700">March 2012</div>
+		    <div class="title">Shopping tour Optimizer</div>
+		    <div class="description">Unser Beitrag zum InformatiCup 2012</div>
+		  </a>
+		</li>
+	
+	  	
+		    <li>
+	    
+	  	<a href="/blog/2012/03/tagshot-und-andere-projekte/">
+		    <div class="published" data-published="2012-03-17 06:30:02 -0700">March 2012</div>
+		    <div class="title">Tagshot und andere Projekte</div>
+		    <div class="description">Fotoverwaltung im Browser</div>
+		  </a>
+		</li>
+	
+	  	
+		    <li>
+	    
+	  	<a href="/blog/2011/10/7000000000/">
+		    <div class="published" data-published="2011-10-31 14:05:59 -0700">October 2011</div>
+		    <div class="title">7000000000</div>
+		    <div class="description"></div>
+		  </a>
+		</li>
+	
+
+	
+  <li class="archive">
+  
+		<a href="/blog/archives"><div><i class="icon-archive"></i> Archive</div></a>
+	</li>
+</ul>
+				</nav>
+			</div>
+		</div>
+	
+		<div id="content">
+			<div>
+<article class="hentry" role="article">
+  
+  <header>
+    <h1 class="entry-title">Neuer Weltrekord bei der Berechnung von PI</h1>
+    <h2 class="author hidden">Dominik Moritz</h2>
+    
+    <p class="meta" title="date published">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-01-08T13:15:30-08:00" pubdate data-updated="true">Jan 8<span>th</span>, 2010</time></p>
+  </header>
+  
+
+  <div class="entry-content">
+    <p>Ok, stimmt nicht ganz.</p>
+
+<p>Die Berechnung von PI mit einer extrem großen Genauigkeit hat keinen praktischen Nutzen, ist aber trotzdem eine tolle Beschäftigungstherapie für Supercomputer und immer wieder ein interessantes Unterfangen. Dieses Mal wurde ein neuer Rekord bei der Berechnung von PI auf einem handelsüblichen PC (mit 2,93 GHz i7 CPU, 6GB RAM, 7,5 TB HD und Fedora als OS) auf 2.699.999.990.000 Nachkommastellen, knapp 2,7 Billionen. Die Rechenzeit betrug (mit Verifikation) 131 Tage.</p>
+
+<p>weitere Infos mit Erklärungen zur Berechnungsmethode: <a href="http://bellard.org/pi/pi2700e9/">http://bellard.org/pi/pi2700e9/</a></p>
+
+  </div>
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Dominik Moritz</span></span>
+
+      
+
+
+      
+<span class="tags">
+  
+    <a href="https://google.com/search?q=Computer site:domoritz.github.io/octopress" class="icon-tag">
+    	Computer
+    </a>
+  
+    <a href="https://google.com/search?q=i7 site:domoritz.github.io/octopress" class="icon-tag">
+    	i7
+    </a>
+  
+    <a href="https://google.com/search?q=PI site:domoritz.github.io/octopress" class="icon-tag">
+    	PI
+    </a>
+  
+</span>
+
+    </p>
+    <ul class="meta">
+    
+      <li class="page-link-prev">
+        <a class="page-link" href="/octopress/blog/2009/12/neuer-planet-erschaffen/" title="Previous Post: neuer Planet erschaffen">
+          <i class=" icon-angle-left"></i>
+          <span>neuer Planet erschaffen</span>
+        </a>
+      </li>
+    
+      <li class="archive-link">
+        <a href="/octopress/blog/archives"><i class="icon-calendar"></i> Blog archive</a>
+      </li>
+    
+      <li class="page-link-next">
+        <a class="page-link" href="/octopress/blog/2010/01/google-blockt-china/" title="Next Post: Google blockt China">
+          <span>Google blockt China</span>
+          <i class=" icon-angle-right"></i>
+        </a>
+      </li>
+    
+    </ul>
+    
+  </footer>
+</article>
+
+  <section>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+		</div>
+	</div>
+
+	<footer role="contentinfo"><p>
+  Page last generated on: August 26, 2016 with the help of <a href="http://octopress.org/">Octopress</a> - <a href="/octopress/">Dominik Moritz</a> <a href="/octopress/atom.xml" class="icon icon-rss" title="Post feed"></a>
+</p>
+</footer>
+
+
+<script type="text/javascript">
+      var disqus_shortname = 'domoritz';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = '/blog/2010/01/neuer-weltrekord-bei-der-berechnung-von-pi';
+        var disqus_url = 'http://domoritz.github.io/octopress/blog/2010/01/neuer-weltrekord-bei-der-berechnung-von-pi/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: UW | Dominik Moritz]]></title>
+  <link href="http://domoritz.github.io/octopress/blog/categories/uw/atom.xml" rel="self"/>
+  <link href="http://domoritz.github.io/octopress/"/>
+  <updated>2016-08-26T18:26:26-07:00</updated>
+  <id>http://domoritz.github.io/octopress/</id>
+  <author>
+    <name><![CDATA[Dominik Moritz]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Data visualizations]]></title>
+    <link href="http://domoritz.github.io/octopress/blog/2014/03/data-visualizations/"/>
+    <updated>2014-03-23T23:50:21-07:00</updated>
+    <id>http://domoritz.github.io/octopress/blog/2014/03/data-visualizations</id>
+    <content type="html"><![CDATA[<p>During the spring quarter at UW, I took Jeffrey Heer’s <a href="https://courses.cs.washington.edu/courses/cse512/14wi/index.html">data visualization class</a>. As part of this class, I worked on three assignments and a final project of which I would like to share the first two assignments.</p>
+
+<p>In the <a href="http://courses.cs.washington.edu/courses/cse512/14wi/a1.html">first assignment</a> we had to design a visualization for Burtin’s antibiotics dataset. The task was to design a visualization without any knowledge from the class. Here is what I created:</p>
+
+<iframe src="//domoritz.github.io/vis-a1" width="100%" height="600px"></iframe>
+
+<p>I created the static visualization with D3. The code is on <a href="https://github.io/domoritz/vis-a1">GitHub</a>.</p>
+
+<p>For the <a href="http://courses.cs.washington.edu/courses/cse512/14wi/a2.html">second assignment</a>, we could choose between different datasets to visualize. I chose the FAA flight data and wanted to answer the question whether airlines overestimate the flight times in order to avoid having bad on-time records. TL;DR, the answer is yes.</p>
+
+<p><a href="https://lh4.googleusercontent.com/-J1zr6t7-AbM/Uy_biJodd4I/AAAAAAAACSU/UgcWCH69sEE/w1192-h896-no/a2-domoritz.png"><img src="https://lh4.googleusercontent.com/-J1zr6t7-AbM/Uy_biJodd4I/AAAAAAAACSU/UgcWCH69sEE/s700/a2-domoritz.png"></a></p>
+
+<p>The data in this plot is based on 1.4GB of flight records for one month each year since 1987. I created the plot with Tableau.</p>
+
+<p>Not as part of the class but during the <a href="http://opendataday.org/">Open Data Day</a>, I worked on a <a href="https://domoritz.github.io/live-bus-seattle">live map of bus locations in Seattle</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Auf nach Amerika]]></title>
+    <link href="http://domoritz.github.io/octopress/blog/2013/03/auf-nach-amerika/"/>
+    <updated>2013-03-19T14:33:00-07:00</updated>
+    <id>http://domoritz.github.io/octopress/blog/2013/03/auf-nach-amerika</id>
+    <content type="html"><![CDATA[<p>Ab Herbst gehe ich für ein Jahr an die <a href="https://www.washington.edu/">University of Washington</a> in Seattle um dort am <a href="http://www.cs.washington.edu/">Department of Computer Science and Engieering</a> zu studieren. Vor einigen Tagen kam die Zusage von der University of Washington (oder auch liebevoll UDub). Während des akademischen Jahres, für das ich in den USA bleibe, werde ich von einem <a href="https://en.wikipedia.org/wiki/Fulbright_Program">Fulbright</a> Jahresstipendium unterstützt. Mit Zurückhaltung würde ich sagen, dass das eines der wichtigsten Erlebnisse meines Lebens wird.</p>
+
+<p><img src="https://lh3.googleusercontent.com/-WFTZpOclcw4/UUh8_fy2xwI/AAAAAAAABvk/xgYiv-vIrf8/s600/seattle.png"></p>
+
+<p>Vor etwa einem Jahr habe ich damit angefangen, mich für Stipendien und Austauschprogramme zu bewerben. Genauer gesagt habe ich mich bei Fulbright, dem <a href="https://www.daad.org/">DAAD</a> und beim Akademischen Ausladsamt (AAA) der Uni Potsdam beworben. Ich hatte schon lange vorher geplant nach meinem Bachelor ins Ausland, am besten die USA, zu gehen. Nachdem ich mich beworben habe und bei den Auswahlgesprächen in Bonn (DAAD), Berlin (Fulbright) und Potsdam war, habe ich überraschenderweise Zusagen von allen Programmen bekommen. Damit stand ich vor der Frage, wie ich in die USA gehe. Von Fulbright wurde ich für die University of Washington nominiert. Alternativ hätte ich auch über das Austauschprogramm der Uni Potsdam an die University of California gehen können; allerdings nur als <em>undergraduate</em>. An der UW bin ich jetzt im <em>PhD program</em>, also auf <em>graduate level</em>. Außerdem passt das Kurs- und Forschungsprogramm in Seattle viel besser auf meine Interessen.</p>
+
+<p>Die ganze Vorbereitung war schon sehr aufwändig und ich viele Stunden Zeit in das Schreiben von Statements, Vergleichen von Unis und im Kontakt mit Professoren und anderen Leuten, die mir beim Vorbereiten der Bewerbung und mit Gutachten geholfen haben, gesteckt. Sehr wichtig waren auch die Gutachten von meinen Professoren an der Uni und die Hilfe beim Gegenlesen meiner Texte. Ich bin froh, dass das letztendlich alles so super ausgegangen ist.</p>
+
+<p><img src="https://lh6.googleusercontent.com/-N4F_wuqRSjw/UUiLZxSbb3I/AAAAAAAABv8/6pe-Bovy6F4/s600/IMG<em>20130318</em>182816.jpg"></p>
+
+<p>Ich habe mich von der Fulbright Kommission platzieren lassen, wobei ich aber einen großen Teil der Bewerbung an der UW selber machen musste. Die Nominierung ist an die Uni gebunden, sodass ich bei einer Absage auch das Stipendium verloren hätte. Vor etwa einer Woche habe ich dann die Zusage aus Washington bekommen, sodass jetzt alles in trockenen Tüchern ist. Am letzten Wochenende war ich beim Fulbright Vorbereitungstreffen und habe die anderen Stipendiaten aus Deutschland und Fulbrighter aus den USA - die zur Zeit in Europa sind - kennen gelernt, den Aufenthalt vorbereitet und über die Unterschiede sowie Gemeinsamkeiten Europas und der USA diskutiert.</p>
+
+<p>Ich freue mich also sehr auf mein Jahr in den USA und bin begeistert, dass ich dabei vom Fulbright Programm unterstützt werde.</p>
+]]></content>
+  </entry>
+  
+</feed>
