@@ -1,17 +1,17 @@
 <ul>
 	<li {% if page.url == '/index.html' %} class="active"{% endif %}>
-		<a href="/" title="Main page"><i class="fa fa-home fa-lg"></i></a>
+		<a href="{{root_url}}/" title="Main page"><i class="fa fa-home fa-lg"></i></a>
 	</li>
 	<li {% if page.url == '/publications/index.html' %} class="active"{% endif %}>
-		<a href="/publications/" title="Publications"><i class="fa fa-university"></i> Papers</a>
+		<a href="{{root_url}}/publications/" title="Publications"><i class="fa fa-university"></i> Papers</a>
 	</li>
 	<li {% if page.url == '/projects/index.html' %} class="active"{% endif %}>
-		<a href="/projects/"><i class="fa fa-terminal"></i> Projects</a>
+		<a href="{{root_url}}/projects/"><i class="fa fa-terminal"></i> Projects</a>
 	</li>
 	<li {% if page.url.start_with? '/blog/' %} class="active"{% endif %}>
 		<a href="{{ site.posts.first.url }}"><i class="fa fa-comment"></i> Blog</a>
 	</li>
 	<li>
-		<a href="/dominik_moritz_cv.pdf"><i class="fa fa-user"></i> CV</a>
+		<a href="{{root_url}}/dominik_moritz_cv.pdf"><i class="fa fa-user"></i> CV</a>
 	</li>
 </ul>

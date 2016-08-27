@@ -20,13 +20,13 @@
   <meta name="MobileOptimized" content="320">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  {% capture canonical %}{{ site.url }}{% if site.permalink contains '.html' %}{{ page.url }}{% else %}{% if page.url contains site.category_dir %}/{% endif %}{{ page.url | remove:'index.html' }}{% endif %}{% endcapture %}
+  {% capture canonical %}{{root_url}}{{ site.url }}{% if site.permalink contains '.html' %}{{ page.url }}{% else %}{% if page.url contains site.category_dir %}/{% endif %}{{ page.url | remove:'index.html' }}{% endif %}{% endcapture %}
   <link rel="canonical" href="{{ canonical }}">
-  <link rel="author" href="humans.txt" />
+  <link rel="author" href="{{ root_url }}/humans.txt" />
   <link href="{{ root_url }}/favicon.ico" rel="icon">
   <link href="{{ root_url }}/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="{{ root_url }}/javascripts/modernizr-2.0.js"></script>
-  <link href="{{ site.subscribe_rss }}" rel="alternate" title="{{site.title}}" type="application/atom+xml">
+  <link href="{{ root_url }}/{{ site.subscribe_rss }}" rel="alternate" title="{{site.title}}" type="application/atom+xml">
   {% include custom/head.html %}
   {% include google_analytics.html %}
 </head>
